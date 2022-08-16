@@ -1,0 +1,169 @@
+@import '../../../../index.scss';
+.wrap__education {
+  margin: 0 auto;
+  max-width: 970px;
+  @include desktop__big {
+    max-width: 768px;
+  }
+  @include md {
+    margin: 0 15px;
+  }
+  .wrap_time_education {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .head_components {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img_head {
+      padding: 5px;
+      text-align: center;
+      border: 1px solid $white;
+      width: 50px;
+      height: 50px;
+      @extend .shadow;
+      margin-right: 15px;
+    }
+    .text_head_components {
+      font-weight: bold;
+      font-size: 40px;
+      color: $black;
+      @include md {
+        font-size: 35px;
+      }
+    }
+  }
+}
+.name__education_right:nth-child(2) {
+  margin-top: 150px;
+  @include md {
+    margin: 0;
+  }
+}
+.timeline {
+  position: absolute;
+  background-color: $green;
+  width: 4px;
+  height: 755px;
+  top: 0;
+  z-index: 1;
+  left: 50.5%;
+  opacity: 0.4;
+  @include desktop__big {
+    height: 790px;
+    left: 50%;
+  }
+  @include md {
+    height: 1260px;
+  }
+}
+h3,
+h4,
+.content {
+  color: $black;
+}
+
+.time__education {
+  @include md {
+    display: grid;
+    justify-items: center;
+  }
+  .name__education,
+  .name__education_right {
+    position: relative;
+    z-index: 10;
+    width: 40%;
+    border: 1px solid transparent;
+    border-left: 5px solid $sky;
+    @extend .shadow;
+    padding: 20px;
+    margin-bottom: 60px;
+    @include desktop__big {
+      width: 37%;
+    }
+    @include md {
+      width: auto;
+      margin-bottom: 15px;
+    }
+    .data-icon {
+      color: $sky;
+    }
+    .circle_education,
+    .circle_education-right {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $green;
+      &_text {
+        text-shadow: 1px 2px 1px $black;
+        margin: 0;
+        color: $white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 11px;
+      }
+    }
+    .circle_education {
+      right: -82px;
+      @include desktop__big {
+      }
+      @include md {
+        right: 10px;
+        top: 5px;
+      }
+    }
+    .circle_education-right {
+      left: -75px;
+      @include desktop__big {
+        left: -82px;
+      }
+      @include md {
+        left: auto;
+        right: 10px;
+        top: 10px;
+      }
+    }
+    .line_left,
+    .line_right {
+      width: 37px;
+      height: 4px;
+      background-color: $green;
+      opacity: 0.4;
+      margin-top: -27px;
+      @include md {
+        display: none;
+      }
+    }
+    .line_left {
+      margin-left: -31px;
+      @include desktop__big {
+        margin-left: -30px;
+      }
+    }
+    .line_right {
+      margin-left: 37px;
+      @include desktop__big {
+        margin-left: 40px;
+      }
+    }
+  }
+  .name__education {
+    float: left;
+    @include md {
+      float: none;
+    }
+  }
+  .name__education_right {
+    float: right;
+    @include md {
+      float: none;
+    }
+  }
+}

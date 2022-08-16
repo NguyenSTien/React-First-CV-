@@ -1,0 +1,56 @@
+@import '../../../../index.scss';
+.wrap_interest {
+  .interest {
+    @extend .shadow;
+    border: 0px solid transparent;
+    @include md {
+      margin: 0 15px;
+    }
+    &_text {
+      padding: 40px;
+    }
+    .interest_icon {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+      @include desktop__big {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include md {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      &-icon {
+        font-size: 35px;
+      }
+      &-text {
+        font-size: 18px;
+      }
+    }
+    .music {
+      background-color: $green;
+      color: $white;
+      width: 16.6%;
+      height: 105px;
+      font-size: 25px;
+      @include desktop__big {
+        width: 100%;
+      }
+      .interest_icon-icon {
+        margin-top: 25px;
+      }
+    }
+    .gaming {
+      color: $green;
+      width: 16.6%;
+      font-size: 25px;
+      @include desktop__big {
+        width: 100%;
+      }
+    }
+  }
+}
+.fa-plane-up {
+  transform: rotate(45deg);
+}

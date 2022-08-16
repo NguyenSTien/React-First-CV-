@@ -1,0 +1,66 @@
+@import '../../../../index.scss';
+.skill {
+  @include md {
+    margin: 0 15px;
+  }
+}
+
+.wrap_skill {
+  position: relative;
+  z-index: -2;
+  padding: 40px;
+  background-color: $green;
+  color: $white;
+  .wrap_soft {
+    display: flex;
+    justify-content: space-between;
+    @include md {
+      display: contents;
+    }
+    .software {
+      width: 250px;
+      @include desktop__big {
+        width: 200px;
+      }
+      @include md {
+        width: 100%;
+      }
+      .prof_head {
+        font-size: 25px;
+        margin: 15px 0 0 50px;
+        @include desktop__big {
+          margin-left: 20px;
+        }
+        @include md {
+          text-align: center;
+          margin-top: 35px;
+        }
+      }
+    }
+    .prof_text {
+      .prof_text_key {
+        width: 85%;
+      }
+      .prof_text_cont {
+        float: right;
+        margin-bottom: 15px;
+        margin-top: -36px;
+        &::after {
+          content: '%';
+        }
+      }
+      .percent {
+        width: 100%;
+        height: 4px;
+        background-color: $white;
+      }
+      .line_percent {
+        position: relative;
+        z-index: -1;
+        height: 4px;
+        background-color: $greenbold;
+        margin-top: -4px;
+      }
+    }
+  }
+}

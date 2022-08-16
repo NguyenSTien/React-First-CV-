@@ -1,0 +1,5 @@
+@import './index.scss';
+
+@include font-face(raleway, Raleway);
+@include font-face(ralewayBold, Raleway-Bold);
+@include font-face(ralewayLight, Raleway-Light);

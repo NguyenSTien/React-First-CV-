@@ -1,0 +1,60 @@
+@import '../../../../index.scss';
+.wrap_form {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 50px;
+  @include desktop__big {
+    grid-template-columns: none;
+    margin: 0 15px;
+  }
+}
+.form {
+  @extend .shadow;
+  display: grid;
+  width: auto;
+  padding: 40px;
+  @include desktop__big {
+    margin-bottom: 15px;
+  }
+}
+label {
+  margin-top: 15px !important;
+  color: $grey;
+  height: 15px;
+}
+input {
+  font-size: 15px;
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid $grey;
+  margin-bottom: 25px;
+}
+.input_message {
+  height: 70px;
+}
+button {
+  @extend .shadow;
+  border-radius: 3px;
+  margin-top: 25px;
+  border: none;
+  background-color: $green;
+  color: $white;
+  width: 100px;
+  padding: 8px 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.wrap_map {
+  @extend .shadow;
+}
+.text_footer {
+  text-align: center;
+  color: $black;
+  font-weight: 300;
+  &-blue {
+    color: $sky;
+    font-weight: 700;
+  }
+}

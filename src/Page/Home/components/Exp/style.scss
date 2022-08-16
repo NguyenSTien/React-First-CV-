@@ -1,0 +1,45 @@
+@import '../../../../index.scss';
+
+.wrap {
+  margin-top: 50px;
+  .wrap__Content {
+    box-shadow: 1px 1px 5px 1px $grey;
+    @include md {
+      margin: 0 15px;
+    }
+    .experience {
+      padding: 40px;
+      text-align: center;
+      margin: 0;
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .about {
+      text-align: center;
+      border-top: 1px solid $grey;
+      padding: 30px 0;
+      @include md {
+        display: grid;
+        padding: 15px 0;
+      }
+      .about__content {
+        // cursor: pointer;
+        @extend .shadow;
+        width: 110px;
+        border-radius: 3px;
+        text-decoration: none;
+        margin: 10px;
+        background-color: $green;
+        padding: 10px 50px;
+        font-size: 15px;
+        color: white;
+        &:hover {
+          @extend .shadow;
+        }
+        @include md {
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}

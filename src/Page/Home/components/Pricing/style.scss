@@ -1,0 +1,76 @@
+@import '../../../../index.scss';
+
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  @include md {
+    margin: 0 15px;
+    grid-template-columns: none;
+  }
+  .pricing_base {
+    @extend .shadow;
+    width: auto;
+    &:hover {
+      transform: scale(1.03);
+      transition: 0.5s;
+      box-shadow: 0px 15px 10px 1px $grey;
+    }
+    @include md {
+      margin-bottom: 15px;
+    }
+  }
+  &_head {
+    background-color: $green;
+    text-align: center;
+    color: $white;
+    padding: 40px;
+    &_dis {
+      display: flex;
+      justify-content: center;
+      .icon_dola {
+        font-size: 23px;
+        margin-top: 16px;
+      }
+    }
+    &-text {
+      color: $white;
+      position: relative;
+      margin: 0;
+      font-size: 50px;
+      @include md {
+        width: 100px;
+        margin: 0;
+      }
+      &::after {
+        content: '/mo';
+        font-size: 20px;
+      }
+    }
+  }
+  &_sub-text {
+    margin: 40px auto;
+    margin-bottom: 0px;
+    padding: 5px;
+    width: 85px;
+    border: 2px solid $white;
+  }
+  &_text {
+    text-align: center;
+    font-size: 15px;
+  }
+  &_pur {
+    padding: 20px 40px;
+    border-top: 1px solid $lightgrey;
+    &-text {
+      cursor: pointer;
+      @extend .shadow;
+      text-align: center;
+      color: $white;
+      width: 90px;
+      background-color: $green;
+      padding: 10px;
+      margin: 0 auto;
+    }
+  }
+}

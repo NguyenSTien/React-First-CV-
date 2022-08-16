@@ -1,0 +1,50 @@
+@import '../../../../index.scss';
+.wrap_tes {
+  @include md {
+    margin: 0 15px;
+  }
+}
+.tes {
+  position: relative;
+  background-color: $green;
+  height: 100%;
+  transition: 3s;
+  -webkit-text-size-adjust: 100%;
+  .tes_img {
+    width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    @extend .shadow;
+  }
+  &_text {
+    padding: 0 55px;
+    color: $white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    &-margin {
+      margin-bottom: 40px;
+    }
+  }
+}
+.animation {
+  margin-top: 20px;
+  opacity: 0.6;
+  @extend .shadow;
+  .ani_img {
+    width: 120px;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px auto;
+  }
+}
+
+.swiper-pagination-bullet {
+  border-radius: unset !important;
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid $pagination;
+}
