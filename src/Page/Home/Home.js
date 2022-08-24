@@ -8,8 +8,9 @@ import Interest from './components/Interest';
 import Testimonials from './components/Testimonals';
 import Pricing from './components/Pricing';
 import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Maps from './components/Maps';
+import Contact from './components/Contact/contact.js';
+import Menu from './components/Menu';
+import Portfolios from './components/Portfolios/index.js';
 
 const Home = () => {
   return (
@@ -19,11 +20,13 @@ const Home = () => {
       <Education />
       <Skill />
       <Experience />
+      <Portfolios />
       <Interest />
       <Testimonials />
       <Pricing />
       <Blog />
       <Contact />
+      <Menu />
     </>
   );
 };

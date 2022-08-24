@@ -10,7 +10,7 @@ import Sectiontitle from '../Title';
 const index = () => {
   return (
     <>
-      <div className='skill'>
+      <div id='skill' className='skill'>
         <div className='container'>
           <Sectiontitle title='SKILL' icon={skill} />
           <div className='wrap_skill'>

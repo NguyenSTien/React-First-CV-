@@ -7,7 +7,7 @@ import Sectiontitle from '../Title';
 const index = () => {
   return (
     <>
-      <div className='wrap_pricing'>
+      <div id='pricing' className='wrap_pricing'>
         <div className='container'>
           <Sectiontitle title='PRICING' icon={lightning} />
           <div className='pricing'>

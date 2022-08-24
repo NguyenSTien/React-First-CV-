@@ -9,7 +9,9 @@ const index = () => {
     <>
       <div className='wrap_interest'>
         <div className='container'>
-          <Sectiontitle title='INTEREST' icon={heart} />
+          <div id='interest'>
+            <Sectiontitle title='INTEREST' icon={heart} />
+          </div>
           <div className='interest'>
             <p className='interest_text'>
               First of all I love music, country music is my favorite. Love

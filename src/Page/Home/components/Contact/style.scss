@@ -1,58 +1,70 @@
 @import '../../../../index.scss';
-.wrap_form {
+.wrap_contact_all {
   display: grid;
   grid-template-columns: 40% 60%;
-  column-gap: 50px;
-  @include desktop__big {
-    grid-template-columns: none;
-    margin: 0 15px;
+  column-gap: 30px;
+  .wrap_contact {
+    @extend .shadow;
+    padding: 60px 40px 10px 40px;
+    margin: 0;
+    .input_click {
+      position: relative;
+      width: auto;
+      &.active {
+        .label {
+          top: -10px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      &:focus-within {
+        .label {
+          transition: 0.2s;
+          top: -25px;
+          font-size: 12px;
+          color: $sky;
+        }
+        .input {
+          border-bottom: 1px solid $sky;
+        }
+      }
+    }
+    .label {
+      position: absolute;
+      top: 0px;
+      color: $grey;
+    }
+    .input {
+      border: 1px solid transparent;
+      border-bottom: 1px solid $grey;
+      outline: none;
+      width: 100%;
+      margin-bottom: 40px;
+      &_mess {
+        height: 60px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid $grey;
+        outline: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .textarea {
+        height: 50px;
+      }
+    }
+    .button_click {
+      @extend .shadow;
+      background-color: $green;
+      color: $white;
+      border: none;
+      padding: 10px 30px;
+      font-weight: 400;
+      cursor: pointer;
+    }
   }
-}
-.form {
-  @extend .shadow;
-  display: grid;
-  width: auto;
-  padding: 40px;
-  @include desktop__big {
-    margin-bottom: 15px;
-  }
-}
-label {
-  margin-top: 15px !important;
-  color: $grey;
-  height: 15px;
-}
-input {
-  font-size: 15px;
-  width: 100%;
-  height: 20px;
-  border: none;
-  border-bottom: 1px solid $grey;
-  margin-bottom: 25px;
-}
-.input_message {
-  height: 70px;
-}
-button {
-  @extend .shadow;
-  border-radius: 3px;
-  margin-top: 25px;
-  border: none;
-  background-color: $green;
-  color: $white;
-  width: 100px;
-  padding: 8px 20px;
-  &:hover {
-    cursor: pointer;
-  }
-}
-.wrap_map {
-  @extend .shadow;
 }
 .text_footer {
   text-align: center;
-  color: $black;
-  font-weight: 300;
   &-blue {
     color: $sky;
     font-weight: 700;

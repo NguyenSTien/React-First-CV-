@@ -12,6 +12,13 @@ import logo9 from '../assets/images/logo9.png';
 import blog1 from '../assets/images/blog-1.png';
 import blog2 from '../assets/images/blog-2.png';
 import blog3 from '../assets/images/blog-3.png';
+import big1 from '../assets/images/big-1.jpg';
+import big2 from '../assets/images/big2.jpg';
+import big3 from '../assets/images/big3.jpg';
+import big4 from '../assets/images/big4.jpg';
+import big5 from '../assets/images/big5.jpg';
+import big6 from '../assets/images/portfolio-1.jpg';
+
 export const educationData = [
   {
     keyword: 'P',
@@ -214,7 +221,7 @@ export const interestData = [
 ];
 export const tesData = [
   {
-    img: <img src={clientone} alt='asdsa'></img>,
+    img: clientone,
     content:
       'I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.',
     contenttwo:
@@ -222,13 +229,13 @@ export const tesData = [
     footer: 'Mike, CEO, IT World',
   },
   {
-    img: <img src={clienttwo} alt='asdsa'></img>,
+    img: clienttwo,
     content:
       'I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer.',
     footer: 'Mike, CEO, IT World',
   },
   {
-    img: <img src={clientthere} alt='asdsa'></img>,
+    img: clientthere,
     content:
       'I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer.',
     footer: 'Mike, CEO, IT World',
@@ -236,28 +243,28 @@ export const tesData = [
 ];
 export const animationData = [
   {
-    img: <img src={logo1} alt='asdsd'></img>,
+    img: logo1,
   },
   {
-    img: <img src={logo2} alt='asdsd'></img>,
+    img: logo2,
   },
   {
-    img: <img src={logo4} alt='asdsd'></img>,
+    img: logo4,
   },
   {
-    img: <img src={logo5} alt='asdsd'></img>,
+    img: logo5,
   },
   {
-    img: <img src={logo6} alt='asdsd'></img>,
+    img: logo6,
   },
   {
-    img: <img src={logo7} alt='asdsd'></img>,
+    img: logo7,
   },
   {
-    img: <img src={logo8} alt='asdsd'></img>,
+    img: logo8,
   },
   {
-    img: <img src={logo9} alt='asdsd'></img>,
+    img: logo9,
   },
 ];
 export const pricingData = [
@@ -294,7 +301,7 @@ export const pricingData = [
 ];
 export const blogData = [
   {
-    img: <img src={blog2} alt='asda'></img>,
+    img: blog2,
     ppImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
     timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
     Commentimg: <i class='fa-regular fa-comments'>168</i>,
@@ -306,9 +313,9 @@ export const blogData = [
       'Web design encompasses many different skills and disciplines in the production of websites.Web design include web graphic design, interface design etc.',
   },
   {
-    img: <img src={blog1} alt='asda'></img>,
+    img: blog1,
     ppImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
-    timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
+    timeImg: <i class='fa-regular fa-timer'>August 7, 2020</i>,
     Commentimg: <i class='fa-regular fa-comments'>168</i>,
     titleOne: 'Backend',
     titleTwo: 'Dev',
@@ -318,7 +325,7 @@ export const blogData = [
       'Web development is a broad term for the work involved in developing a web site for the Internet or an intranet. Now lets get a bit deeper in this topic',
   },
   {
-    img: <img src={blog3} alt='asda'></img>,
+    img: blog3,
     ppImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
     timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
     Commentimg: <i class='fa-regular fa-comments'>168</i>,
@@ -328,5 +335,104 @@ export const blogData = [
     subTitle: 'A GOOD UI',
     content:
       'The user interface (UI), in the industrial design field of human–machine interaction, is the space where interactions between humans and machines occur.',
+  },
+];
+export const menuData = [
+  {
+    icon: <i class='fa-solid fa-user'></i>,
+    link: 'home',
+    content: 'HOME',
+  },
+  {
+    icon: <i class='fa-solid fa-gauge-high'></i>,
+    link: 'about',
+    content: 'ABOUT',
+  },
+  {
+    icon: <i class='fa-solid fa-graduation-cap'></i>,
+    link: 'education',
+    content: 'EDUCATION',
+  },
+  {
+    icon: <i class='fa-solid fa-sliders'></i>,
+    link: 'skill',
+    content: 'SKILL',
+  },
+  {
+    icon: <i class='fa-solid fa-suitcase'></i>,
+    link: 'experience',
+    content: 'EXPERIENCE',
+  },
+  // {
+  //   icon: <i class='fa-solid fa-box-archive'></i>,
+  //   link: 'po',
+  //   content: 'PORTFOLIOS',
+  // },
+  {
+    icon: <i class='fa-solid fa-heart'></i>,
+    link: 'interest',
+    content: 'INTEREST',
+  },
+  {
+    icon: <i class='fa-solid fa-users'></i>,
+    link: 'testimonials',
+    content: 'TESTIMONIALS',
+  },
+  {
+    icon: <i class='fa-regular fa-money-bill-1'></i>,
+    content: 'PRICING',
+    link: 'pricing',
+  },
+  {
+    icon: <i class='fa-solid fa-square-pen'></i>,
+    content: 'BLOG',
+    link: 'blog',
+  },
+  {
+    icon: <i class='fa-solid fa-envelope'></i>,
+    content: 'CONTACT',
+    link: 'contact',
+  },
+];
+export const logoData = [
+  {
+    img: big1,
+  },
+  {
+    img: big2,
+  },
+  {
+    vid: 'https://i.vimeocdn.com/video/319715493-98f5dbc89c5077e4ee06485f1370263220b5383199c54a73424965051224fe50-d?mw=1100&mh=619&q=70',
+  },
+];
+export const dribbleData = [
+  {
+    img: big3,
+  },
+  {
+    img: big4,
+  },
+  {
+    img: big5,
+  },
+];
+export const websiteData = [
+  {
+    img: big1,
+  },
+  {
+    img: big2,
+  },
+  {
+    img: big3,
+  },
+  {
+    img: big4,
+  },
+  {
+    img: big5,
+  },
+  {
+    img: big6,
   },
 ];

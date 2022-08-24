@@ -1,0 +1,75 @@
+@import '../../../../index.scss';
+.menu {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  margin-left: -230px;
+  transition: 1s;
+  &-active {
+    margin-left: 0px;
+  }
+}
+.menu_all {
+  @extend .shadow;
+  position: relative;
+  .menu_header {
+    background-color: $green;
+    .menu_img {
+      padding: 30px 50px;
+      width: 130px;
+    }
+    .menu_option {
+      background-color: $white;
+      padding: 30px 30px 70px 30px;
+      font-size: 13px;
+      &_wrap {
+        margin-bottom: 28px;
+      }
+      &_icon {
+        cursor: pointer;
+        color: $text;
+        margin-bottom: 20px;
+        text-decoration: none;
+        &:hover {
+          color: $sky;
+        }
+      }
+      &_text {
+        font-weight: 700;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.button_menu {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  right: -60px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid $black;
+  padding: 10px;
+  &:hover {
+    background-color: $text;
+    transition: 1s;
+  }
+  .line_menu {
+    background-color: $sky;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
+  }
+  .line_menu_two {
+    background-color: $sky;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
+  }
+  .line_menu_there {
+    background-color: $sky;
+    width: 20px;
+    height: 2px;
+  }
+}

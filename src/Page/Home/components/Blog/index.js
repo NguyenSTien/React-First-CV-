@@ -7,7 +7,7 @@ import './style.scss';
 const index = () => {
   return (
     <>
-      <div className='wrap_blog'>
+      <div id='blog' className='wrap_blog'>
         <div className='container'>
           <Sectiontitle title='BLOG' icon={post} />
           <div className='blog'>
@@ -19,12 +19,14 @@ const index = () => {
               >
                 <div className='wrap_blog_img'>
                   <figure className='blog_img' id='a'>
-                    {data.img}
+                    <img src={data.img} alt='jdhfkjdhs'></img>
                   </figure>
                   <div className='blog_img_content' id='b'>
-                    <p className='blog_img_text'>{data.ppImg}</p>
-                    <p className='blog_img_text'>{data.timeImg}</p>
-                    <p className='blog_img_text'>{data.Commentimg}</p>
+                    <div className='blog_img_text'>
+                      <p className='blog_img_text_a'>{data.ppImg}</p>
+                      <p className='blog_img_text_a'>{data.timeImg}</p>
+                      <p className='blog_img_text_a'>{data.Commentimg}</p>
+                    </div>
                   </div>
                 </div>
                 <div className='blog_content'>

@@ -2,10 +2,11 @@ import React from 'react';
 import './style.scss';
 import profile from '../../../../assets/images/profile.png';
 import background from '../../../../assets/images/background.jpg';
+
 const index = () => {
   return (
     <>
-      <div className='wrap__background'>
+      <div id='home' className='wrap__background'>
         <figure className='background'>
           <img src={background} alt='asdsad'></img>
         </figure>

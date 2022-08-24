@@ -16,7 +16,7 @@ import 'swiper/scss/autoplay';
 const index = () => {
   return (
     <>
-      <div className='wrap_tes'>
+      <div id='testimonials' className='wrap_tes'>
         <div className='container'>
           <SectionTitle title='TESTIMONIALS' icon={hand} />
           <div className='tes'>
@@ -24,6 +24,7 @@ const index = () => {
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}
               speed={1000}
+              autoHeight={true}
               slidesPerView={1}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
@@ -32,10 +33,14 @@ const index = () => {
             >
               {tesData.map((data, index) => (
                 <SwiperSlide key={index}>
-                  <figure className='tes_img'>{data.img}</figure>
-                  <div className='tes_text'>{data.content}</div>
-                  <div className='tes_text'>{data.contenttwo}</div>
-                  <div className='tes_text tes_text-margin'>{data.footer}</div>
+                  <div className='slider'>
+                    <figure className='tes_img'>
+                      <img src={data.img} alt='kjashdjsa'></img>
+                    </figure>
+                    <div className='tes_text'>{data.content}</div>
+                    <div className='tes_text'>{data.contenttwo}</div>
+                    <div className='tes_text_footer'>{data.footer}</div>
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -70,14 +75,16 @@ const index = () => {
                   spaceBetween: 15,
                 },
                 1024: {
-                  slidesPerView: 6,
+                  slidesPerView: 7,
                   spaceBetween: 15,
                 },
               }}
             >
               {animationData.map((data, index) => (
                 <SwiperSlide key={index}>
-                  <figure className='ani_img'>{data.img}</figure>
+                  <figure className='ani_img'>
+                    <img src={data.img} alt='asdkjahdjk'></img>
+                  </figure>
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -7,7 +7,7 @@
 .tes {
   position: relative;
   background-color: $green;
-  height: 100%;
+  height: auto;
   transition: 3s;
   -webkit-text-size-adjust: 100%;
   .tes_img {
@@ -24,14 +24,10 @@
     text-align: center;
     font-size: 15px;
     line-height: 25px;
-    &-margin {
-      margin-bottom: 40px;
-    }
   }
 }
 .animation {
   margin-top: 20px;
-  opacity: 0.6;
   @extend .shadow;
   .ani_img {
     width: 120px;
@@ -39,6 +35,11 @@
     position: relative;
     margin-top: 20px;
     padding: 10px auto;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+      transition: 1s linear;
+    }
   }
 }
 
@@ -47,4 +48,14 @@
   width: 10px !important;
   height: 10px !important;
   border: 2px solid $pagination;
+}
+.tes_text_footer {
+  padding: 0 55px;
+  color: $white;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+.slider {
+  padding-bottom: 40px;
 }
