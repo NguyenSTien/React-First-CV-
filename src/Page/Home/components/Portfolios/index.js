@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionTitle from '../Title';
 import safe from '../../../../assets/images/safe.png';
 import Dribble from './Dribble.js';
@@ -6,31 +6,20 @@ import Logo from './Logo.js';
 import Website from './Website.js';
 import './style.scss';
 
-const index = () => {
-  let sliderIndex = 1;
-  function showSlider(n) {
-    let i;
-    let slides = document.getElementsByClassName('slider_port');
-    let dots = document.getElementsByClassName('button_text');
-    if (n > slides.length) {
-      sliderIndex = 1;
+const Index = () => {
+  const [text, setText] = useState('');
+
+  const handleClick = value => {
+    if (value === 'logo') {
+      setText('logo');
     }
-    if (n < 1) {
-      sliderIndex = slides.length;
+    if (value === 'dribble') {
+      setText('dribble');
     }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
+    if (value === 'websites') {
+      setText('websites');
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(' active', '');
-    }
-    slides[sliderIndex - 1].style.display = 'block';
-    dots[sliderIndex - 1].className += ' active';
-  }
-  showSlider(sliderIndex);
-  function currentSlide(n) {
-    showSlider((sliderIndex = n));
-  }
+  };
 
   return (
     <>
@@ -39,26 +28,50 @@ const index = () => {
           <SectionTitle title='PORTFOLIOS' icon={safe} />
           <div className='portfolios'>
             <div className='button_all'>
-              <button className='button_text' onClick={currentSlide(1)}>
+              <button
+                className='button_text'
+                onClick={() => handleClick('all')}
+              >
                 ALL
               </button>
-              <button className='button_text' onClick={currentSlide(2)}>
+              <button
+                className='button_text '
+                onClick={() => handleClick('logo')}
+              >
                 LOGO
               </button>
-              <button className='button_text' onClick={currentSlide(3)}>
+              <button
+                className='button_text'
+                onClick={() => handleClick('dribble')}
+              >
                 DRIBBLE
               </button>
-              <button className='button_text' onClick={currentSlide(4)}>
+              <button
+                className='button_text'
+                onClick={() => handleClick('websites')}
+              >
                 WEBSITES
               </button>
             </div>
-            <div className='slider_port fade'>
+            <div
+              className={`slider_port fade ${
+                text === 'logo' || text === '' ? 'block' : ''
+              }`}
+            >
               <Logo />
             </div>
-            <div className='slider_port fade'>
+            <div
+              className={`slider_port fade ${
+                text === 'dribble' ? 'block' : ''
+              }`}
+            >
               <Dribble />
             </div>
-            <div className='slider_port fade'>
+            <div
+              className={`slider_port fade ${
+                text === 'websites' ? 'block' : ''
+              }`}
+            >
               <Website />
             </div>
           </div>
@@ -68,4 +81,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

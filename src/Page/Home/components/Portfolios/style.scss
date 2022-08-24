@@ -63,7 +63,7 @@
   }
 }
 .slider_port {
-  //   display: none;
+  display: none;
 }
 .fade {
   animation-name: fade;
@@ -79,4 +79,7 @@
 }
 .active:hover {
   border-bottom: 3px solid $sky;
+}
+.block {
+  display: block;
 }
