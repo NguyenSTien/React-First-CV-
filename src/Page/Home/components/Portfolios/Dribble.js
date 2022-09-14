@@ -7,9 +7,18 @@ const Dribble = () => {
     <div className='wrap_dribble'>
       {dribbleData.map((data, index) => (
         <div key={index} className='dribble_portfolios'>
-          <figure className='img_dribble'>
+          <figure className={`img_dribble ${data.className}`}>
             <img src={data.img} alt='sda'></img>
           </figure>
+          <div className='bgr_white'></div>
+          <div className='bgr_black'></div>
+          <p className='logo_icon'>{data.icon}</p>
+          <p className='content_hover'>
+            {data.contentHover}
+            <span>{data.content}</span>
+          </p>
+          <p className='sub_hover'>{data.subContentHover}</p>
+          <p className='sub_hover_two'>{data.subContentHover2}</p>
         </div>
       ))}
     </div>

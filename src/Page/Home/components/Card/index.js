@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import profile from '../../../../assets/images/profile.png';
 import background from '../../../../assets/images/background.jpg';
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <div id='home' className='wrap__background'>
@@ -75,4 +75,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

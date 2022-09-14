@@ -20,7 +20,7 @@
       text-align: center;
       border-top: 1px solid $grey;
       padding: 30px 0;
-      @include md {
+      @include small {
         display: grid;
         padding: 15px 0;
       }
@@ -38,8 +38,9 @@
         &:hover {
           @extend .shadow;
         }
-        @include md {
+        @include small {
           margin: 10px auto;
+          padding: 10px 0;
         }
       }
     }

@@ -1,0 +1,47 @@
+@import '../../index.scss';
+.to-top {
+  @extend .shadow;
+  position: fixed;
+  width: 45px;
+  right: 20px;
+  bottom: 20px;
+  height: 45px;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  background-color: $sky;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  animation: rotate 0.5s;
+  @include md {
+    right: 45px;
+  }
+}
+
+.to-top .active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  transform: rotate(180deg);
+  transition: 1s;
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(200deg);
+  }
+  25% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(200deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}

@@ -10,16 +10,17 @@
   }
   .wrap_time_education {
     position: relative;
-    top: 0;
+    top: 30px;
     left: 0;
     margin: 0;
   }
   .head_components {
-    margin-top: 40px;
+    margin: 40px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     .img_head {
       padding: 5px;
       text-align: center;
@@ -33,6 +34,7 @@
       font-weight: bold;
       font-size: 40px;
       color: $black;
+      margin: 0;
       @include md {
         font-size: 35px;
       }
@@ -49,8 +51,8 @@
   position: absolute;
   background-color: $green;
   width: 4px;
-  height: 755px;
-  top: 20px;
+  height: 775px;
+  top: 25px;
   z-index: 1;
   left: 50.5%;
   opacity: 0.4;
@@ -59,7 +61,7 @@
     left: 50%;
   }
   @include md {
-    height: 1260px;
+    display: none;
   }
 }
 h3,
@@ -77,14 +79,14 @@ h4,
   .name__education_right {
     position: relative;
     z-index: 10;
-    width: 40%;
+    width: 45%;
     border: 1px solid transparent;
     border-left: 5px solid $sky;
     @extend .shadow;
     padding: 20px;
     margin-bottom: 60px;
     @include desktop__big {
-      width: 37%;
+      width: 43%;
     }
     @include md {
       width: auto;
@@ -107,11 +109,11 @@ h4,
         text-align: center;
         font-weight: bold;
         font-size: 25px;
-        padding: 11px;
+        padding: 5px;
       }
     }
     .circle_education {
-      right: -82px;
+      right: -78px;
       @include desktop__big {
       }
       @include md {
@@ -120,9 +122,9 @@ h4,
       }
     }
     .circle_education-right {
-      left: -75px;
+      left: -71px;
       @include desktop__big {
-        left: -82px;
+        left: -79px;
       }
       @include md {
         left: auto;
@@ -132,7 +134,7 @@ h4,
     }
     .line_left,
     .line_right {
-      width: 37px;
+      width: 27px;
       height: 4px;
       background-color: $green;
       opacity: 0.4;
@@ -142,15 +144,15 @@ h4,
       }
     }
     .line_left {
-      margin-left: -31px;
+      margin-left: -27px;
       @include desktop__big {
-        margin-left: -30px;
+        margin-left: -27px;
       }
     }
     .line_right {
-      margin-left: 37px;
+      margin-left: 43px;
       @include desktop__big {
-        margin-left: 40px;
+        margin-left: 48px;
       }
     }
   }

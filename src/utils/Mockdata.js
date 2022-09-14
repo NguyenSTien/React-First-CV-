@@ -396,43 +396,99 @@ export const menuData = [
 ];
 export const logoData = [
   {
+    className: 'animate__animated animate__fadeInLeft ',
     img: big1,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS SCALE',
   },
   {
+    className: 'animate__animated animate__fadeInRight',
+    img: big6,
+    icon: <i class='fa-solid fa-circle-play'></i>,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'I DESIGNER FOR A CLIENT FOR HIS CAFE',
+  },
+  {
+    className: 'animate__animated animate__fadeInRight',
     img: big2,
-  },
-  {
-    vid: 'https://i.vimeocdn.com/video/319715493-98f5dbc89c5077e4ee06485f1370263220b5383199c54a73424965051224fe50-d?mw=1100&mh=619&q=70',
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS UP',
   },
 ];
 export const dribbleData = [
   {
+    className: 'animate__animated animate__fadeInRight',
     img: big3,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS SCALE',
   },
   {
+    className: 'animate__animated animate__fadeInLeft ',
     img: big4,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'USED LATEST MATERIAL DESIGN TO MAKE',
+    subContentHover2: 'THIS SAMPLE ',
   },
   {
+    className: 'animate__animated animate__fadeInLeft ',
     img: big5,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS SCALE',
   },
 ];
 export const websiteData = [
   {
+    className: 'animate__animated animate__fadeInLeft ',
     img: big1,
+    contentHover: 'SINGLE',
+    content: 'PAGE',
+    subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
+    subContentHover2: 'A SINGLE PAGE',
   },
   {
-    img: big2,
-  },
-  {
+    className: 'animate__animated animate__fadeInRight',
     img: big3,
+    contentHover: 'SINGLE',
+    content: 'PAGE',
+    subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
+    subContentHover2: 'A SINGLE PAGE',
   },
   {
-    img: big4,
-  },
-  {
-    img: big5,
-  },
-  {
+    className: 'animate__animated animate__fadeInRight',
     img: big6,
+    contentHover: 'SINGLE',
+    content: 'PAGE',
+    subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
+    subContentHover2: 'A SINGLE PAGE',
+  },
+  {
+    className: 'animate__animated animate__fadeInLeft ',
+    img: big2,
+    contentHover: 'SINGLE',
+    content: 'PAGE',
+    subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
+    subContentHover2: 'A SINGLE PAGE',
+  },
+  {
+    className: 'animate__animated animate__fadeInRight',
+    img: big4,
+    contentHover: 'SINGLE',
+    content: 'PAGE',
+    subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
+    subContentHover2: 'A SINGLE PAGE',
+  },
+  {
+    className: 'animate__animated animate__fadeInLeft ',
+    img: big5,
+    contentHover: 'SINGLE',
+    content: 'PAGE',
+    subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
+    subContentHover2: 'A SINGLE PAGE',
   },
 ];

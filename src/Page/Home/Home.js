@@ -11,7 +11,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact/contact.js';
 import Menu from './components/Menu';
 import Portfolios from './components/Portfolios/index.js';
-
+import ButtonScrollTop from '../../components/buttonScrollTop';
 const Home = () => {
   return (
     <>
@@ -27,6 +27,7 @@ const Home = () => {
       <Blog />
       <Contact />
       <Menu />
+      <ButtonScrollTop />
     </>
   );
 };

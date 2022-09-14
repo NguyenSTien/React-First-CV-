@@ -1,4 +1,9 @@
 @import '../../../../index.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
 .wrap_blog {
   .blog {
     @extend .shadow;

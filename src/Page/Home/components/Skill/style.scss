@@ -1,7 +1,4 @@
 @import '../../../../index.scss';
-#skill {
-  margin-top: 1050px;
-}
 .skill {
   @include md {
     margin: 0 15px;
@@ -41,6 +38,7 @@
       }
     }
     .prof_text {
+      margin-bottom: 10px;
       .prof_text_key {
         width: 85%;
       }

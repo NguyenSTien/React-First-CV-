@@ -1,6 +1,5 @@
 @import '../../../../index.scss';
 #interest {
-  margin-top: 720px;
 }
 .wrap_interest {
   .interest {
@@ -32,6 +31,7 @@
       }
     }
     .music {
+      display: grid;
       background-color: $green;
       color: $white;
       width: 16.6%;
@@ -40,17 +40,23 @@
       @include desktop__big {
         width: 100%;
       }
-      .interest_icon-icon {
-        margin-top: 25px;
-      }
     }
     .gaming {
+      display: grid;
       color: $green;
       width: 16.6%;
+      height: 105px;
       font-size: 25px;
       @include desktop__big {
         width: 100%;
       }
+    }
+    .interest_icon-icon {
+      height: 15px;
+      font-size: 40px;
+    }
+    .interest_icon-text {
+      height: 15px;
     }
   }
 }

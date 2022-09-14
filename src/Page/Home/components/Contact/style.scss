@@ -1,12 +1,18 @@
 @import '../../../../index.scss';
 .wrap_contact_all {
   display: grid;
-  grid-template-columns: 40% 60%;
-  column-gap: 30px;
+  grid-template-columns: 38% 60%;
+  column-gap: 20px;
+  @include desktop__big {
+    grid-template-columns: none;
+  }
   .wrap_contact {
     @extend .shadow;
     padding: 60px 40px 10px 40px;
     margin: 0;
+    @include desktop__big {
+      margin-bottom: 20px;
+    }
     .input_click {
       position: relative;
       width: auto;
