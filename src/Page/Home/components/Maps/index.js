@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 
-const index = () => {
+const Index = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: 'AIzaSyDgQr0nvAMh0aGxfqQzhI5spvth3YKeLvk',
@@ -21,4 +21,4 @@ function Map() {
     </GoogleMap>
   );
 }
-export default index;
+export default Index;

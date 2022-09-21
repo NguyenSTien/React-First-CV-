@@ -11,37 +11,53 @@
   padding: 40px;
   background-color: $green;
   color: $white;
+
   .wrap_soft {
+    font-family: 'raleway';
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
+
     @include md {
       display: contents;
     }
+
     .software {
-      width: 250px;
+      width: 270px;
+
       @include desktop__big {
         width: 200px;
       }
+
       @include md {
         width: 100%;
       }
+
       .prof_head {
-        font-size: 25px;
-        margin: 15px 0 0 50px;
+        text-shadow: 1px 1px 1px $shadow;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+
         @include desktop__big {
           margin-left: 20px;
         }
+
         @include md {
           text-align: center;
           margin-top: 35px;
         }
       }
     }
+
     .prof_text {
       margin-bottom: 10px;
+      font-size: 15px;
+
       .prof_text_key {
         width: 85%;
       }
+
       .prof_text_cont {
         float: right;
         margin-bottom: 15px;
@@ -50,11 +66,13 @@
           content: '%';
         }
       }
+
       .percent {
         width: 100%;
         height: 4px;
         background-color: $white;
       }
+
       .line_percent {
         position: relative;
         z-index: -1;

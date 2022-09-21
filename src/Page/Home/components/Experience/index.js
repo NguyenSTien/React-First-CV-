@@ -2,14 +2,14 @@ import React from 'react';
 import './style.scss';
 import layers from '../../../../assets/images/layers.png';
 import { experienceData } from '../../../../utils/Mockdata';
-import Sectiontitle from '../Title';
+import SectionTitle from '../Title';
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <div id='experience' className='wrap_experience'>
         <div className='container'>
-          <Sectiontitle title='EXPERIENCE' icon={layers} />
+          <SectionTitle title='EXPERIENCE' icon={layers} />
           <div className='wrap_time_exp'>
             <div className='time__exp'>
               {experienceData.map((data, index) => (
@@ -27,8 +27,8 @@ const index = () => {
                       className={index % 2 === 0 ? 'line_left' : 'line_right'}
                     ></div>
                   </div>
-                  <h3>{data.title}</h3>
-                  <h4>
+                  <h3 className='text_title'>{data.title}</h3>
+                  <h4 className='text_subTitle'>
                     {data.subTitle}
                     <br />
                     {data.date}
@@ -48,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -1,6 +1,7 @@
 @import '../../../../index.scss';
 
 .pricing {
+  font-family: 'muli';
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
@@ -8,6 +9,7 @@
     margin: 0 15px;
     grid-template-columns: none;
   }
+
   .pricing_base {
     @extend .shadow;
     width: auto;
@@ -16,23 +18,28 @@
       transition: 0.5s;
       box-shadow: 0px 15px 10px 1px $grey;
     }
+
     @include md {
       margin-bottom: 15px;
     }
   }
+
   &_head {
     background-color: $green;
     text-align: center;
     color: $white;
     padding: 40px;
+
     &_dis {
       display: flex;
       justify-content: center;
+
       .icon_dola {
-        font-size: 23px;
-        margin-top: 16px;
+        font-size: 30px;
+        margin: 0;
       }
     }
+
     &-text {
       color: $white;
       position: relative;
@@ -42,26 +49,32 @@
         width: 100px;
         margin: 0;
       }
+
       &::after {
         content: '/mo';
         font-size: 20px;
       }
     }
   }
+
   &_sub-text {
     margin: 40px auto;
     margin-bottom: 0px;
     padding: 5px;
-    width: 85px;
+    width: 100px;
     border: 2px solid $white;
   }
+
   &_text {
+    color: $black;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
   }
+
   &_pur {
     padding: 20px 40px;
     border-top: 1px solid $lightgrey;
+
     &-text {
       cursor: pointer;
       @extend .shadow;
@@ -73,4 +86,8 @@
       margin: 0 auto;
     }
   }
+}
+
+.pricing_wrap_text {
+  padding: 20px 0;
 }

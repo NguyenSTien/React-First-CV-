@@ -2,15 +2,15 @@ import React from 'react';
 import './style.scss';
 import heart from '../../../../assets/images/heart.png';
 import { interestData } from '../../../../utils/Mockdata';
-import Sectiontitle from '../Title';
+import SectionTitle from '../Title';
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <div className='wrap_interest'>
         <div className='container'>
           <div id='interest'>
-            <Sectiontitle title='INTEREST' icon={heart} />
+            <SectionTitle title='INTEREST' icon={heart} />
           </div>
           <div className='interest'>
             <p className='interest_text'>
@@ -38,4 +38,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

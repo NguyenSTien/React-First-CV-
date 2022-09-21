@@ -13,12 +13,16 @@ const Dribble = () => {
           <div className='bgr_white'></div>
           <div className='bgr_black'></div>
           <p className='logo_icon'>{data.icon}</p>
-          <p className='content_hover'>
+          <p className={`content_hover ${data.className}`}>
             {data.contentHover}
-            <span>{data.content}</span>
+            <span className='content_hover--bold'>{data.content}</span>
           </p>
-          <p className='sub_hover'>{data.subContentHover}</p>
-          <p className='sub_hover_two'>{data.subContentHover2}</p>
+          <p className={`sub_hover ${data.className}`}>
+            {data.subContentHover}
+          </p>
+          <p className={`sub_hover_two ${data.className}`}>
+            {data.subContentHover2}
+          </p>
         </div>
       ))}
     </div>

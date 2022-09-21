@@ -9,23 +9,29 @@
     margin-left: 0px;
   }
 }
+
 .menu_all {
   @extend .shadow;
   position: relative;
+
   .menu_header {
     background-color: $green;
+
     .menu_img {
       margin: 0 auto;
       padding: 40px 0;
       width: 130px;
     }
+
     .menu_option {
       background-color: $white;
       padding: 30px 30px 70px 30px;
       font-size: 13px;
+
       &_wrap {
         margin-bottom: 21px;
       }
+
       &_icon {
         cursor: pointer;
         color: $text;
@@ -35,6 +41,7 @@
           color: $sky;
         }
       }
+
       &_text {
         font-weight: 700;
         margin-left: 10px;
@@ -42,6 +49,7 @@
     }
   }
 }
+
 .button_menu {
   margin: 0;
   position: absolute;
@@ -56,18 +64,21 @@
     background-color: $text;
     transition: 1s;
   }
+
   .line_menu {
     background-color: $sky;
     width: 20px;
     height: 2px;
     margin-bottom: 3px;
   }
+
   .line_menu_two {
     background-color: $sky;
     width: 20px;
     height: 2px;
     margin-bottom: 3px;
   }
+
   .line_menu_there {
     background-color: $sky;
     width: 20px;

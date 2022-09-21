@@ -1,65 +1,87 @@
 @import '../../../../index.scss';
-#interest {
-}
+
 .wrap_interest {
   .interest {
     @extend .shadow;
     border: 0px solid transparent;
+
     @include md {
       margin: 0 15px;
     }
+
     &_text {
+      text-align: center;
+      font-family: 'muli';
       padding: 40px;
+      color: $black;
+      line-height: 20px;
     }
+
     .interest_icon {
+      font-family: 'raleway';
       display: flex;
       text-align: center;
       justify-content: space-between;
       align-items: center;
+
       @include desktop__big {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+
         @include md {
           grid-template-columns: 1fr 1fr;
         }
       }
+
       &-icon {
         font-size: 35px;
       }
+
       &-text {
         font-size: 18px;
       }
     }
+
     .music {
+      padding: 10px;
       display: grid;
       background-color: $green;
       color: $white;
       width: 16.6%;
       height: 105px;
       font-size: 25px;
+
       @include desktop__big {
         width: 100%;
       }
     }
+
     .gaming {
+      padding: 10px;
       display: grid;
       color: $green;
       width: 16.6%;
       height: 105px;
       font-size: 25px;
+
       @include desktop__big {
         width: 100%;
       }
     }
+
     .interest_icon-icon {
       height: 15px;
       font-size: 40px;
     }
+
     .interest_icon-text {
       height: 15px;
+      margin-top: 10px;
+      font-size: 16px;
     }
   }
 }
+
 .fa-plane-up {
   transform: rotate(45deg);
 }

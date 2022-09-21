@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style.scss';
 import profile from '../../../../assets/images/profile.png';
 import background from '../../../../assets/images/background.jpg';
+import { cardData } from '../../../../utils/Mockdata';
 
 const Index = () => {
   return (
@@ -21,23 +22,12 @@ const Index = () => {
                   Software Engineer & UI/UX Expert
                 </h6>
                 <div className='cardContentInfo'>
-                  <p className='cardContentInfoIcon'>
-                    <i className='fa-solid fa-envelope'></i>
-                    email@mailprovider.com
-                  </p>
-                  <p className='cardContentInfoIcon'>
-                    <i class='fa-solid fa-globe'></i>yourpersonalwebsite.com
-                  </p>
-                  <p className='cardContentInfoIcon'>
-                    <i className='fa-brands fa-skype'></i>yourusername@skype.com
-                  </p>
-                  <p className='cardContentInfoIcon'>
-                    <i className='fa-solid fa-phone'></i>+152 25634 254 846
-                  </p>
-                  <p className='cardContentInfoIcon'>
-                    <i className='fa-solid fa-location-dot'></i>LampStreet 34/3,
-                    London, UK
-                  </p>
+                  {cardData.map((data, index) => (
+                    <p key={index} className='card_content_icon'>
+                      {data.icon}
+                      <span className='card_content_text'>{data.content}</span>
+                    </p>
+                  ))}
                 </div>
                 <div className='cardContentIcon'>
                   <div className='circle facebook'>

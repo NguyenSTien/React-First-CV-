@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import education from '../../../../assets/images/book.png';
 import { educationData } from '../../../../utils/Mockdata';
-import Sectiontitle from '../Title';
+import SectionTitle from '../Title';
+import Popup from './popup';
 
-const index = () => {
+const Index = () => {
+  const [buttonPopup, setButtonPopup] = useState('');
+  const handlePopup = () => {
+    setButtonPopup({
+      id: 'edu_one',
+    });
+  };
+
   return (
     <>
       <div id='education' className='wrap__education'>
         <div className='container'>
-          <Sectiontitle title='EDUCATION' icon={education} />
+          <SectionTitle title='EDUCATION' icon={education} />
           <div className='wrap_time_education'>
             <div className='time__education'>
               {educationData.map((data, index) => (
@@ -33,17 +41,18 @@ const index = () => {
                       className={index % 2 === 0 ? 'line_left' : 'line_right'}
                     ></div>
                   </div>
-                  <h3>{data.title}</h3>
-                  <h4>
+                  <h3 className='text_title'>{data.title}</h3>
+                  <h4 className='text_subTitle'>
                     {data.subTitle} <br />
                     {data.date}
                   </h4>
                   <p className='content'>{data.content}</p>
-                  <a href='#' className='data-icon'>
+                  <button className='data-icon' onClick={handlePopup}>
                     {data.icon}
-                  </a>
+                  </button>
                 </div>
               ))}
+              <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
             </div>
             <div className='timeline'></div>
           </div>
@@ -53,4 +62,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

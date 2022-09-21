@@ -9,17 +9,21 @@ const Logo = () => {
       <div className='wrap_logo'>
         {logoData.map((data, index) => (
           <div key={index} className='logo_portfolios'>
-            <figure className={`img_logo ${data.className}`}>
-              <img src={data.img} alt='asdkajl'></img>
-            </figure>
+            <a href={data.img} target='_blank'>
+              <figure className={`img_logo ${data.className}`}>
+                <img src={data.img} alt='logoImg'></img>
+              </figure>
+            </a>
             <div className='bgr_white'></div>
             <div className='bgr_black'></div>
-            <p className='logo_icon'>{data.icon}</p>
-            <p className='content_hover'>
+            <p className={`logo_icon ${data.className}`}>{data.icon}</p>
+            <p className={`content_hover ${data.className}`}>
               {data.contentHover}
-              <span>{data.content}</span>
+              <span className='content_hover--bold'>{data.content}</span>
             </p>
-            <p className='sub_hover'>{data.subContentHover}</p>
+            <p className={`sub_hover ${data.className}`}>
+              {data.subContentHover}
+            </p>
           </div>
         ))}
       </div>

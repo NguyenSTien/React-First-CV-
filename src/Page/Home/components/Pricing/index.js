@@ -2,14 +2,14 @@ import React from 'react';
 import './style.scss';
 import lightning from '../../../../assets/images/lightning.png';
 import { pricingData } from '../../../../utils/Mockdata';
-import Sectiontitle from '../Title';
+import SectionTitle from '../Title';
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <div id='pricing' className='wrap_pricing'>
         <div className='container'>
-          <Sectiontitle title='PRICING' icon={lightning} />
+          <SectionTitle title='PRICING' icon={lightning} />
           <div className='pricing'>
             {pricingData.map((data, index) => (
               <div key={index} className='pricing_base'>
@@ -21,11 +21,13 @@ const index = () => {
                   <p className='pricing_sub-text'>{data.subTitle}</p>
                 </div>
 
-                <p className='pricing_text'>{data.Banwidth}</p>
-                <p className='pricing_text'>{data.Disk}</p>
-                <p className='pricing_text'>{data.Database}</p>
-                <p className='pricing_text'>{data.Domain}</p>
-                <p className='pricing_text'>{data.Subdomain}</p>
+                <div className='pricing_wrap_text'>
+                  <p className='pricing_text'>{data.Banwidth}</p>
+                  <p className='pricing_text'>{data.Disk}</p>
+                  <p className='pricing_text'>{data.Database}</p>
+                  <p className='pricing_text'>{data.Domain}</p>
+                  <p className='pricing_text'>{data.Subdomain}</p>
+                </div>
                 <div className='pricing_pur'>
                   <p className='pricing_pur-text'>{data.Purchase}</p>
                 </div>
@@ -38,4 +40,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -2,20 +2,25 @@
 #about {
   padding-top: 10px;
 }
+
 .wrap {
   margin-top: 50px;
+
   .wrap__Content {
     box-shadow: 1px 1px 5px 1px $grey;
     @include md {
       margin: 0 15px;
     }
+
     .experience {
+      font-family: 'muli';
       padding: 40px;
       text-align: center;
       margin: 0;
       font-size: 15px;
       line-height: 22px;
     }
+
     .about {
       text-align: center;
       border-top: 1px solid $grey;
@@ -24,8 +29,9 @@
         display: grid;
         padding: 15px 0;
       }
+
       .about__content {
-        // cursor: pointer;
+        font-family: 'muli';
         @extend .shadow;
         width: 110px;
         border-radius: 3px;
@@ -35,9 +41,11 @@
         padding: 10px 50px;
         font-size: 15px;
         color: white;
+
         &:hover {
           @extend .shadow;
         }
+
         @include small {
           margin: 10px auto;
           padding: 10px 0;

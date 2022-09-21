@@ -1,28 +1,36 @@
 @import '../../../../index.scss';
 .wrap_contact_all {
+  font-family: 'muli';
   display: grid;
-  grid-template-columns: 38% 60%;
+  grid-template-columns: 40% 55%;
   column-gap: 20px;
+  margin-bottom: 15px;
+  height: 100%;
+
   @include desktop__big {
     grid-template-columns: none;
   }
+
   .wrap_contact {
+    height: auto;
     @extend .shadow;
-    padding: 60px 40px 10px 40px;
-    margin: 0;
+    padding: 60px 40px 40px 40px;
+
     @include desktop__big {
       margin-bottom: 20px;
     }
+
     .input_click {
       position: relative;
       width: auto;
       &.active {
         .label {
           top: -10px;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
         }
       }
+
       &:focus-within {
         .label {
           transition: 0.2s;
@@ -30,22 +38,27 @@
           font-size: 12px;
           color: $sky;
         }
+
         .input {
           border-bottom: 1px solid $sky;
         }
       }
     }
+
     .label {
       position: absolute;
       top: 0px;
-      color: $grey;
+      color: $black;
+      opacity: 0.8;
     }
+
     .input {
       border: 1px solid transparent;
       border-bottom: 1px solid $grey;
       outline: none;
       width: 100%;
       margin-bottom: 40px;
+
       &_mess {
         height: 60px;
         border: 1px solid transparent;
@@ -54,21 +67,26 @@
         width: 100%;
         margin-bottom: 20px;
       }
+
       .textarea {
         height: 50px;
       }
     }
+
     .button_click {
       @extend .shadow;
+      border-radius: 3px;
       background-color: $green;
       color: $white;
       border: none;
-      padding: 10px 30px;
+      padding: 7px 40px;
       font-weight: 400;
       cursor: pointer;
+      font-size: 13px;
     }
   }
 }
+
 .text_footer {
   text-align: center;
   &-blue {

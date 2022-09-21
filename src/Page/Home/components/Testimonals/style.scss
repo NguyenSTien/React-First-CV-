@@ -4,12 +4,16 @@
     margin: 0 15px;
   }
 }
+
 .tes {
+  font-family: 'muli';
+  line-height: 20px;
   position: relative;
   background-color: $green;
   height: auto;
   transition: 3s;
   -webkit-text-size-adjust: 100%;
+
   .tes_img {
     width: 130px;
     height: 130px;
@@ -18,17 +22,24 @@
     overflow: hidden;
     @extend .shadow;
   }
+
   &_text {
     padding: 0 55px;
     color: $white;
     text-align: center;
     font-size: 15px;
-    line-height: 25px;
   }
 }
+
+.tes_text::before {
+  content: ' " ';
+  color: $blue;
+}
+
 .animation {
   margin-top: 20px;
   @extend .shadow;
+
   .ani_img {
     width: 120px;
     height: auto;
@@ -49,6 +60,7 @@
   height: 10px !important;
   border: 2px solid $pagination;
 }
+
 .tes_text_footer {
   padding: 0 55px;
   color: $white;
@@ -56,6 +68,7 @@
   font-size: 15px;
   line-height: 25px;
 }
+
 .slider {
   padding-bottom: 40px;
 }

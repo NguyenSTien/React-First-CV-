@@ -3,73 +3,89 @@
   margin: 0 auto;
   max-width: 970px;
   position: relative;
+
   @include desktop__big {
     max-width: 768px;
   }
+
   @include md {
     margin: 0 15px;
   }
 }
+
 .head_components {
   margin: 40px 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   .img_head {
     padding: 5px;
     text-align: center;
     border: 1px solid $white;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     @extend .shadow;
     margin-right: 15px;
   }
+
   .text_head_components {
+    font-family: 'raleway';
     font-weight: bold;
-    font-size: 40px;
+    font-size: 33px;
     color: $black;
+    margin-top: 10px;
+
     @include md {
       font-size: 35px;
     }
   }
 }
+
 .wrap_time_exp {
   @include md {
     display: grid;
     justify-items: center;
   }
 }
+
 .time {
   width: 4px;
-  height: 450px;
+  height: 400px;
   background-color: $green;
   position: absolute;
   top: 150px;
   left: 50.5%;
   z-index: -1;
   opacity: 0.4;
+
   @include desktop__big {
-    height: 450px;
     left: 50%;
   }
+
   @include md {
     display: none;
   }
 }
+
 .data-icon {
   color: $sky;
 }
+
 .name__exp_right:nth-child(2) {
   margin-top: 150px;
+
   @include md {
     margin: 0;
   }
 }
+
 .time__exp {
   @include md {
     grid-template-columns: none;
   }
+
   .name__exp,
   .name__exp_right {
     position: relative;
@@ -79,13 +95,16 @@
     @extend .shadow;
     padding: 20px;
     margin-bottom: 60px;
+
     @include desktop__big {
       width: 43%;
     }
+
     @include md {
       width: auto;
       margin-bottom: 15px;
     }
+
     .circle_exp,
     .circle_exp-right {
       position: absolute;
@@ -93,6 +112,7 @@
       height: 50px;
       border-radius: 50%;
       background-color: $green;
+
       &_text {
         text-shadow: 1px 2px 1px $black;
         margin: 0;
@@ -103,28 +123,37 @@
         padding: 5px;
       }
     }
+
     .circle_exp {
+      top: 0px;
       left: 112%;
+
       @include desktop__big {
         left: 110%;
       }
+
       @include md {
         left: auto;
         right: 10px;
         top: 15px;
       }
     }
+
     .circle_exp-right {
+      top: 0px;
       left: -22%;
+
       @include desktop__big {
         left: -25%;
       }
+
       @include md {
         left: auto;
         right: 10px;
         top: 15px;
       }
     }
+
     .line_left,
     .line_right {
       width: 48px;
@@ -132,31 +161,40 @@
       background-color: $green;
       opacity: 0.4;
       margin-top: -27px;
+
       @include desktop__big {
         width: 41px;
       }
+
       @include md {
         display: none;
       }
     }
+
     .line_left {
       margin-left: -46px;
+
       @include desktop__big {
         margin-left: -31px;
       }
     }
+
     .line_right {
       margin-left: 35px;
     }
   }
+
   .name__exp {
     float: left;
+
     @include md {
       float: none;
     }
   }
+
   .name__exp_right {
     float: right;
+
     @include md {
       float: none;
     }

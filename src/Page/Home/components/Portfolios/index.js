@@ -9,7 +9,6 @@ import './style.scss';
 
 const Index = () => {
   const [text, setText] = useState('');
-<<<<<<< HEAD
   const [extra, setExtra] = useState(false);
   const handleClickChange = () => {
     setExtra(!extra);
@@ -32,20 +31,6 @@ const Index = () => {
     }
   };
   var buttons = document.querySelectorAll('.button_text');
-=======
-
-  const handleClick = value => {
-    if (value === 'logo') {
-      setText('logo');
-    }
-    if (value === 'dribble') {
-      setText('dribble');
-    }
-    if (value === 'websites') {
-      setText('websites');
-    }
-  };
->>>>>>> e6b9cf380ced45caf13f2639a91513d35315f6ea
 
   Array.prototype.forEach.call(buttons, function (b) {
     b.addEventListener('click', createRipple);
@@ -74,53 +59,39 @@ const Index = () => {
           <div className='portfolios'>
             <div className='button_all'>
               <button
-<<<<<<< HEAD
                 data-mdb-ripple-color='#696666'
                 className={`btn btn-primary btn-lg ${
-                  text === 'all' ? 'button_text-active' : 'button_text'
+                  text === 'all' || text === ''
+                    ? 'button_text-active'
+                    : 'button_text'
                 }`}
-=======
-                className='button_text'
->>>>>>> e6b9cf380ced45caf13f2639a91513d35315f6ea
                 onClick={() => handleClick('all')}
               >
                 ALL
               </button>
               <button
-<<<<<<< HEAD
                 data-mdb-ripple-color='#696666'
                 className={`btn btn-primary btn-lg ${
                   text === 'logo' ? 'button_text-active' : 'button_text'
                 }`}
-=======
-                className='button_text '
->>>>>>> e6b9cf380ced45caf13f2639a91513d35315f6ea
                 onClick={() => handleClick('logo')}
               >
                 LOGO
               </button>
               <button
-<<<<<<< HEAD
                 data-mdb-ripple-color='#696666'
                 className={`btn btn-primary btn-lg ${
                   text === 'dribble' ? 'button_text-active' : 'button_text'
                 }`}
-=======
-                className='button_text'
->>>>>>> e6b9cf380ced45caf13f2639a91513d35315f6ea
                 onClick={() => handleClick('dribble')}
               >
                 DRIBBLE
               </button>
               <button
-<<<<<<< HEAD
                 data-mdb-ripple-color='#696666'
                 className={`btn btn-primary btn-lg ${
                   text === 'websites' ? 'button_text-active' : 'button_text'
                 }`}
-=======
-                className='button_text'
->>>>>>> e6b9cf380ced45caf13f2639a91513d35315f6ea
                 onClick={() => handleClick('websites')}
               >
                 WEBSITES
@@ -128,7 +99,6 @@ const Index = () => {
             </div>
             <div
               className={`slider_port fade ${
-<<<<<<< HEAD
                 text === 'all' || text === '' ? 'block' : ''
               }`}
             >
@@ -147,11 +117,6 @@ const Index = () => {
             <div
               className={`slider_port fade ${text === 'logo' ? 'block' : ''}`}
             >
-=======
-                text === 'logo' || text === '' ? 'block' : ''
-              }`}
-            >
->>>>>>> e6b9cf380ced45caf13f2639a91513d35315f6ea
               <Logo />
             </div>
             <div

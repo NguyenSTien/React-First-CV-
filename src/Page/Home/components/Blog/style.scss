@@ -5,11 +5,14 @@ html {
 }
 
 .wrap_blog {
+  font-family: 'muli';
+  color: $black;
   .blog {
     @extend .shadow;
     @include md {
       margin: 0 15px;
     }
+
     &_block_left,
     &_block_right {
       display: grid;
@@ -18,20 +21,18 @@ html {
         display: grid;
         grid-template-columns: none;
       }
+
       .wrap_blog_img {
         overflow: hidden;
+
         .blog_img {
           width: 100%;
           height: 100%;
-          // &:hover {
-          //   transform: scale(1.05);
-          //   transition: 1s;
-          //   text-shadow: 1px 1px 1px $grey;
-          // }
           @include md {
             width: auto;
           }
         }
+
         .blog_img_content {
           position: relative;
           color: $white;
@@ -40,48 +41,64 @@ html {
           margin-top: -40px;
           margin-right: 10px;
         }
+
         .blog_img_text {
           position: absolute;
           display: flex;
           top: 40px;
           right: -10px;
           font-size: 12px;
-          &_a {
+          &C {
             margin-right: 10px;
           }
         }
+
         &:hover {
           .blog_img {
             transform: scale(1.05);
             transition: 1s;
             text-shadow: 1px 1px 1px $grey;
           }
+
           .blog_img_text {
             top: 0px;
             transition: 0.5s;
           }
         }
       }
+
       .blog_content {
-        padding: 40px;
+        padding: 70px 40px;
+
         &_title {
           display: flex;
           @include md {
             justify-content: center;
           }
+
+          &_text {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+
           &_text-blue {
+            margin-left: 10px;
+            margin-right: 10px;
             color: $lightblue;
             text-decoration: underline $grey solid;
           }
         }
+
         @include md {
           text-align: center;
         }
       }
     }
+
     &_block_right {
       text-align: right;
       transform: scaleX(-1);
+
       .wrap_blog_img {
         .blog_img {
           &:hover {
@@ -90,18 +107,21 @@ html {
           }
         }
       }
+
       .blog_content {
         &_title {
           flex-direction: row-reverse;
         }
         transform: scaleX(-1);
       }
+
       .blog_img_content {
         transform: scaleX(-1);
       }
     }
   }
 }
+
 @keyframes blog_img_text {
   0% {
     top: 0px;
@@ -109,4 +129,14 @@ html {
   100% {
     top: 100px;
   }
+}
+.blog_content_head {
+  margin: 10px 10px;
+  font-family: 'raleway';
+  font-weight: bold;
+  font-size: 20px;
+}
+.blog_main_content {
+  margin: 10px 10px;
+  font-size: 15px;
 }

@@ -6,7 +6,7 @@ import { menuData } from '../../../../utils/Mockdata';
 import { useState } from 'react';
 import './style.scss';
 
-const index = ({ menu_move }) => {
+const Index = ({ menu_move }) => {
   const [move, setMove] = useState(false);
   const handleClick = () => {
     setMove(!move);
@@ -50,4 +50,4 @@ const index = ({ menu_move }) => {
   );
 };
 
-export default index;
+export default Index;

@@ -13,7 +13,7 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/autoplay';
-const index = () => {
+const Index = () => {
   return (
     <>
       <div id='testimonials' className='wrap_tes'>
@@ -38,7 +38,6 @@ const index = () => {
                       <img src={data.img} alt='kjashdjsa'></img>
                     </figure>
                     <div className='tes_text'>{data.content}</div>
-                    <div className='tes_text'>{data.contenttwo}</div>
                     <div className='tes_text_footer'>{data.footer}</div>
                   </div>
                 </SwiperSlide>
@@ -95,4 +94,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

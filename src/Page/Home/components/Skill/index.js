@@ -5,14 +5,14 @@ import { professionalData } from '../../../../utils/Mockdata';
 import { personalData } from '../../../../utils/Mockdata';
 import { softwarelData } from '../../../../utils/Mockdata';
 import { abc } from '../../../../utils/Mockdata';
-import Sectiontitle from '../Title';
+import SectionTitle from '../Title';
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <div id='skill' className='skill'>
         <div className='container'>
-          <Sectiontitle title='SKILL' icon={skill} />
+          <SectionTitle title='SKILL' icon={skill} />
           <div className='wrap_skill'>
             <div className='wrap_soft'>
               {abc.map((data, index) => {
@@ -43,4 +43,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

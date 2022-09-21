@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Sectiontitle from '../Title';
+import SectionTitle from '../Title';
 import envelope from '../../../../assets/images/envelope.png';
 import ContactItem from './contactItem';
 import Map from '../Maps/index';
@@ -24,7 +24,7 @@ export default function contact() {
   return (
     <section id='contact' className='contact'>
       <div className='container'>
-        <Sectiontitle title='CONTACT' icon={envelope} />
+        <SectionTitle title='CONTACT' icon={envelope} />
         <div className='wrap_contact_all'>
           <div className='wrap_contact'>
             <ContactItem

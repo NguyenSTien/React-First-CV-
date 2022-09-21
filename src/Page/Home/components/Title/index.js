@@ -1,14 +1,14 @@
 import React from 'react';
 
-const index = ({ icon, title }) => {
+const Index = ({ icon, title }) => {
   return (
     <div className='head_components'>
       <figure className='img_head'>
         <img src={icon} alt='asds'></img>
       </figure>
-      <p className='text_head_components'>{title}</p>
+      <h4 className='text_head_components'>{title}</h4>
     </div>
   );
 };
 
-export default index;
+export default Index;

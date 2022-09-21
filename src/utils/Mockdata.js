@@ -18,6 +18,30 @@ import big3 from '../assets/images/big3.jpg';
 import big4 from '../assets/images/big4.jpg';
 import big5 from '../assets/images/big5.jpg';
 import big6 from '../assets/images/portfolio-1.jpg';
+import education from '../assets/images/education1.jpg';
+
+export const cardData = [
+  {
+    icon: <i className='fa-solid fa-envelope'></i>,
+    content: 'email@mailprovider.com',
+  },
+  {
+    icon: <i class='fa-solid fa-globe'></i>,
+    content: 'yourpersonalwebsite.com',
+  },
+  {
+    icon: <i className='fa-brands fa-skype'></i>,
+    content: 'yourusername@skype.com',
+  },
+  {
+    icon: <i className='fa-solid fa-phone'></i>,
+    content: '+152 25634 254 846',
+  },
+  {
+    icon: <i className='fa-solid fa-location-dot'></i>,
+    content: 'LampStreet 34/3, London, UK',
+  },
+];
 
 export const educationData = [
   {
@@ -223,9 +247,8 @@ export const tesData = [
   {
     img: clientone,
     content:
-      'I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.',
-    contenttwo:
-      'I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.',
+      'I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.',
+
     footer: 'Mike, CEO, IT World',
   },
   {
@@ -407,7 +430,7 @@ export const logoData = [
     img: big6,
     icon: <i class='fa-solid fa-circle-play'></i>,
     contentHover: 'LIGHTBOX',
-    content: 'IMAGE',
+    content: 'VIDEO',
     subContentHover: 'I DESIGNER FOR A CLIENT FOR HIS CAFE',
   },
   {
@@ -490,5 +513,49 @@ export const websiteData = [
     content: 'PAGE',
     subContentHover: 'SHOWCASE YOUR PORTFOLIOS IN DETAILS ON',
     subContentHover2: 'A SINGLE PAGE',
+  },
+];
+
+export const educationclickData = [
+  {
+    id: '1',
+    className: 'edu_one',
+    title: 'GRADUATION AT ASHTON UNI',
+    time: 'Jan 2014 - Mar 2015',
+    img: education,
+    content:
+      "I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However, during the game, I noticed that I didn't run as hard as I could, nor did I try to evade my defender and get open. The fact of the matter is that I really did not want to be thrown the ball. I didn't want to be the one at fault if I dropped the ball and the play didn't succeed. I did not want the responsibility of helping the team because I was too afraid of making a mistake. That aspect of my character led the first years of my high school life. All the while, I went to practice.",
+  },
+  {
+    id: '2',
+    className: 'edu_two',
+    title: 'EDUCATION AT Y',
+    time: 'Jan 2014 - Mar 2015',
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+  {
+    id: '3',
+    className: 'edu_there',
+    title: 'EDUCATION AT Z',
+    time: 'Jan 2014 - Mar 2015',
+    img: education,
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+];
+
+export const experienceclickData = [
+  {
+    title: 'EXPERIENCE AT Z',
+    time: 'Jan 2014 - Mar 2015',
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+  {
+    title: 'EXPERIENCE AT M',
+    time: 'Jan 2014 - Mar 2015',
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
   },
 ];
