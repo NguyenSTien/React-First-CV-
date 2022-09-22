@@ -1,12 +1,18 @@
 import React from 'react';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import './style.scss';
 
 const Index = () => {
+  const { color, setColor } = useColorContext();
+  const handleColor = () => {
+    setColor('red')
+  }
+  
   return (
     <>
-      <div id='about'>
+      <div id='about' >
         <section className='wrap'>
-          <div className='container'>
+          <div className={`${'container'} ${color}`}>
             <div className='wrap__Content'>
               <p className='experience'>
                 Hello! I’m John Doe. Senior Web Developer with over 13 years of
@@ -16,7 +22,7 @@ const Index = () => {
                 CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript, JQuery,
                 Angular JS. Strong background in management and leadership.
               </p>
-              <div className='about'>
+              <div className='about' onClick={() => handleColor()}>
                 <a href='#' className='about__content'>
                   DOWLOAD CV
                 </a>
