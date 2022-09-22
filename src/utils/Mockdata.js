@@ -386,11 +386,11 @@ export const menuData = [
     link: 'experience',
     content: 'EXPERIENCE',
   },
-  // {
-  //   icon: <i class='fa-solid fa-box-archive'></i>,
-  //   link: 'po',
-  //   content: 'PORTFOLIOS',
-  // },
+  {
+    icon: <i class='fa-solid fa-box-archive'></i>,
+    link: 'portfolios',
+    content: 'PORTFOLIOS',
+  },
   {
     icon: <i class='fa-solid fa-heart'></i>,
     link: 'interest',
@@ -516,10 +516,10 @@ export const websiteData = [
   },
 ];
 
-export const educationclickData = [
+export const educationClickData = [
   {
     id: '1',
-    className: 'edu_one',
+    className: 'animate__animated animate__fadeInDownBig',
     title: 'GRADUATION AT ASHTON UNI',
     time: 'Jan 2014 - Mar 2015',
     img: education,
@@ -528,7 +528,7 @@ export const educationclickData = [
   },
   {
     id: '2',
-    className: 'edu_two',
+    className: 'animate__animated animate__fadeInDownBig',
     title: 'EDUCATION AT Y',
     time: 'Jan 2014 - Mar 2015',
     content:
@@ -536,7 +536,7 @@ export const educationclickData = [
   },
   {
     id: '3',
-    className: 'edu_there',
+    className: 'animate__animated animate__fadeInDownBig',
     title: 'EDUCATION AT Z',
     time: 'Jan 2014 - Mar 2015',
     img: education,
@@ -545,17 +545,47 @@ export const educationclickData = [
   },
 ];
 
-export const experienceclickData = [
+export const experienceClickData = [
   {
+    className: 'animate__animated animate__fadeInDownBig',
     title: 'EXPERIENCE AT Z',
     time: 'Jan 2014 - Mar 2015',
     content:
       'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
   },
   {
+    className: 'animate__animated animate__fadeInDownBig',
     title: 'EXPERIENCE AT M',
     time: 'Jan 2014 - Mar 2015',
     content:
       'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+];
+
+export const portfolioPopupData = [
+  {
+    img: big1,
+    className: 'animate__animated animate__flipInY ',
+    className2: 'animate__animated animate__flipOutY',
+  },
+  {
+    img: big2,
+    className: 'animate__animated animate__flipInY ',
+  },
+  {
+    img: big3,
+    className: 'animate__animated animate__flipInY ',
+  },
+  {
+    img: big4,
+    className: 'animate__animated animate__flipInY ',
+  },
+  {
+    img: big5,
+    className: 'animate__animated animate__flipInY ',
+  },
+  {
+    img: big6,
+    className: 'animate__animated animate__flipInY ',
   },
 ];

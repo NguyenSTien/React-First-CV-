@@ -8,9 +8,7 @@ import Popup from './popup';
 const Index = () => {
   const [buttonPopup, setButtonPopup] = useState('');
   const handlePopup = () => {
-    setButtonPopup({
-      id: 'edu_one',
-    });
+    setButtonPopup(true);
   };
 
   return (

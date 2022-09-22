@@ -17,7 +17,7 @@
       padding: 40px;
       text-align: center;
       margin: 0;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 22px;
     }
 
@@ -47,6 +47,7 @@
         }
 
         @include small {
+          width: 160px;
           margin: 10px auto;
           padding: 10px 0;
         }

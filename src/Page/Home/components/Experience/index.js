@@ -3,8 +3,14 @@ import './style.scss';
 import layers from '../../../../assets/images/layers.png';
 import { experienceData } from '../../../../utils/Mockdata';
 import SectionTitle from '../Title';
+import Popup from './popup.js';
+import { useState } from 'react';
 
 const Index = () => {
+  const [buttonPopup, setButtonPopup] = useState('');
+  const handlePopup = () => {
+    setButtonPopup(true);
+  };
   return (
     <>
       <div id='experience' className='wrap_experience'>
@@ -34,9 +40,13 @@ const Index = () => {
                     {data.date}
                   </h4>
                   <p className='content'>{data.content}</p>
-                  <a href='#' className='data-icon'>
+                  <button className='data-icon' onClick={handlePopup}>
                     {data.icon}
-                  </a>
+                  </button>
+                  <Popup
+                    trigger={buttonPopup}
+                    setTrigger={setButtonPopup}
+                  ></Popup>
                 </div>
               ))}
             </div>

@@ -7,6 +7,22 @@
   transition: 0.3s;
   &-active {
     margin-left: 0px;
+
+    .line_menu {
+      margin-top: 0px;
+      transform: rotate(45deg);
+      transition: 0.7s;
+    }
+
+    .line_menu_two {
+      opacity: 0;
+    }
+
+    .line_menu_there {
+      margin-top: -10px;
+      transform: rotate(-45deg);
+      transition: 0.7s;
+    }
   }
 }
 
