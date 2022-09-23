@@ -15,7 +15,10 @@ const Logo = () => {
       <div className='wrap_logo'>
         {logoData.map((data, index) => (
           <div key={index} className='logo_portfolios'>
-            <button className='btn_port' onClick={handlePopup}>
+            <button
+              className={`btn_port ${data.className}`}
+              onClick={handlePopup}
+            >
               <figure className={`img_logo ${data.className}`}>
                 <img src={data.img} alt='logoImg'></img>
               </figure>

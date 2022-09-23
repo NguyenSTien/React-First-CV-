@@ -5,6 +5,10 @@ import background from '../../../../assets/images/background.jpg';
 import { cardData } from '../../../../utils/Mockdata';
 
 const Index = () => {
+  const [changeMenu, setChangeMenu] = useState('');
+  const handleClick = () => {
+    setChangeMenu(!changeMenu);
+  };
   return (
     <>
       <div id='home' className='wrap__background'>
@@ -61,6 +65,36 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <div
+        className={
+          changeMenu ? 'changeColor changeColor-active' : 'changeColor'
+        }
+      >
+        <button className='change_icon' onClick={handleClick}>
+          <i class={`${'fa-solid fa-gear'} ${'icon_active'}`}></i>
+        </button>
+        <div className='change_title'>
+          <p>Pick a Color</p>
+          <div className='colorBase'>
+            <button className='blue'></button>
+            <button className='dGreen'></button>
+            <button className='lBrown'></button>
+            <button className='green'></button>
+            <button className='purple'></button>
+            <button className='brown'></button>
+            <button className='red'></button>
+            <button className='pink'></button>
+          </div>
+        </div>
+        <div className='change_title'>
+          <p>Blend & Dark</p>
+          <div className='colorBase_blend'>
+            <button className='blue'></button>
+            <button className='green'></button>
+            <button className='white'></button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

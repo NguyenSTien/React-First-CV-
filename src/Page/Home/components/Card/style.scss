@@ -225,3 +225,115 @@
     margin: -500px auto;
   }
 }
+
+.changeColor {
+  @extend .shadow;
+  position: fixed;
+  right: -200px;
+  top: 30%;
+  width: 200px;
+  background-color: $white;
+  padding: 15px;
+  transition: 1s;
+  &-active {
+    right: 0px;
+  }
+
+  .change_icon {
+    @extend .shadow;
+    position: absolute;
+    right: 200px;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    font-size: 15px;
+    text-align: center;
+    bottom: 40%;
+    border: none;
+
+    .icon_active {
+      animation: change 2s linear infinite;
+    }
+  }
+
+  .change_title {
+    text-align: center;
+    color: $black;
+    font-family: 'muli';
+  }
+
+  .colorBase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 10px;
+
+    .blue,
+    .dGreen,
+    .lBrown,
+    .green,
+    .purple,
+    .brown,
+    .red,
+    .pink {
+      width: 30px;
+      height: 30px;
+      background-color: $blue;
+      border-radius: 50%;
+      border: none;
+    }
+
+    .dGreen {
+      background-color: $darkGreen;
+    }
+    .lBrown {
+      background-color: $lightBrown;
+    }
+    .green {
+      background-color: $green;
+    }
+    .purple {
+      background-color: $purple;
+    }
+    .brown {
+      background-color: $brown;
+    }
+    .red {
+      background-color: $red;
+    }
+    .pink {
+      background-color: $pink;
+    }
+  }
+
+  .colorBase_blend {
+    display: flex;
+    justify-content: space-evenly;
+
+    .blue,
+    .green,
+    .white {
+      width: 30px;
+      height: 30px;
+      background-color: $blue;
+      border-radius: 50%;
+      border: none;
+    }
+    .green {
+      background-color: $green;
+    }
+    .white {
+      background-color: $light;
+    }
+  }
+}
+
+@keyframes change {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

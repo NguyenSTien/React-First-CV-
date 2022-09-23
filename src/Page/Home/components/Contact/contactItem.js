@@ -3,9 +3,12 @@ import './style.scss';
 function ContactItem({ active, name, inputType, onChange }) {
   return (
     <div className={`${'input_click'} ${!active ? '' : 'active'}`}>
-      <label className='label'>{name}</label>
+      <label htmlFor={name} className='label'>
+        {name}
+      </label>
       {inputType === 'input' ? (
         <input
+          id={name}
           type='text'
           className={'input'}
           name={name}

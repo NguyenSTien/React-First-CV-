@@ -18,7 +18,7 @@ const Index = () => {
               </p>
               <div className='about'>
                 <a href='./about' className='about__content'>
-                  DOWLOAD CV
+                  DOWNLOAD CV
                 </a>
                 <a href='./about' className='about__content'>
                   CONTACT ME

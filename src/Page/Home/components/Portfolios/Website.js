@@ -13,7 +13,10 @@ const Website = () => {
     <div className='wrap_website'>
       {websiteData.map((data, index) => (
         <div key={index} className='website_portfolios'>
-          <button className='btn_port' onClick={handlePopup}>
+          <button
+            className={`btn_port ${data.className}`}
+            onClick={handlePopup}
+          >
             <figure className={`img_website ${data.className}`}>
               <img src={data.img} alt='lasdj'></img>
             </figure>
