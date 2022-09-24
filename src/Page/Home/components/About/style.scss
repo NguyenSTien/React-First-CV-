@@ -1,4 +1,4 @@
-@import '../../../../index.scss';
+@import "../../../../index.scss";
 #about {
   padding-top: 10px;
 }
@@ -13,7 +13,7 @@
     }
 
     .experience {
-      font-family: 'muli';
+      font-family: "muli";
       padding: 40px;
       text-align: center;
       margin: 0;
@@ -31,7 +31,7 @@
       }
 
       .about__content {
-        font-family: 'muli';
+        font-family: "muli";
         @extend .shadow;
         width: 110px;
         border-radius: 3px;
@@ -41,6 +41,10 @@
         padding: 10px 50px;
         font-size: 15px;
         color: white;
+
+        &.red {
+          background-color: red;
+        }
 
         &:hover {
           @extend .shadow;

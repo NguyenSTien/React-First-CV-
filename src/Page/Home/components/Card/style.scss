@@ -1,4 +1,4 @@
-@import '../../../../index.scss';
+@import "../../../../index.scss";
 
 .wrap__background {
   position: relative;
@@ -12,7 +12,7 @@
 }
 
 .wrapCard {
-  font-family: 'raleway';
+  font-family: "raleway";
   @include md {
     margin: 0 15px;
   }
@@ -37,6 +37,14 @@
       height: auto;
       width: 655px;
       background-color: $green;
+
+      &.red {
+        background-color: red;
+      }
+
+      &.green {
+        background-color: green;
+      }
 
       @include desktop__big {
         width: 410px;
@@ -259,7 +267,7 @@
   .change_title {
     text-align: center;
     color: $black;
-    font-family: 'muli';
+    font-family: "muli";
   }
 
   .colorBase {
