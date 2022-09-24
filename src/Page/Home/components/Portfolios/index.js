@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import SectionTitle from '../Title';
 import safe from '../../../../assets/images/safe.png';
 import Dribble from './Dribble.js';
@@ -8,6 +9,7 @@ import * as mdb from 'mdb-ui-kit'; // lib
 import './style.scss';
 
 const Index = () => {
+  const { borderBottom } = useColorContext();
   const [text, setText] = useState('');
   const [extra, setExtra] = useState(false);
   const handleClickChange = () => {
@@ -53,7 +55,7 @@ const Index = () => {
   }
   return (
     <>
-      <div className='wrap_portfolios'>
+      <div className='wrap_portfolios animate__animated animate__zoomIn'>
         <div className='container'>
           <SectionTitle title='PORTFOLIOS' icon={safe} />
           <div className='portfolios'>

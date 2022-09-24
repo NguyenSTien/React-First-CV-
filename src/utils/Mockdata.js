@@ -151,7 +151,7 @@ export const softwarelData = [
     content: '80',
   },
 ];
-export const abc = [
+export const skillData = [
   {
     title: 'Professional',
     content: [

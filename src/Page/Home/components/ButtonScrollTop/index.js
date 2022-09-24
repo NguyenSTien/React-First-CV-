@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import './style.scss';
 
 const Index = () => {
+  const { lightColor } = useColorContext();
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -25,7 +27,7 @@ const Index = () => {
     <button
       onClick={scrollToTop}
       type='button'
-      className={`to-top`}
+      className={`${'to-top'} ${lightColor}`}
       style={{ display: visible ? 'inline' : 'none' }}
     >
       <i className='fas fa-chevron-up'></i>

@@ -1,11 +1,13 @@
 import React from 'react';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import './style.scss';
 
 const Index = () => {
+  const { color } = useColorContext();
   return (
     <>
       <div id='about'>
-        <section className='wrap'>
+        <section className='wrap animate__animated animate__fadeInUp'>
           <div className='container'>
             <div className='wrap__Content'>
               <p className='experience'>
@@ -17,10 +19,10 @@ const Index = () => {
                 Angular JS. Strong background in management and leadership.
               </p>
               <div className='about'>
-                <a href='./about' className='about__content'>
+                <a href='./about' className={`${'about__content'} ${color}`}>
                   DOWNLOAD CV
                 </a>
-                <a href='./about' className='about__content'>
+                <a href='./about' className={`${'about__content'} ${color}`}>
                   CONTACT ME
                 </a>
               </div>

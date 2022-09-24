@@ -1,0 +1,102 @@
+@import '../../../../index.scss';
+
+.wrap_load {
+  position: fixed;
+  width: 100%;
+  height: 900px;
+  z-index: 11;
+  text-align: center;
+  padding: 350px;
+  background-color: $green;
+  animation-name: hiden;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  overflow: hidden;
+
+  .main_load {
+    .box {
+      margin: 0 auto;
+      width: 30px;
+      height: 30px;
+      border: 4px solid $white;
+      background-color: $green;
+      animation: spin 1s ease 1s infinite;
+      overflow: hidden;
+
+      .box_inner {
+        width: 31px;
+        height: 34px;
+        background-color: $lightblue;
+        animation: toTop 2s ease-in infinite;
+      }
+    }
+  }
+
+  .content_load {
+    font-family: 'raleway';
+    color: $white;
+    text-shadow: 2px 2px 4px $black;
+
+    .load_title {
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    .load_subTitle {
+      font-size: 17px;
+      margin-top: -10px;
+    }
+  }
+}
+
+@keyframes toTop {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 100%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes hiden {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  50% {
+    opacity: 1;
+    top: 0%;
+  }
+  100% {
+    opacity: 0;
+    top: -1000%;
+  }
+}

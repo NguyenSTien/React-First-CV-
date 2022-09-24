@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Page/Home/Home";
-import "./App.scss";
-import { ColorProvider } from "./contexts/ColorContext";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Page/Home/Home';
+import './App.scss';
+import { ColorProvider } from './contexts/ColorContext';
 
 function App() {
   return (

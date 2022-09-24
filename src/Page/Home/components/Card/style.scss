@@ -276,7 +276,8 @@
     .purple,
     .brown,
     .red,
-    .pink {
+    .pink,
+    .white {
       width: 30px;
       height: 30px;
       background-color: $blue;
@@ -304,6 +305,9 @@
     }
     .pink {
       background-color: $pink;
+    }
+    .white {
+      background-color: $light;
     }
   }
 

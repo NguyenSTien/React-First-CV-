@@ -1,13 +1,15 @@
 import React from 'react';
 import post from '../../../../assets/images/post-it.png';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import SectionTitle from '../Title';
 import { blogData } from '../../../../utils/Mockdata';
 import './style.scss';
 
 const Index = () => {
+  const { textColor } = useColorContext();
   return (
     <>
-      <div id='blog' className='wrap_blog'>
+      <div id='blog' className='wrap_blog animate__animated animate__zoomIn'>
         <div className='container'>
           <SectionTitle title='BLOG' icon={post} />
           <div className='blog'>
@@ -21,7 +23,7 @@ const Index = () => {
                   <figure className='blog_img'>
                     <img src={data.img} alt='title'></img>
                   </figure>
-                  <div className='blog_img_content' id='b'>
+                  <div className='blog_img_content'>
                     <div className='blog_img_text'>
                       <p className='blog_img_textC'>{data.ppImg}</p>
                       <p className='blog_img_textC'>{data.timeImg}</p>
@@ -31,11 +33,15 @@ const Index = () => {
                 </div>
                 <div className='blog_content'>
                   <div className='blog_content_title'>
-                    <p className='blog_content_title_text blog_content_title_text-blue'>
+                    <p
+                      className={`${'blog_content_title_text blog_content_title_text-blue'} ${textColor}`}
+                    >
                       {data.titleOne}
                     </p>
                     <p>/</p>
-                    <p className='blog_content_title_text blog_content_title_text-blue'>
+                    <p
+                      className={`${'blog_content_title_text blog_content_title_text-blue'} ${textColor}`}
+                    >
                       {data.titleTwo}
                     </p>
                     <p>/</p>
@@ -43,7 +49,11 @@ const Index = () => {
                   </div>
                   <h4 className='blog_content_head'>{data.subTitle}</h4>
                   <p className='blog_main_content'>{data.content}</p>
-                  <p className='blog_content_title_text-blue'>Read more</p>
+                  <p
+                    className={`${'blog_content_title_text-blue'} ${textColor}`}
+                  >
+                    Read more
+                  </p>
                 </div>
               </div>
             ))}

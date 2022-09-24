@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { dribbleData } from '../../../../utils/Mockdata';
 import './style.scss';
 import { useState } from 'react';
@@ -20,7 +21,8 @@ const Dribble = () => {
             <figure className={`img_dribble ${data.className}`}>
               <img src={data.img} alt='sda'></img>
             </figure>
-            <div className='bgr_white'></div>n<div className='bgr_black'></div>
+            <div className='bgr_white'></div>
+            <div className='bgr_black'></div>
             <p className='logo_icon'>{data.icon}</p>
             <p className={`content_hover ${data.className}`}>
               {data.contentHover}

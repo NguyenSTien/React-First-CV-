@@ -1,6 +1,6 @@
 import React from 'react';
 import hand from '../../../../assets/images/handshake.png';
-import clientone from '../../../../assets/images/client-1.png';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import { tesData } from '../../../../utils/Mockdata';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { animationData } from '../../../../utils/Mockdata';
@@ -14,12 +14,16 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/autoplay';
 const Index = () => {
+  const { color } = useColorContext();
   return (
     <>
-      <div id='testimonials' className='wrap_tes'>
+      <div
+        id='testimonials'
+        className='wrap_tes animate__animated animate__zoomIn'
+      >
         <div className='container'>
           <SectionTitle title='TESTIMONIALS' icon={hand} />
-          <div className='tes'>
+          <div className={`${'tes'} ${color}`}>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}
@@ -35,7 +39,7 @@ const Index = () => {
                 <SwiperSlide key={index}>
                   <div className='slider'>
                     <figure className='tes_img'>
-                      <img src={data.img} alt='kjashdjsa'></img>
+                      <img src={data.img} alt='imgTes'></img>
                     </figure>
                     <div className='tes_text'>{data.content}</div>
                     <div className='tes_text_footer'>{data.footer}</div>
@@ -82,7 +86,7 @@ const Index = () => {
               {animationData.map((data, index) => (
                 <SwiperSlide key={index}>
                   <figure className='ani_img'>
-                    <img src={data.img} alt='asdkjahdjk'></img>
+                    <img src={data.img} alt='imgTes'></img>
                   </figure>
                 </SwiperSlide>
               ))}

@@ -2,14 +2,94 @@
 @import './assets/scss/mixin.scss';
 @import './assets/scss/vars.scss';
 
-.red {
-  background-color: red;
-}
-
 .blue {
-  background-color: blue;
+  background-color: $darkBlue !important;
 }
 
+.dGreen {
+  background-color: $darkGreen !important;
+}
+
+.lBrown {
+  background-color: $lightBrown !important;
+}
+
+.green {
+  background-color: $green !important;
+}
+
+.purple {
+  background-color: $purple !important;
+}
+
+.brown {
+  background-color: $brown !important;
+}
+
+.red {
+  background-color: $red !important;
+}
+
+.pink {
+  background-color: $pink !important;
+}
+
+.white {
+  background-color: $light !important;
+}
+
+.orange {
+  background-color: $orange !important;
+}
+
+.border_orange {
+  border-left: 5px solid $orange !important ;
+}
+
+.border_purple {
+  border-left: 5px solid $purple !important ;
+}
+
+.border_pink {
+  border-left: 5px solid $pink !important ;
+}
+
+.border_green {
+  border-left: 5px solid $green !important ;
+}
+
+.border_bottom_pink {
+  border-bottom: 4px solid $pink !important ;
+}
+
+.border_bottom_orange {
+  border-bottom: 4px solid $orange !important ;
+}
+
+.border_bottom_purple {
+  border-bottom: 4px solid $purple !important ;
+}
+
+.text_orange {
+  color: $orange !important;
+}
+
+.text_purple {
+  color: $purple !important;
+}
+
+.text_pink {
+  color: $pink !important;
+}
+
+.text_green {
+  color: $green !important;
+}
+
+.lOr {
+  background-color: $orangelight !important;
+  border-left: 5px solid $orangelight !important ;
+}
 .container {
   width: 100%;
   height: 100%;

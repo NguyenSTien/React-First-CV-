@@ -4,9 +4,12 @@ import SectionTitle from '../Title';
 import envelope from '../../../../assets/images/envelope.png';
 import ContactItem from './contactItem';
 import Map from '../Maps/index';
+import { useColorContext } from '../../../../contexts/ColorContext';
 import './style.scss';
 
 export default function contact() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { color, textColor } = useColorContext();
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [input, setInput] = useState({
     name: '',
@@ -22,7 +25,7 @@ export default function contact() {
     });
   };
   return (
-    <section id='contact' className='contact'>
+    <section id='contact' className='contact animate__animated animate__zoomIn'>
       <div className='container'>
         <SectionTitle title='CONTACT' icon={envelope} />
         <div className='wrap_contact_all'>
@@ -55,7 +58,7 @@ export default function contact() {
               value={setInput}
               inputType='textarea'
             />
-            <button type='button' className='button_click'>
+            <button type='button' className={`${'button_click'} ${color}`}>
               SEND
             </button>
           </div>
@@ -63,7 +66,10 @@ export default function contact() {
         </div>
         <p className='text_footer'>
           © Material CV. All right reserved by
-          <span className='text_footer-blue'> Trimatrixlab</span>
+          <span className={`${'text_footer-blue'} ${textColor}`}>
+            {' '}
+            Trimatrixlab
+          </span>
         </p>
       </div>
     </section>
