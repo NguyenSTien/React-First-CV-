@@ -1,4 +1,5 @@
 @import '../../../../index.scss';
+
 #about {
   padding-top: 10px;
 }
@@ -6,7 +7,7 @@
 .wrap {
   margin-top: 50px;
 
-  .wrap__Content {
+  .wrap__content {
     box-shadow: 1px 1px 5px 1px $grey;
     @include md {
       margin: 0 15px;

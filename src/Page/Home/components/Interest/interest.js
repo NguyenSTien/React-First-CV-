@@ -1,12 +1,12 @@
 import React from 'react';
-import './style.scss';
+import './interest.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import heart from '../../../../assets/images/heart.png';
 import { interestData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title';
+import SectionTitle from '../Title/title';
 
 const Index = () => {
-  const { color, textColor } = useColorContext();
+  const { color } = useColorContext();
   return (
     <>
       <div className='wrap_interest animate__animated animate__zoomIn'>

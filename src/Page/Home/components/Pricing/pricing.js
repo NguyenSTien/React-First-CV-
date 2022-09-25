@@ -1,9 +1,9 @@
 import React from 'react';
-import './style.scss';
+import './pricing.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import lightning from '../../../../assets/images/lightning.png';
 import { pricingData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title';
+import SectionTitle from '../Title/title';
 
 const Index = () => {
   const { color } = useColorContext();
@@ -18,7 +18,7 @@ const Index = () => {
           <div className='pricing'>
             {pricingData.map((data, index) => (
               <div key={index} className='pricing_base'>
-                <div className={`${'pricing_head'} ${color}`}>
+                <div className={`pricing_head ${color}`}>
                   <div className='pricing_head_dis'>
                     <p className='icon_dola'>$</p>
                     <h4 className='pricing_head-text'>{data.title}</h4>
@@ -34,9 +34,7 @@ const Index = () => {
                   <p className='pricing_text'>{data.Subdomain}</p>
                 </div>
                 <div className='pricing_pur'>
-                  <p className={`${'pricing_pur-text'} ${color}`}>
-                    {data.Purchase}
-                  </p>
+                  <p className={`pricing_pur-text ${color}`}>{data.Purchase}</p>
                 </div>
               </div>
             ))}

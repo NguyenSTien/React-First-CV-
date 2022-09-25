@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './style.scss';
+import './buttonScrollTop.scss';
 
 const Index = () => {
   const { lightColor } = useColorContext();
@@ -27,7 +27,7 @@ const Index = () => {
     <button
       onClick={scrollToTop}
       type='button'
-      className={`${'to-top'} ${lightColor}`}
+      className={`to-top ${lightColor}`}
       style={{ display: visible ? 'inline' : 'none' }}
     >
       <i className='fas fa-chevron-up'></i>

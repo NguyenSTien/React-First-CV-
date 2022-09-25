@@ -1,6 +1,6 @@
 import React from 'react';
 import { educationClickData } from '../../../../utils/Mockdata';
-import './style.scss';
+import './education.scss';
 
 const Popup = (props) => {
   return props.trigger ? (

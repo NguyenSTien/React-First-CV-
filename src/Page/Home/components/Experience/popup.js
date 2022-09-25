@@ -1,6 +1,6 @@
 import React from 'react';
 import { experienceClickData } from '../../../../utils/Mockdata';
-import './style.scss';
+import './experience.scss';
 
 const Popup = (props) => {
   return props.trigger ? (

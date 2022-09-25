@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import John from '../../../../assets/images/john.png';
 import { menuData } from '../../../../utils/Mockdata';
 import { useState } from 'react';
-import './style.scss';
+import './menu.scss';
 
 const Index = () => {
   const { color, lightColor } = useColorContext();
@@ -18,7 +18,7 @@ const Index = () => {
       <nav className={move ? 'menu menu-active' : 'menu'}>
         <div className='menu_container'>
           <div className='menu_all'>
-            <div className={`${'menu_header'} ${color}`}>
+            <div className={`menu_header ${color}`}>
               <figure className='menu_img'>
                 <img src={John} alt='asdsad' />
               </figure>
@@ -41,9 +41,9 @@ const Index = () => {
               </div>
             </div>
             <button className='button_menu' onClick={handleClick}>
-              <div className={`${'line_menu'} ${lightColor}`}></div>
-              <div className={`${'line_menu_two'} ${lightColor}`}></div>
-              <div className={`${'line_menu_there'} ${lightColor}`}></div>
+              <div className={`line_menu ${lightColor}`}></div>
+              <div className={`line_menu_two ${lightColor}`}></div>
+              <div className={`line_menu_there ${lightColor}`}></div>
             </button>
           </div>
         </div>

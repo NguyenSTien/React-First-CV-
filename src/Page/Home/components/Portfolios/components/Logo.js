@@ -1,6 +1,6 @@
 import React from 'react';
-import { logoData } from '../../../../utils/Mockdata';
-import './style.scss';
+import { logoData } from '../../../../../utils/Mockdata';
+import '../portfolios.scss';
 import 'animate.css';
 import Popup from './popup.js';
 import { useState } from 'react';

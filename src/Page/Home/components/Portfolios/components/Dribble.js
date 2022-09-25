@@ -1,24 +1,25 @@
 import React from 'react';
-import { websiteData } from '../../../../utils/Mockdata';
-import './style.scss';
+
+import { dribbleData } from '../../../../../utils/Mockdata';
+import '../portfolios.scss';
 import { useState } from 'react';
 import Popup from './popup.js';
 
-const Website = () => {
+const Dribble = () => {
   const [buttonPopup, setButtonPopup] = useState('');
   const handlePopup = () => {
     setButtonPopup(true);
   };
   return (
-    <div className='wrap_website'>
-      {websiteData.map((data, index) => (
-        <div key={index} className='website_portfolios'>
+    <div className='wrap_dribble'>
+      {dribbleData.map((data, index) => (
+        <div key={index} className='dribble_portfolios'>
           <button
             className={`btn_port ${data.className}`}
             onClick={handlePopup}
           >
-            <figure className={`img_website ${data.className}`}>
-              <img src={data.img} alt='lasdj'></img>
+            <figure className={`img_dribble ${data.className}`}>
+              <img src={data.img} alt='sda'></img>
             </figure>
             <div className='bgr_white'></div>
             <div className='bgr_black'></div>
@@ -41,4 +42,4 @@ const Website = () => {
   );
 };
 
-export default Website;
+export default Dribble;

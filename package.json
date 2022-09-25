@@ -13,6 +13,8 @@
     "google-map-react": "^2.2.0",
     "mapbox-gl": "^2.9.2",
     "mdb-ui-kit": "^4.4.0",
+    "module": "^1.2.5",
+    "nodemailer": "^6.7.8",
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",

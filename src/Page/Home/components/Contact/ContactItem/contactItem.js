@@ -1,8 +1,8 @@
-import './style.scss';
+import '../contact.scss';
 
 function ContactItem({ active, name, inputType, onChange }) {
   return (
-    <div className={`${'input_click'} ${!active ? '' : 'active'}`}>
+    <div className={`input_click ${!active ? '' : 'active'}`}>
       <label htmlFor={name} className='label'>
         {name}
       </label>
@@ -17,7 +17,7 @@ function ContactItem({ active, name, inputType, onChange }) {
       ) : (
         <textarea
           type='text'
-          className={`${'input_mess'} ${'textlarea'}`}
+          className={`input_mess textarea`}
           name={name}
           onChange={onChange}
         />

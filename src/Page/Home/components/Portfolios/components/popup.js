@@ -1,6 +1,6 @@
 import React from 'react';
-import { portfolioPopupData } from '../../../../utils/Mockdata';
-import './style.scss';
+import { portfolioPopupData } from '../../../../../utils/Mockdata';
+import '../portfolios.scss';
 
 const Popup = (props) => {
   return props.trigger ? (

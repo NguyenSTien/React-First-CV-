@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-import SectionTitle from '../Title';
+import SectionTitle from '../Title/title';
 import envelope from '../../../../assets/images/envelope.png';
-import ContactItem from './contactItem';
-import Map from '../Maps/index';
+import ContactItem from './ContactItem/contactItem';
+import Map from '../Maps/maps';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './style.scss';
+import './contact.scss';
 
 export default function contact() {
   // eslint-disable-next-line react-hooks/rules-of-hooks

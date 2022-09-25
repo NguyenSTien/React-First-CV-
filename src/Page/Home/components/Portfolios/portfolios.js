@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { useColorContext } from '../../../../contexts/ColorContext';
-import SectionTitle from '../Title';
+import SectionTitle from '../Title/title';
 import safe from '../../../../assets/images/safe.png';
-import Dribble from './Dribble.js';
-import Logo from './Logo.js';
-import Website from './Website.js';
+import Dribble from './components/Dribble';
+import Logo from './components/Logo';
+import Website from './components/Website';
 import * as mdb from 'mdb-ui-kit'; // lib
-import './style.scss';
+import './portfolios.scss';
 
 const Index = () => {
-  const { borderBottom } = useColorContext();
   const [text, setText] = useState('');
   const [extra, setExtra] = useState(false);
   const handleClickChange = () => {

@@ -4,8 +4,8 @@ import { useColorContext } from '../../../../contexts/ColorContext';
 import { tesData } from '../../../../utils/Mockdata';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { animationData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title';
-import './style.scss';
+import SectionTitle from '../Title/title';
+import './testimonials.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -23,7 +23,7 @@ const Index = () => {
       >
         <div className='container'>
           <SectionTitle title='TESTIMONIALS' icon={hand} />
-          <div className={`${'tes'} ${color}`}>
+          <div className={`tes ${color}`}>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}

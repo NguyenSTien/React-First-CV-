@@ -1,9 +1,9 @@
 import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './style.scss';
+import './skill.scss';
 import skill from '../../../../assets/images/mixer.png';
 import { skillData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title';
+import SectionTitle from '../Title/title';
 
 const Index = () => {
   const { color } = useColorContext();
@@ -13,7 +13,7 @@ const Index = () => {
       <div id='skill' className='skill animate__animated animate__zoomIn'>
         <div className='container'>
           <SectionTitle title='SKILL' icon={skill} />
-          <div className={`${'wrap_skill'} ${color}`}>
+          <div className={`wrap_skill ${color}`}>
             <div className='wrap_soft'>
               {skillData.map((data, index) => {
                 return (
@@ -28,7 +28,7 @@ const Index = () => {
                             className='percent'
                             style={{ width: `${data.percent}%` }}
                           ></div>
-                          <div className={`${'line_percent'} ${color}`}></div>
+                          <div className={`line_percent ${color}`}></div>
                         </div>
                       ))}
                     </div>

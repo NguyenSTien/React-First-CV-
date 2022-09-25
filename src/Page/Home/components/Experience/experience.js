@@ -1,9 +1,9 @@
 import React from 'react';
-import './style.scss';
+import './experience.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import layers from '../../../../assets/images/layers.png';
 import { experienceData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title';
+import SectionTitle from '../Title/title';
 import Popup from './popup.js';
 import { useState } from 'react';
 
@@ -54,7 +54,7 @@ const Index = () => {
                   </h4>
                   <p className='content'>{data.content}</p>
                   <button
-                    className={`${'data-icon'} ${textColor}`}
+                    className={`data-icon ${textColor}`}
                     onClick={handlePopup}
                   >
                     {data.icon}
@@ -67,7 +67,7 @@ const Index = () => {
               ))}
             </div>
           </div>
-          <div className={`${'time'} ${color}`}></div>
+          <div className={`time ${color}`}></div>
         </div>
       </div>
     </>
