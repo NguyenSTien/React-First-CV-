@@ -66,7 +66,7 @@ const pickColor = () => {
       setBorderBottom('border_bottom_purple');
     }
     if (value === 'white') {
-      setColor('wgreen');
+      setColor('wGreen');
       setBorder('border_green');
       setTextColor('text_green');
       setLightColor('green');

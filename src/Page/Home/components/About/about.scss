@@ -1,5 +1,9 @@
+<<<<<<< HEAD:src/Page/Home/components/About/about.scss
 @import '../../../../index.scss';
 
+=======
+@import "../../../../index.scss";
+>>>>>>> 9330302789c62b87cce14c19a8f7cc9fc3fcb449:src/Page/Home/components/About/style.scss
 #about {
   padding-top: 10px;
 }
@@ -14,7 +18,7 @@
     }
 
     .experience {
-      font-family: 'muli';
+      font-family: "muli";
       padding: 40px;
       text-align: center;
       margin: 0;
@@ -32,7 +36,7 @@
       }
 
       .about__content {
-        font-family: 'muli';
+        font-family: "muli";
         @extend .shadow;
         width: 110px;
         border-radius: 3px;
@@ -42,6 +46,10 @@
         padding: 10px 50px;
         font-size: 15px;
         color: white;
+
+        &.red {
+          background-color: red;
+        }
 
         &:hover {
           @extend .shadow;

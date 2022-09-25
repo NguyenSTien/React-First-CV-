@@ -6,7 +6,7 @@ import { educationData } from '../../../../utils/Mockdata';
 import SectionTitle from '../Title/title';
 import Popup from './popup';
 
-const Index = () => {
+const Education = () => {
   const { color, textColor, border } = useColorContext();
   const [buttonPopup, setButtonPopup] = useState('');
   const handlePopup = () => {
@@ -67,4 +67,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Education;
