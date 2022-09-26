@@ -5,7 +5,7 @@ import heart from '../../../../assets/images/heart.png';
 import { interestData } from '../../../../utils/Mockdata';
 import SectionTitle from '../Title/title';
 
-const Index = () => {
+const Interest = () => {
   const { color } = useColorContext();
   return (
     <>
@@ -40,4 +40,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Interest;

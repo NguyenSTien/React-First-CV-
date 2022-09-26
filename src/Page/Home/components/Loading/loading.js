@@ -1,7 +1,7 @@
 import React from 'react';
 import './loading.scss';
 
-const Index = () => {
+const Loading = () => {
   return (
     <div className={`wrap_load ${'animate__animated animate__fadeOut'}`}>
       <div className={`main_load ${'animate__animated animate__bounceInDown'}`}>
@@ -17,4 +17,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Loading;

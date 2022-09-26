@@ -7,7 +7,7 @@ import { menuData } from '../../../../utils/Mockdata';
 import { useState } from 'react';
 import './menu.scss';
 
-const Index = () => {
+const Menu = () => {
   const { color, lightColor } = useColorContext();
   const [move, setMove] = useState(false);
   const handleClick = () => {
@@ -52,4 +52,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Menu;

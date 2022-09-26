@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import './buttonScrollTop.scss';
 
-const Index = () => {
+const ButtonScrollTop = () => {
   const { lightColor } = useColorContext();
   const [visible, setVisible] = useState(false);
 
@@ -35,4 +35,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default ButtonScrollTop;

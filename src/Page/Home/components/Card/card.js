@@ -5,7 +5,7 @@ import profile from '../../../../assets/images/profile.png';
 import background from '../../../../assets/images/background.jpg';
 import { cardData } from '../../../../utils/Mockdata';
 
-const Index = () => {
+const Card = () => {
   const { color, lightColor } = useColorContext();
 
   return (
@@ -70,4 +70,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Card;

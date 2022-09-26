@@ -2,7 +2,7 @@ import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import './about.scss';
 
-const Index = () => {
+const About = () => {
   const { color } = useColorContext();
   return (
     <>
@@ -34,4 +34,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default About;

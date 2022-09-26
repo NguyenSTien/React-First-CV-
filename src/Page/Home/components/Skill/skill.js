@@ -5,7 +5,7 @@ import skill from '../../../../assets/images/mixer.png';
 import { skillData } from '../../../../utils/Mockdata';
 import SectionTitle from '../Title/title';
 
-const Index = () => {
+const Skill = () => {
   const { color } = useColorContext();
 
   return (
@@ -43,4 +43,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Skill;

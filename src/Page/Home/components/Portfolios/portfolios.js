@@ -7,7 +7,7 @@ import Website from './components/Website';
 import * as mdb from 'mdb-ui-kit'; // lib
 import './portfolios.scss';
 
-const Index = () => {
+const Portfolios = () => {
   const [text, setText] = useState('');
   const [extra, setExtra] = useState(false);
   const handleClickChange = () => {
@@ -149,4 +149,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Portfolios;

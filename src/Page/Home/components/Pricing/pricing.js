@@ -5,7 +5,7 @@ import lightning from '../../../../assets/images/lightning.png';
 import { pricingData } from '../../../../utils/Mockdata';
 import SectionTitle from '../Title/title';
 
-const Index = () => {
+const Pricing = () => {
   const { color } = useColorContext();
   return (
     <>
@@ -45,4 +45,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Pricing;

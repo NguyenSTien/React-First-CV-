@@ -5,7 +5,7 @@ import SectionTitle from '../Title/title';
 import { blogData } from '../../../../utils/Mockdata';
 import './blog.scss';
 
-const Index = () => {
+const Blog = () => {
   const { textColor } = useColorContext();
   return (
     <>
@@ -62,4 +62,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Blog;

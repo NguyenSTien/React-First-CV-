@@ -7,7 +7,7 @@ import SectionTitle from '../Title/title';
 import Popup from './popup.js';
 import { useState } from 'react';
 
-const Index = () => {
+const Experience = () => {
   const { color, border, textColor } = useColorContext();
   const [buttonPopup, setButtonPopup] = useState('');
   const handlePopup = () => {
@@ -74,4 +74,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Experience;

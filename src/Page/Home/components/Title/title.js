@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Index = ({ icon, title }) => {
+const Title = ({ icon, title }) => {
   return (
     <div className='head_components'>
       <figure className='img_head'>
@@ -11,4 +11,4 @@ const Index = ({ icon, title }) => {
   );
 };
 
-export default Index;
+export default Title;

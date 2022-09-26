@@ -13,7 +13,7 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/autoplay';
-const Index = () => {
+const Testimonials = () => {
   const { color } = useColorContext();
   return (
     <>
@@ -98,4 +98,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Testimonials;
