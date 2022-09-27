@@ -9,11 +9,12 @@
   z-index: 10;
   cursor: pointer;
   color: white;
-  background-color: $sky;
+  background-color: #1976d2;
   border: none;
   text-align: center;
   font-size: 18px;
   animation: rotate 0.5s;
+  padding-top: 6px;
   @include md {
     right: 45px;
   }
@@ -25,23 +26,17 @@
   opacity: 1;
   transform: rotate(180deg);
   transition: 1s;
-
-  i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 @keyframes rotate {
   0% {
-    transform: rotateY(200deg);
+    transform: rotateY(270deg);
   }
   25% {
     transform: rotateY(180deg);
   }
   75% {
-    transform: rotateY(200deg);
+    transform: rotateY(220deg);
   }
   100% {
     transform: rotateY(180deg);

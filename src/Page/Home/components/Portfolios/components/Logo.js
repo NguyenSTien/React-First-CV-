@@ -1,8 +1,8 @@
 import React from 'react';
 import { logoData } from '../../../../../utils/Mockdata';
-import '../portfolios.scss';
+import '../Portfolios.scss';
 import 'animate.css';
-import Popup from './popup.js';
+import Popup from './Popup.js';
 import { useState } from 'react';
 
 const Logo = () => {

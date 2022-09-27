@@ -1,19 +1,19 @@
 import React from 'react';
-import Card from './components/Card/card.js';
-import About from './components/About/about.js';
-import Education from './components/Education/education.js';
-import Skill from './components/Skill/skill.js';
-import Experience from './components/Experience/experience.js';
-import Interest from './components/Interest/interest.js';
-import Testimonials from './components/Testimonials/testimonials.js';
-import Pricing from './components/Pricing/pricing.js';
-import Blog from './components/Blog/blog.js';
-import Contact from './components/Contact/contact.js';
-import Menu from './components/Menu/menu.js';
-import Portfolios from './components/Portfolios/portfolios.js';
-import ButtonScrollTop from './components/ButtonScrollTop/buttonScrollTop.js';
-import Loading from './components/Loading/loading.js';
-import PickColor from './components/PickColor/pickColor.js';
+import Card from './components/Card/Card.js';
+import About from './components/About/About.js';
+import Education from './components/Education/Education.js';
+import Skill from './components/Skill/Skill.js';
+import Experience from './components/Experience/Experience.js';
+import Interest from './components/Interest/Interest.js';
+import Testimonials from './components/Testimonials/Testimonials.js';
+import Pricing from './components/Pricing/Pricing.js';
+import Blog from './components/Blog/Blog.js';
+import Contact from './components/Contact/Contact.js';
+import Menu from './components/Menu/Menu.js';
+import Portfolios from './components/Portfolios/Portfolios.js';
+import ButtonScrollTop from './components/ButtonScrollTop/ButtonScrollTop.js';
+import Loading from './components/Loading/Loading.js';
+import PickColor from './components/PickColor/PickColor.js';
 
 const Home = () => {
   return (

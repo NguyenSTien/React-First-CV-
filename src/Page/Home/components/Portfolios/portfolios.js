@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import SectionTitle from '../Title/title';
+import SectionTitle from '../Title/Title';
 import safe from '../../../../assets/images/safe.png';
 import Dribble from './components/Dribble';
 import Logo from './components/Logo';
 import Website from './components/Website';
 import * as mdb from 'mdb-ui-kit'; // lib
-import './portfolios.scss';
+import './Portfolios.scss';
 
 const Portfolios = () => {
   const [text, setText] = useState('');

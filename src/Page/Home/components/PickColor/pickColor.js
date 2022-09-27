@@ -1,20 +1,14 @@
 import { useState } from 'react';
 import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './pickColor.scss';
+import './PickColor.scss';
 
-const pickColor = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const PickColor = () => {
   const { color, setColor } = useColorContext();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { setLightColor } = useColorContext();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { setBorder } = useColorContext();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { setTextColor } = useColorContext();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { setBorderBottom } = useColorContext();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const handleColor = (value) => {
     if (value === 'blue') {
       setColor('blue');
@@ -72,7 +66,6 @@ const pickColor = () => {
       setLightColor('green');
     }
   };
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [changeMenu, setChangeMenu] = useState('');
   const handleClick = () => {
     setChangeMenu(!changeMenu);
@@ -85,7 +78,7 @@ const pickColor = () => {
         }
       >
         <button className='change_icon' onClick={handleClick}>
-          <i class={`${'fa-solid fa-gear'} ${'icon_active'}`}></i>
+          <i class={`fa-solid fa-gear ${'icon_active'}`}></i>
         </button>
         <div className='change_title'>
           <p>Pick a Color</p>
@@ -146,4 +139,4 @@ const pickColor = () => {
   );
 };
 
-export default pickColor;
+export default PickColor;

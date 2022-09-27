@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import './education.scss';
+import './Education.scss';
+import ModalEducation from './ModalEducation/ModalEducation.js';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import education from '../../../../assets/images/book.png';
 import { educationData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title/title';
-import Popup from './popup';
+import SectionTitle from '../Title/Title';
 
 const Education = () => {
   const { color, textColor, border } = useColorContext();
-  const [buttonPopup, setButtonPopup] = useState('');
-  const handlePopup = () => {
-    setButtonPopup(true);
+  const [buttonModal, setButtonModal] = useState('');
+  const handleModal = () => {
+    setButtonModal(true);
   };
 
   return (
     <>
-      <div id='education' data-aos='zoom-in' className='wrap__education'>
+      <div className='wrap__education'>
         <div className='container'>
           <SectionTitle title='EDUCATION' icon={education} />
           <div className='wrap_time_education'>
@@ -51,13 +51,13 @@ const Education = () => {
                   <p className='content'>{data.content}</p>
                   <button
                     className={`data-icon ${textColor}`}
-                    onClick={handlePopup}
+                    onClick={() => handleModal(true)}
                   >
                     {data.icon}
                   </button>
+                  {buttonModal && <ModalEducation clsModal={setButtonModal} />}
                 </div>
               ))}
-              <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
             </div>
             <div className={`timeline ${color}`}></div>
           </div>

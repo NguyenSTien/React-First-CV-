@@ -1,16 +1,16 @@
 import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './skill.scss';
+import './Skill.scss';
 import skill from '../../../../assets/images/mixer.png';
 import { skillData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title/title';
+import SectionTitle from '../Title/Title';
 
 const Skill = () => {
   const { color } = useColorContext();
 
   return (
     <>
-      <div id='skill' className='skill animate__animated animate__zoomIn'>
+      <div className='skill animate__animated animate__zoomIn'>
         <div className='container'>
           <SectionTitle title='SKILL' icon={skill} />
           <div className={`wrap_skill ${color}`}>

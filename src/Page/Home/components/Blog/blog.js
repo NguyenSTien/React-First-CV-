@@ -1,9 +1,9 @@
 import React from 'react';
 import post from '../../../../assets/images/post-it.png';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import SectionTitle from '../Title/title';
+import SectionTitle from '../Title/Title';
 import { blogData } from '../../../../utils/Mockdata';
-import './blog.scss';
+import './Blog.scss';
 
 const Blog = () => {
   const { textColor } = useColorContext();

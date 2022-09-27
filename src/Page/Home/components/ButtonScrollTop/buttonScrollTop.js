@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './buttonScrollTop.scss';
+import './ButtonScrollTop.scss';
 
 const ButtonScrollTop = () => {
   const { lightColor } = useColorContext();

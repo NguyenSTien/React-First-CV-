@@ -1,24 +1,21 @@
 import React from 'react';
-import './experience.scss';
+import './Experience.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
+import ModalExperience from './ModalExperience/ModalExperience';
 import layers from '../../../../assets/images/layers.png';
 import { experienceData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title/title';
-import Popup from './popup.js';
+import SectionTitle from '../Title/Title';
 import { useState } from 'react';
 
 const Experience = () => {
   const { color, border, textColor } = useColorContext();
-  const [buttonPopup, setButtonPopup] = useState('');
-  const handlePopup = () => {
-    setButtonPopup(true);
+  const [buttonModal, setButtonModal] = useState(false);
+  const handleModal = () => {
+    setButtonModal(true);
   };
   return (
     <>
-      <div
-        id='experience'
-        className='wrap_experience animate__animated animate__zoomIn'
-      >
+      <div className='wrap_experience animate__animated animate__zoomIn'>
         <div className='container'>
           <SectionTitle title='EXPERIENCE' icon={layers} />
           <div className='wrap_time_exp'>
@@ -55,14 +52,11 @@ const Experience = () => {
                   <p className='content'>{data.content}</p>
                   <button
                     className={`data-icon ${textColor}`}
-                    onClick={handlePopup}
+                    onClick={() => handleModal(true)}
                   >
                     {data.icon}
                   </button>
-                  <Popup
-                    trigger={buttonPopup}
-                    setTrigger={setButtonPopup}
-                  ></Popup>
+                  {buttonModal && <ModalExperience clsModal={setButtonModal} />}
                 </div>
               ))}
             </div>

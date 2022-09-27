@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './card.scss';
+import './Card.scss';
 import profile from '../../../../assets/images/profile.png';
 import background from '../../../../assets/images/background.jpg';
 import { cardData } from '../../../../utils/Mockdata';

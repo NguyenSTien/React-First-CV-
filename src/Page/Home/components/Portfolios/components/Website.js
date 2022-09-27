@@ -1,8 +1,8 @@
 import React from 'react';
 import { websiteData } from '../../../../../utils/Mockdata';
-import '../portfolios.scss';
+import '../Portfolios.scss';
 import { useState } from 'react';
-import Popup from './popup.js';
+import Popup from './Popup.js';
 
 const Website = () => {
   const [buttonPopup, setButtonPopup] = useState('');

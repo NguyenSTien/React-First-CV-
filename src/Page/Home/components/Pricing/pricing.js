@@ -1,9 +1,9 @@
 import React from 'react';
-import './pricing.scss';
+import './Pricing.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import lightning from '../../../../assets/images/lightning.png';
 import { pricingData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title/title';
+import SectionTitle from '../Title/Title';
 
 const Pricing = () => {
   const { color } = useColorContext();

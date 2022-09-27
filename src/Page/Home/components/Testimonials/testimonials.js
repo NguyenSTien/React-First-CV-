@@ -4,8 +4,8 @@ import { useColorContext } from '../../../../contexts/ColorContext';
 import { tesData } from '../../../../utils/Mockdata';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { animationData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title/title';
-import './testimonials.scss';
+import SectionTitle from '../Title/Title';
+import './Testimonials.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 

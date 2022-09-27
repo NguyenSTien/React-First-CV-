@@ -1,4 +1,4 @@
-import '../contact.scss';
+import '../Contact.scss';
 
 function ContactItem({ active, name, inputType, onChange }) {
   return (

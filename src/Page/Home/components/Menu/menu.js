@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import John from '../../../../assets/images/john.png';
 import { menuData } from '../../../../utils/Mockdata';
 import { useState } from 'react';
-import './menu.scss';
+import './Menu.scss';
 
 const Menu = () => {
   const { color, lightColor } = useColorContext();

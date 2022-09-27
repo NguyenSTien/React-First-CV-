@@ -1,16 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
-import SectionTitle from '../Title/title';
+import SectionTitle from '../Title/Title';
 import envelope from '../../../../assets/images/envelope.png';
-import ContactItem from './ContactItem/contactItem';
-import Map from '../Maps/maps';
+import ContactItem from './ContactItem/ContactItem';
+import Map from '../Maps/Maps';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './contact.scss';
+import './Contact.scss';
 
-export default function contact() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function Contact() {
   const { color, textColor } = useColorContext();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [input, setInput] = useState({
     name: '',
     subject: '',
@@ -58,7 +56,7 @@ export default function contact() {
               value={setInput}
               inputType='textarea'
             />
-            <button type='button' className={`${'button_click'} ${color}`}>
+            <button type='button' className={`button_click ${color}`}>
               SEND
             </button>
           </div>
@@ -66,10 +64,7 @@ export default function contact() {
         </div>
         <p className='text_footer'>
           © Material CV. All right reserved by
-          <span className={`${'text_footer-blue'} ${textColor}`}>
-            {' '}
-            Trimatrixlab
-          </span>
+          <span className={`text_footer-blue ${textColor}`}> Trimatrixlab</span>
         </p>
       </div>
     </section>

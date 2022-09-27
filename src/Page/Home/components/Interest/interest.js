@@ -1,9 +1,9 @@
 import React from 'react';
-import './interest.scss';
+import './Interest.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import heart from '../../../../assets/images/heart.png';
 import { interestData } from '../../../../utils/Mockdata';
-import SectionTitle from '../Title/title';
+import SectionTitle from '../Title/Title';
 
 const Interest = () => {
   const { color } = useColorContext();

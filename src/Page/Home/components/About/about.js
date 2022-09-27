@@ -1,6 +1,6 @@
 import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import './about.scss';
+import './About.scss';
 
 const About = () => {
   const { color } = useColorContext();

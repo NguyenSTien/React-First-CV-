@@ -1,10 +1,10 @@
 import React from 'react';
-import './loading.scss';
+import './Loading.scss';
 
 const Loading = () => {
   return (
-    <div className={`wrap_load ${'animate__animated animate__fadeOut'}`}>
-      <div className={`main_load ${'animate__animated animate__bounceInDown'}`}>
+    <div className={`wrap_load animate__animated animate__fadeOut`}>
+      <div className={`main_load animate__animated animate__bounceInDown`}>
         <div className='box'>
           <div className='box_inner'></div>
         </div>
