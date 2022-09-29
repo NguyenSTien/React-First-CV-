@@ -4,7 +4,7 @@ import safe from '../../../../assets/images/safe.png';
 import Dribble from './components/Dribble';
 import Logo from './components/Logo';
 import Website from './components/Website';
-import * as mdb from 'mdb-ui-kit'; // lib
+// import * as mdb from 'mdb-ui-kit'; // lib
 import './Portfolios.scss';
 
 const Portfolios = () => {
