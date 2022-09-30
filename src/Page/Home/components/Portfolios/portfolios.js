@@ -53,11 +53,13 @@ const Portfolios = () => {
   }
   return (
     <>
-      <div className='wrap_portfolios animate__animated animate__zoomIn'>
+      <div className='wrap_portfolios'>
         <div className='container'>
-          <SectionTitle title='PORTFOLIOS' icon={safe} />
-          <div className='portfolios'>
-            <div className='button_all'>
+          <section className='section'>
+            <SectionTitle title='PORTFOLIOS' icon={safe} />
+          </section>
+          <section className='section portfolios'>
+            <section className='section button_all'>
               <button
                 data-mdb-ripple-color='#696666'
                 className={`btn btn-primary btn-lg ${
@@ -96,7 +98,7 @@ const Portfolios = () => {
               >
                 WEBSITES
               </button>
-            </div>
+            </section>
             <div
               className={`slider_port fade ${
                 text === 'all' || text === '' ? 'block' : ''
@@ -133,7 +135,7 @@ const Portfolios = () => {
             >
               <Website />
             </div>
-          </div>
+          </section>
           <div
             className={
               text === 'all' ? 'extra_portfolios-active' : 'extra_portfolios'

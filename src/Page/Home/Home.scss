@@ -1,0 +1,20 @@
+@import '../../index.scss';
+
+.move_up {
+  visibility: visible;
+  animation-name: moveUp;
+  animation-duration: 0.5s;
+  scroll-behavior: smooth;
+  transition: 0.5s ease 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: scale(0.75) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1 !important;
+  }
+}

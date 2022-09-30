@@ -23,10 +23,12 @@ export default function Contact() {
     });
   };
   return (
-    <section id='contact' className='contact animate__animated animate__zoomIn'>
+    <section>
       <div className='container'>
-        <SectionTitle title='CONTACT' icon={envelope} />
-        <div className='wrap_contact_all'>
+        <section className='section'>
+          <SectionTitle title='CONTACT' icon={envelope} />
+        </section>
+        <section className='section wrap_contact_all'>
           <div className='wrap_contact'>
             <ContactItem
               active={input.name ? false : true}
@@ -61,7 +63,7 @@ export default function Contact() {
             </button>
           </div>
           <Map />
-        </div>
+        </section>
         <p className='text_footer'>
           © Material CV. All right reserved by
           <span className={`text_footer-blue ${textColor}`}> Trimatrixlab</span>

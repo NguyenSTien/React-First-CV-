@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from './components/Card/Card.js';
 import About from './components/About/About.js';
 import Education from './components/education/Education.js';
@@ -14,8 +14,30 @@ import Portfolios from './components/Portfolios/Portfolios.js';
 import ButtonScrollTop from './components/ButtonScrollTop/ButtonScrollTop.js';
 import Loading from './components/Loading/Loading.js';
 import PickColor from './components/PickColor/PickColor.js';
+import './Home.scss';
 
 const Home = () => {
+  useEffect(() => {
+    let observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('section')) {
+              entry.target.classList.add('move_up');
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: '0px 0px -10px 0px',
+      }
+    );
+    document.querySelectorAll('section').forEach((section) => {
+      observer.observe(section);
+    });
+  });
+
   return (
     <>
       <Loading />

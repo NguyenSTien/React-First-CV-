@@ -17,23 +17,25 @@ const Education = () => {
     <>
       <div className='wrap__education'>
         <div className='container'>
-          <SectionTitle title='EDUCATION' icon={education} />
+          <section className='section'>
+            <SectionTitle title='EDUCATION' icon={education} />
+          </section>
           <div className='wrap_time_education'>
             <div className='time__education'>
               {educationData.map((data, index) => (
-                <div
+                <section
                   key={index}
                   className={`${
                     index % 2 === 0
-                      ? 'name__education animate__animated animate__zoomIn'
-                      : 'name__education_right animate__animated animate__zoomIn'
+                      ? 'section name__education  '
+                      : 'section name__education_right '
                   } ${border}`}
                 >
-                  <div
+                  <section
                     className={`${
                       index % 2 === 0
-                        ? 'circle_education animate__animated animate__zoomIn'
-                        : 'circle_education-right animate__animated animate__zoomIn'
+                        ? 'section circle_education '
+                        : 'section circle_education-right '
                     } ${color}`}
                   >
                     <p className='circle_education_text'>{data.keyword}</p>
@@ -42,7 +44,7 @@ const Education = () => {
                         index % 2 === 0 ? 'line_left' : 'line_right'
                       } ${color}`}
                     ></div>
-                  </div>
+                  </section>
                   <h3 className='text_title'>{data.title}</h3>
                   <h4 className='text_subTitle'>
                     {data.subTitle} <br />
@@ -56,7 +58,7 @@ const Education = () => {
                     {data.icon}
                   </button>
                   {buttonModal && <ModalEducation clsModal={setButtonModal} />}
-                </div>
+                </section>
               ))}
             </div>
             <div className={`timeline ${color}`}></div>

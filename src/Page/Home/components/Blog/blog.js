@@ -9,10 +9,12 @@ const Blog = () => {
   const { textColor } = useColorContext();
   return (
     <>
-      <div id='blog' className='wrap_blog animate__animated animate__zoomIn'>
+      <div className='wrap_blog'>
         <div className='container'>
-          <SectionTitle title='BLOG' icon={post} />
-          <div className='blog'>
+          <section className='section'>
+            <SectionTitle title='BLOG' icon={post} />
+          </section>
+          <section className='section blog'>
             {blogData.map((data, index) => (
               <div
                 className={
@@ -55,7 +57,7 @@ const Blog = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </section>
         </div>
       </div>
     </>

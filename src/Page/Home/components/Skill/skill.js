@@ -12,8 +12,10 @@ const Skill = () => {
     <>
       <div className='skill animate__animated animate__zoomIn'>
         <div className='container'>
-          <SectionTitle title='SKILL' icon={skill} />
-          <div className={`wrap_skill ${color}`}>
+          <section className='section'>
+            <SectionTitle title='SKILL' icon={skill} />
+          </section>
+          <section className={`section wrap_skill ${color}`}>
             <div className='wrap_soft'>
               {skillData.map((data, index) => {
                 return (
@@ -21,7 +23,7 @@ const Skill = () => {
                     <div className='professional_text'>
                       <p className='prof_head'>{data.title}</p>
                       {data.content.map((data, index) => (
-                        <div key={index} className='prof_text'>
+                        <section key={index} className='section prof_text'>
                           <p className='prof_text_key'>{data.skill}</p>
                           <p className='prof_text_cont'>{data?.percent}</p>
                           <div
@@ -29,14 +31,14 @@ const Skill = () => {
                             style={{ width: `${data.percent}%` }}
                           ></div>
                           <div className={`line_percent ${color}`}></div>
-                        </div>
+                        </section>
                       ))}
                     </div>
                   </div>
                 );
               })}
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </>

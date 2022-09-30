@@ -7,6 +7,10 @@ html {
 .wrap_blog {
   font-family: 'muli';
   color: $black;
+  @include md {
+    margin: 0;
+  }
+
   .blog {
     @extend .shadow;
     @include md {
@@ -70,6 +74,10 @@ html {
       .blog_content {
         background-color: white;
         padding: 70px 40px;
+
+        @include md {
+          padding: 40px 10px;
+        }
 
         &_title {
           display: flex;
@@ -136,6 +144,10 @@ html {
   font-family: 'raleway';
   font-weight: bold;
   font-size: 20px;
+
+  @include md {
+    margin: 20px 10px;
+  }
 }
 .blog_main_content {
   margin: 10px 10px;

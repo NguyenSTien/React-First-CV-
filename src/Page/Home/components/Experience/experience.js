@@ -17,32 +17,36 @@ const Experience = () => {
     <>
       <div className='wrap_experience animate__animated animate__zoomIn'>
         <div className='container'>
-          <SectionTitle title='EXPERIENCE' icon={layers} />
+          <section className='section'>
+            <SectionTitle title='EXPERIENCE' icon={layers} />
+          </section>
           <div className='wrap_time_exp'>
-            <div className='time__exp'>
+            <section className='section time__exp'>
               {experienceData.map((data, index) => (
-                <div
+                <section
                   key={index}
                   className={`${
                     index % 2 === 0
-                      ? 'name__exp animate__animated animate__zoomIn'
-                      : 'name__exp_right animate__animated animate__zoomIn'
+                      ? 'section name__exp '
+                      : 'section name__exp_right'
                   } ${border}`}
                 >
-                  <div
+                  <section
                     className={`${
                       index % 2 === 0
-                        ? 'circle_exp animate__animated animate__zoomIn'
-                        : 'circle_exp-right animate__animated animate__zoomIn'
+                        ? 'section circle_exp'
+                        : 'section circle_exp-right'
                     } ${color}`}
                   >
                     <p className='circle_exp_text'>{data.keyword}</p>
-                    <div
+                    <section
                       className={`${
-                        index % 2 === 0 ? 'line_left' : 'line_right'
+                        index % 2 === 0
+                          ? 'section line_left'
+                          : 'section line_right'
                       } ${color}`}
-                    ></div>
-                  </div>
+                    ></section>
+                  </section>
                   <h3 className='text_title'>{data.title}</h3>
                   <h4 className='text_subTitle'>
                     {data.subTitle}
@@ -57,9 +61,9 @@ const Experience = () => {
                     {data.icon}
                   </button>
                   {buttonModal && <ModalExperience clsModal={setButtonModal} />}
-                </div>
+                </section>
               ))}
-            </div>
+            </section>
           </div>
           <div className={`time ${color}`}></div>
         </div>

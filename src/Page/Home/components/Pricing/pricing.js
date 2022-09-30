@@ -9,15 +9,14 @@ const Pricing = () => {
   const { color } = useColorContext();
   return (
     <>
-      <div
-        id='pricing'
-        className='wrap_pricing animate__animated animate__zoomIn'
-      >
+      <div className='wrap_pricing '>
         <div className='container'>
-          <SectionTitle title='PRICING' icon={lightning} />
+          <section className='section'>
+            <SectionTitle title='PRICING' icon={lightning} />
+          </section>
           <div className='pricing'>
             {pricingData.map((data, index) => (
-              <div key={index} className='pricing_base'>
+              <section key={index} className='section pricing_base'>
                 <div className={`pricing_head ${color}`}>
                   <div className='pricing_head_dis'>
                     <p className='icon_dola'>$</p>
@@ -36,7 +35,7 @@ const Pricing = () => {
                 <div className='pricing_pur'>
                   <p className={`pricing_pur-text ${color}`}>{data.Purchase}</p>
                 </div>
-              </div>
+              </section>
             ))}
           </div>
         </div>

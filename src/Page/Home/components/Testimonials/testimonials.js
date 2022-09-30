@@ -17,13 +17,12 @@ const Testimonials = () => {
   const { color } = useColorContext();
   return (
     <>
-      <div
-        id='testimonials'
-        className='wrap_tes animate__animated animate__zoomIn'
-      >
+      <div className='wrap_tes'>
         <div className='container'>
-          <SectionTitle title='TESTIMONIALS' icon={hand} />
-          <div className={`tes ${color}`}>
+          <section className='section'>
+            <SectionTitle title='TESTIMONIALS' icon={hand} />
+          </section>
+          <section className={`section tes ${color}`}>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}
@@ -47,7 +46,7 @@ const Testimonials = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </section>
           <div className='animation'>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}

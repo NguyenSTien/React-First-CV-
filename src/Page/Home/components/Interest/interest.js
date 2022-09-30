@@ -9,12 +9,12 @@ const Interest = () => {
   const { color } = useColorContext();
   return (
     <>
-      <div className='wrap_interest animate__animated animate__zoomIn'>
+      <div className='wrap_interest'>
         <div className='container'>
-          <div id='interest'>
+          <section className='section' id='interest'>
             <SectionTitle title='INTEREST' icon={heart} />
-          </div>
-          <div className='interest'>
+          </section>
+          <section className='section interest'>
             <p className='interest_text'>
               First of all I love music, country music is my favorite. Love
               watching football, movies and playing games with my buddies. I
@@ -24,16 +24,18 @@ const Interest = () => {
             </p>
             <div className='interest_icon'>
               {interestData.map((data, index) => (
-                <div
+                <section
                   key={index}
-                  className={`${index % 2 === 0 ? 'music' : 'gaming'} ${color}`}
+                  className={`${
+                    index % 2 === 0 ? 'section music' : 'section gaming'
+                  } ${color}`}
                 >
                   <div className='interest_icon-icon'>{data.icon}</div>
                   <span className='interest_icon-text'>{data.content}</span>
-                </div>
+                </section>
               ))}
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </>
