@@ -30,7 +30,7 @@ function ModalEducation({ clsModal }) {
               the while, I went to practice.
             </p>
             <button className='cls_btn' onClick={() => clsModal(false)}>
-              x
+              <i className='fa fa-close' />
             </button>
           </div>
         </div>
