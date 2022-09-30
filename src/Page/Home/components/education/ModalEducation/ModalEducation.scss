@@ -6,8 +6,8 @@
   left: 0%;
   right: 0%;
   width: 100%;
-  background-color: black;
-  color: $white;
+  background-color: white;
+  color: $grey;
   font-family: 'raleway';
   padding: 30px;
 
@@ -29,6 +29,10 @@
     right: 10px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: $grey;
+
+    &:hover {
+      color: $sky;
+    }
   }
 }
