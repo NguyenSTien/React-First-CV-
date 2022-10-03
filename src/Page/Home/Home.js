@@ -4,7 +4,7 @@ import About from './components/About/About';
 import Education from './components/education/Education';
 import Skill from './components/Skill/Skill';
 import Experience from './components/Experience/Experience';
-import Interest from './components/Interest/interest';
+import Interest from './components/Interest/Interest';
 import Testimonials from './components/Testimonials/Testimonials';
 import Pricing from './components/Pricing/Pricing';
 import Blog from './components/Blog/Blog';

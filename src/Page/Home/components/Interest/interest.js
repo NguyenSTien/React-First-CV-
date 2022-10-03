@@ -1,5 +1,5 @@
 import React from 'react';
-import './interest.scss';
+import './Interest.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import heart from '../../../../assets/images/heart.png';
 import { interestData } from '../../../../utils/Mockdata';
