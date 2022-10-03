@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
-import Card from './components/Card/Card.js';
-import About from './components/About/About.js';
-import Education from './components/education/Education.js';
-import Skill from './components/Skill/Skill.js';
-import Experience from './components/Experience/Experience.js';
-import Interest from './components/Interest/Interest.js';
-import Testimonials from './components/Testimonials/Testimonials.js';
-import Pricing from './components/Pricing/Pricing.js';
-import Blog from './components/Blog/Blog.js';
-import Contact from './components/Contact/Contact.js';
-import Menu from './components/Menu/Menu.js';
-import Portfolios from './components/Portfolios/Portfolios.js';
-import ButtonScrollTop from './components/ButtonScrollTop/ButtonScrollTop.js';
-import Loading from './components/Loading/Loading.js';
-import PickColor from './components/PickColor/PickColor.js';
+import Card from './components/Card/Card';
+import About from './components/About/About';
+import Education from './components/education/Education';
+import Skill from './components/Skill/Skill';
+import Experience from './components/Experience/Experience';
+import Interest from './components/Interest/Interest';
+import Testimonials from './components/Testimonials/Testimonials';
+import Pricing from './components/Pricing/Pricing';
+import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
+import Menu from './components/Menu/Menu';
+import Portfolios from './components/Portfolios/Portfolios';
+import ButtonScrollTop from './components/ButtonScrollTop/ButtonScrollTop';
+import PickColor from './components/PickColor/PickColor';
 import './Home.scss';
+import Loading from './components/Loading/Loading';
 
 const Home = () => {
   useEffect(() => {
