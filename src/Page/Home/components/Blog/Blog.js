@@ -27,9 +27,9 @@ const Blog = () => {
                   </figure>
                   <div className='blog_img_content'>
                     <div className='blog_img_text'>
-                      <p className='blog_img_textC'>{data.ppImg}</p>
+                      <p className='blog_img_textC'>{data.peopleImg}</p>
                       <p className='blog_img_textC'>{data.timeImg}</p>
-                      <p className='blog_img_textC'>{data.Commentimg}</p>
+                      <p className='blog_img_textC'>{data.commentImg}</p>
                     </div>
                   </div>
                 </div>

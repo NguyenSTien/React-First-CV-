@@ -1,6 +1,6 @@
-import clientone from '../assets/images/client-1.png';
-import clienttwo from '../assets/images/client-2.png';
-import clientthere from '../assets/images/client-3.png';
+import clientOne from '../assets/images/client-1.png';
+import clientTwo from '../assets/images/client-2.png';
+import clientThree from '../assets/images/client-3.png';
 import logo1 from '../assets/images/logo1.png';
 import logo2 from '../assets/images/logo2.png';
 import logo4 from '../assets/images/logo4.png';
@@ -245,20 +245,20 @@ export const interestData = [
 ];
 export const tesData = [
   {
-    img: clientone,
+    img: clientOne,
     content:
       'I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.I work with John on several web development projects and I find hom to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.',
 
     footer: 'Mike, CEO, IT World',
   },
   {
-    img: clienttwo,
+    img: clientTwo,
     content:
       'I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer.',
     footer: 'Mike, CEO, IT World',
   },
   {
-    img: clientthere,
+    img: clientThree,
     content:
       'I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer.',
     footer: 'Mike, CEO, IT World',
@@ -294,40 +294,40 @@ export const pricingData = [
   {
     title: '50',
     subTitle: 'STARTER',
-    Banwidth: '2 GB Bandwidth',
-    Disk: '5 GB Disk Space',
-    Database: '5 Databases',
-    Domain: 'Free Domain',
-    Subdomain: '5 Subdomain',
-    Purchase: 'Purchase',
+    banWidth: '2 GB Bandwidth',
+    disk: '5 GB Disk Space',
+    database: '5 Databases',
+    domain: 'Free Domain',
+    subdomain: '5 Subdomain',
+    purchase: 'Purchase',
   },
   {
     title: '200',
     subTitle: 'ULTIMATE',
-    Banwidth: '∞ Bandwidth',
-    Disk: '∞ Disk Space',
-    Database: '∞ Databases',
-    Domain: 'Free Domain',
-    Subdomain: '∞ Subdomain',
-    Purchase: 'Purchase',
+    banWidth: '∞ Bandwidth',
+    disk: '∞ Disk Space',
+    database: '∞ Databases',
+    domain: 'Free Domain',
+    subdomain: '∞ Subdomain',
+    purchase: 'Purchase',
   },
   {
     title: '100',
     subTitle: 'BUSINESS',
-    Banwidth: '5 GB Bandwidth',
-    Disk: '25 GB Disk Space',
-    Database: '10 Databases',
-    Domain: 'Free Domain',
-    Subdomain: '15 Subdomain',
-    Purchase: 'Purchase',
+    banWidth: '5 GB Bandwidth',
+    disk: '25 GB Disk Space',
+    database: '10 Databases',
+    domain: 'Free Domain',
+    subdomain: '15 Subdomain',
+    purchase: 'Purchase',
   },
 ];
 export const blogData = [
   {
     img: blog2,
-    ppImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
+    peopleImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
     timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
-    Commentimg: <i class='fa-regular fa-comments'>168</i>,
+    commentImg: <i class='fa-regular fa-comments'>168</i>,
     titleOne: 'Fontend',
     titleTwo: 'Design',
     titleThere: 'Material',
@@ -337,9 +337,9 @@ export const blogData = [
   },
   {
     img: blog1,
-    ppImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
+    peopleImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
     timeImg: <i class='fa-regular fa-timer'>August 7, 2020</i>,
-    Commentimg: <i class='fa-regular fa-comments'>168</i>,
+    commentImg: <i class='fa-regular fa-comments'>168</i>,
     titleOne: 'Backend',
     titleTwo: 'Dev',
     titleThere: 'Shortcuts',
@@ -349,9 +349,9 @@ export const blogData = [
   },
   {
     img: blog3,
-    ppImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
+    peopleImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
     timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
-    Commentimg: <i class='fa-regular fa-comments'>168</i>,
+    commentImg: <i class='fa-regular fa-comments'>168</i>,
     titleOne: 'Fontend',
     titleTwo: 'Specs',
     titleThere: ' UI',
@@ -547,7 +547,6 @@ export const educationClickData = [
 
 export const experienceClickData = [
   {
-    className2: '1',
     className: 'animate__animated animate__fadeInDownBig',
     title: 'EXPERIENCE AT Z',
     time: 'Jan 2014 - Mar 2015',
@@ -555,7 +554,6 @@ export const experienceClickData = [
       'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
   },
   {
-    className2: '2',
     className: 'animate__animated animate__fadeInDownBig',
     title: 'EXPERIENCE AT M',
     time: 'Jan 2014 - Mar 2015',
@@ -568,7 +566,6 @@ export const portfolioPopupData = [
   {
     img: big1,
     className: 'animate__animated animate__flipInY ',
-    className2: 'animate__animated animate__flipOutY',
   },
   {
     img: big2,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import './Card.scss';
 import profile from '../../../../assets/images/profile.png';

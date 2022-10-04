@@ -162,9 +162,9 @@
 @mixin font-face($fontFamilyName, $fontName) {
   @font-face {
     font-family: #{$fontFamilyName};
-    src: url('../Fonts/#{$fontName}.ttf') format('truetype'),
-      url('../Fonts/#{$fontName}.woff') format('woff'),
-      url('../Fonts/#{$fontName}.woff2') format('woff2');
+    src: url('../fonts/#{$fontName}.ttf') format('truetype'),
+      url('../fonts/#{$fontName}.woff') format('woff'),
+      url('../fonts/#{$fontName}.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }

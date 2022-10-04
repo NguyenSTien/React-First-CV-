@@ -1,5 +1,22 @@
 @import './index.scss';
 
-@include font-face(raleway, Raleway);
-@include font-face(ralewayBold, Raleway-Bold);
-@include font-face(ralewayLight, Raleway-Light);
+// @include font-face(raleway, Raleway);
+// @include font-face(ralewayBold, Raleway-Bold);
+// @include font-face(ralewayLight, Raleway-Light);
+@font-face {
+  font-family: 'raleway';
+  src: url('./assets/fonts/Raleway.ttf') format('truetype'),
+    url('./assets/fonts/Raleway.woff') format('woff'),
+    url('./assets/fonts/Raleway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'muli';
+  src: url('./assets/fonts/Mulish-Medium.ttf') format('truetype'),
+    url('./assets/fonts/Mulish-Medium.woff') format('woff'),
+    url('./assets/fonts/Mulish-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

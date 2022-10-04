@@ -26,14 +26,14 @@ const Pricing = () => {
                 </div>
 
                 <div className='pricing_wrap_text'>
-                  <p className='pricing_text'>{data.Banwidth}</p>
-                  <p className='pricing_text'>{data.Disk}</p>
-                  <p className='pricing_text'>{data.Database}</p>
-                  <p className='pricing_text'>{data.Domain}</p>
-                  <p className='pricing_text'>{data.Subdomain}</p>
+                  <p className='pricing_text'>{data.banWidth}</p>
+                  <p className='pricing_text'>{data.disk}</p>
+                  <p className='pricing_text'>{data.database}</p>
+                  <p className='pricing_text'>{data.domain}</p>
+                  <p className='pricing_text'>{data.subdomain}</p>
                 </div>
                 <div className='pricing_pur'>
-                  <p className={`pricing_pur-text ${color}`}>{data.Purchase}</p>
+                  <p className={`pricing_pur-text ${color}`}>{data.purchase}</p>
                 </div>
               </section>
             ))}

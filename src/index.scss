@@ -1,5 +1,5 @@
 // tat ca import bien deu import vao day
-@import './assets/scss/mixin.scss';
+@import './assets/scss/Mixin.scss';
 @import './assets/scss/vars.scss';
 
 .blue {
@@ -91,8 +91,8 @@
 }
 
 .lOr {
-  background-color: $orangelight !important;
-  border-left: 5px solid $orangelight !important ;
+  background-color: $orangeLight !important;
+  border-left: 5px solid $orangeLight !important ;
 }
 .container {
   width: 100%;
@@ -142,17 +142,17 @@ video {
 }
 @font-face {
   font-family: 'raleway';
-  src: url('./assets/Fonts/Raleway.ttf') format('truetype'),
-    url('./assets/Fonts/Raleway.woff') format('woff'),
-    url('./assets/Fonts/Raleway.woff2') format('woff2');
+  src: url('./assets/fonts/Raleway.ttf') format('truetype'),
+    url('./assets/fonts/Raleway.woff') format('woff'),
+    url('./assets/fonts/Raleway.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'muli';
-  src: url('./assets/Fonts/Mulish-Medium.ttf') format('truetype'),
-    url('./assets/Fonts/Mulish-Medium.woff') format('woff'),
-    url('./assets/Fonts/Mulish-Medium.woff2') format('woff2');
+  src: url('./assets/fonts/Mulish-Medium.ttf') format('truetype'),
+    url('./assets/fonts/Mulish-Medium.woff') format('woff'),
+    url('./assets/fonts/Mulish-Medium.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

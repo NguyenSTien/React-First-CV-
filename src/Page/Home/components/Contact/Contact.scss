@@ -21,56 +21,51 @@
       margin-bottom: 20px;
     }
 
-    .input_click {
+    .wrap_label {
       position: relative;
-      width: auto;
-      &.active {
-        .label {
-          top: -10px;
-          font-size: 16px;
-          font-weight: 400;
-        }
+      .label {
+        font-size: 15px;
+        position: absolute;
+        top: -10px;
+        color: $black;
+        opacity: 0.8;
+        transition: 1s linear;
       }
 
-      &:focus-within {
-        .label {
-          transition: 0.2s;
-          top: -25px;
-          font-size: 12px;
-          color: $sky;
-        }
-
-        .input {
-          border-bottom: 1px solid $sky;
-        }
-      }
-    }
-
-    .label {
-      position: absolute;
-      top: 0px;
-      color: $black;
-      opacity: 0.8;
-    }
-
-    .input {
-      border: 1px solid transparent;
-      border-bottom: 1px solid $grey;
-      outline: none;
-      width: 100%;
-      margin-bottom: 40px;
-
-      &_mess {
-        height: 60px;
+      .input {
         border: 1px solid transparent;
         border-bottom: 1px solid $grey;
         outline: none;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        background-color: transparent;
+
+        &_mess {
+          height: 60px;
+          border: 1px solid transparent;
+          border-bottom: 1px solid $grey;
+          outline: none;
+          width: 100%;
+          margin-bottom: 20px;
+        }
       }
 
       .textarea {
-        height: 50px;
+        height: 60px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $grey;
+        margin-bottom: 10px;
+        outline: none;
+      }
+
+      &.active {
+        .label {
+          font-size: 13px;
+          top: -25px;
+          color: $sky;
+          transition: 1s linear;
+        }
       }
     }
 
