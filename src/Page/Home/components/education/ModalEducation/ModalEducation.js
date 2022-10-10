@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ImgModalEducation from '../../../../../assets/images/education1.jpg';
 import './ModalEducation.scss';
 
 function ModalEducation({ clsModal }) {
@@ -7,12 +8,12 @@ function ModalEducation({ clsModal }) {
     <div>
       <div className='wrap_modal'>
         <div className='container'>
-          <div>
+          <div className='content_modal_education'>
             <h4 className='modal_title'>GRADUATION AT ASHTON UNI</h4>
             <p className='modal_time'>Jan 2014 - Mar 2015</p>
-            {/* <figure className='modal_img'>
-              <img src={data.img}></img>
-            </figure> */}
+            <figure>
+              <img src={ImgModalEducation} alt='imgModal'></img>
+            </figure>
             <p className='modal_content'>
               I have learned a great many things from participating in varsity
               football. It has changed my entire outlook on and attitude toward
