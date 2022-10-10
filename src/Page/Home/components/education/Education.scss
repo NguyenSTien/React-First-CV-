@@ -1,5 +1,6 @@
 @import '../../../../index.scss';
 .wrap__education {
+  position: relative;
   height: 1050px;
   margin: 0 auto;
   max-width: 970px;
@@ -106,6 +107,7 @@
     @extend .shadow;
     padding: 20px;
     margin-bottom: 60px;
+    background-color: white;
 
     @include desktop__big {
       width: 43%;

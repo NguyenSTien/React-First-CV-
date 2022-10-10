@@ -1,8 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './ModalEducation.scss';
 
 function ModalEducation({ clsModal }) {
-  return (
+  return ReactDOM.createPortal(
     <div>
       <div className='wrap_modal'>
         <div className='container'>
@@ -35,7 +36,8 @@ function ModalEducation({ clsModal }) {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.querySelector('#modal')
   );
 }
 

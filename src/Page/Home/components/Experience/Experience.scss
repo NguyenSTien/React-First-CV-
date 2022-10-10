@@ -112,6 +112,7 @@
     @extend .shadow;
     padding: 20px;
     margin-bottom: 60px;
+    background-color: white;
 
     @include desktop__big {
       width: 43%;
