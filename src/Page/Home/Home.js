@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Card from './components/Card/Card';
 import About from './components/About/About';
-import Education from './components/Education/Education';
+import Education from './components/education/Education';
 import Skill from './components/Skill/Skill';
 import Experience from './components/Experience/Experience';
 import Interest from './components/Interest/Interest';
