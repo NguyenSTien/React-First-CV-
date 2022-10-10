@@ -2,7 +2,8 @@
 
 .wrap_modal {
   position: absolute;
-  top: 0px;
+  z-index: 100;
+  top: 126%;
   left: 0%;
   right: 0%;
   width: 100%;
