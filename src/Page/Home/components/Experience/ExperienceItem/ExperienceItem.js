@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import ModalEducation from '../ModalEducation/ModalEducation';
 import { useColorContext } from '../../../../../contexts/ColorContext';
-import '../Education.scss';
+import ModalExperience from '../ModalExperience/ModalExperience';
 
-const EducationItem = ({ data, index }) => {
-  const { color, textColor, border } = useColorContext();
+const ExperienceItem = ({ data, index }) => {
+  const { color, border, textColor } = useColorContext();
   const [buttonModal, setButtonModal] = useState(false);
   const handleModal = () => {
     setButtonModal(true);
@@ -13,26 +12,25 @@ const EducationItem = ({ data, index }) => {
     <section
       key={index}
       className={`${
-        index % 2 === 0
-          ? 'section name__education  '
-          : 'section name__education_right '
+        index % 2 === 0 ? 'section name__exp ' : 'section name__exp_right'
       } ${border}`}
     >
       <section
         className={`${
-          index % 2 === 0
-            ? 'section circle_education '
-            : 'section circle_education-right '
+          index % 2 === 0 ? 'section circle_exp' : 'section circle_exp-right'
         } ${color}`}
       >
-        <p className='circle_education_text'>{data.keyword}</p>
-        <div
-          className={`${index % 2 === 0 ? 'line_left' : 'line_right'} ${color}`}
-        ></div>
+        <p className='circle_exp_text'>{data.keyword}</p>
+        <section
+          className={`${
+            index % 2 === 0 ? 'section line_left' : 'section line_right'
+          } ${color}`}
+        ></section>
       </section>
       <h3 className='text_title'>{data.title}</h3>
       <h4 className='text_subTitle'>
-        {data.subTitle} <br />
+        {data.subTitle}
+        <br />
         {data.date}
       </h4>
       <p className='content'>{data.content}</p>
@@ -42,9 +40,9 @@ const EducationItem = ({ data, index }) => {
       >
         {data.icon}
       </button>
-      {buttonModal && <ModalEducation clsModal={setButtonModal} />}
+      {buttonModal && <ModalExperience clsModal={setButtonModal} />}
     </section>
   );
 };
 
-export default EducationItem;
+export default ExperienceItem;

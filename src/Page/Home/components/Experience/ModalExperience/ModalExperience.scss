@@ -1,38 +1,56 @@
 @import '../../../../../index.scss';
 
 .wrap_modal {
-  position: absolute;
-  top: -50%;
+  position: fixed;
+  top: 0%;
   left: 0%;
   right: 0%;
   width: 100%;
-  background-color: white;
+  background-color: rgb(0, 0, 0, 25%);
   color: $black;
   font-family: 'raleway';
   padding: 30px;
 
-  .modal_title {
-    font-size: 25px;
-  }
+  .content_modal_experience {
+    position: relative;
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
+    height: 300px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'raleway';
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    transition: 0.5s;
 
-  .modal_time {
-    font-size: 20px;
-  }
+    .modal_title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
 
-  .modal_content {
-    font-size: 15px;
-  }
+    .modal_time {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
 
-  .cls_btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    color: $grey;
+    .modal_content {
+      font-size: 15px;
+      text-align: justify;
+      font-family: 'muli';
+    }
 
-    &:hover {
-      color: $sky;
+    .cls_btn_experience {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+      color: $grey;
+
+      &:hover {
+        color: $sky;
+      }
     }
   }
 }

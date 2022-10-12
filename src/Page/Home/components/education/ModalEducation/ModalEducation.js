@@ -6,9 +6,9 @@ import './ModalEducation.scss';
 function ModalEducation({ clsModal }) {
   return ReactDOM.createPortal(
     <div>
-      <div className='wrap_modal'>
+      <div className='wrap_modal' onClick={() => clsModal(false)}>
         <div className='container'>
-          <div className='content_modal_education'>
+          <div className='content_modal_education animate__animated animate__fadeInDownBig'>
             <h4 className='modal_title'>GRADUATION AT ASHTON UNI</h4>
             <p className='modal_time'>Jan 2014 - Mar 2015</p>
             <figure>
