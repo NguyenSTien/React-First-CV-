@@ -24,7 +24,7 @@ const LogoItem = ({ data, index }) => {
         </p>
         <p className={`sub_hover ${data.className}`}>{data.subContentHover}</p>
       </button>
-      {buttonLogo && <ModalLogo clsLogo={setButtonLogo} />}
+      {buttonLogo && <ModalLogo indexValue={index} clsLogo={setButtonLogo} />}
     </div>
   );
 };

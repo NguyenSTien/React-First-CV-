@@ -1,6 +1,6 @@
 import React from 'react';
 import { logoData } from '../../../../../utils/Mockdata';
-import LogoItem from '../LogoItem/LogoItem';
+import LogoItem from '../LogoItem/LogoContent';
 import '../Portfolios.scss';
 import 'animate.css';
 

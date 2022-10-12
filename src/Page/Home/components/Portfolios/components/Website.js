@@ -1,22 +1,13 @@
 import React from 'react';
 import { websiteData } from '../../../../../utils/Mockdata';
 import '../Portfolios.scss';
-import { useState } from 'react';
-import Popup from './Popup.js';
 
 const Website = () => {
-  const [buttonPopup, setButtonPopup] = useState('');
-  const handlePopup = () => {
-    setButtonPopup(true);
-  };
   return (
     <div className='wrap_website'>
       {websiteData.map((data, index) => (
         <div key={index} className='website_portfolios'>
-          <button
-            className={`btn_port ${data.className}`}
-            onClick={handlePopup}
-          >
+          <button className={`btn_port ${data.className}`}>
             <figure className={`img_website ${data.className}`}>
               <img src={data.img} alt='lasdj'></img>
             </figure>
@@ -34,7 +25,6 @@ const Website = () => {
               {data.subContentHover2}
             </p>
           </button>
-          <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
         </div>
       ))}
     </div>
