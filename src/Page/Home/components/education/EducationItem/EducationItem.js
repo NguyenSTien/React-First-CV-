@@ -42,7 +42,9 @@ const EducationItem = ({ data, index }) => {
       >
         {data.icon}
       </button>
-      {buttonModal && <ModalEducation clsModal={setButtonModal} />}
+      {buttonModal && (
+        <ModalEducation indexValue={index} clsModal={setButtonModal} />
+      )}
     </section>
   );
 };

@@ -4,7 +4,7 @@ import '../LogoItem/LogoItem.scss';
 const ModalDribbleItem = ({ data, index, clsDribble }) => {
   return (
     <div
-      className='wrap_modalLogo_content animate__animated animate__flipInY'
+      className={`wrap_modalLogo_content ${data.classNameModal}`}
       key={index}
     >
       <figure className='img_modalLogo'>

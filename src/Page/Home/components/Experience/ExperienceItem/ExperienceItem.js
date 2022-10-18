@@ -40,7 +40,9 @@ const ExperienceItem = ({ data, index }) => {
       >
         {data.icon}
       </button>
-      {buttonModal && <ModalExperience clsModal={setButtonModal} />}
+      {buttonModal && (
+        <ModalExperience indexValue={index} clsModal={setButtonModal} />
+      )}
     </section>
   );
 };

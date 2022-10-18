@@ -420,6 +420,7 @@ export const menuData = [
 export const logoData = [
   {
     className: 'animate__animated animate__fadeInLeft ',
+    classNameModal: 'animate__animated animate__flipInY',
     img: big1,
     contentHover: 'LIGHTBOX',
     content: 'IMAGE',
@@ -427,6 +428,7 @@ export const logoData = [
   },
   {
     className: 'animate__animated animate__fadeInRight',
+    classNameModal: '',
     img: big6,
     icon: <i class='fa-solid fa-circle-play'></i>,
     contentHover: 'LIGHTBOX',
@@ -435,6 +437,7 @@ export const logoData = [
   },
   {
     className: 'animate__animated animate__fadeInRight',
+    classNameModal: 'animate__animated animate__fadeInLeft',
     img: big2,
     contentHover: 'LIGHTBOX',
     content: 'IMAGE',
@@ -444,6 +447,7 @@ export const logoData = [
 export const dribbleData = [
   {
     className: 'animate__animated animate__fadeInRight',
+    classNameModal: 'animate__animated animate__fadeInDownBig',
     img: big3,
     contentHover: 'LIGHTBOX',
     content: 'IMAGE',
@@ -451,6 +455,7 @@ export const dribbleData = [
   },
   {
     className: 'animate__animated animate__fadeInLeft ',
+    classNameModal: 'animate__animated animate__flipInY',
     img: big4,
     contentHover: 'LIGHTBOX',
     content: 'IMAGE',
@@ -459,6 +464,7 @@ export const dribbleData = [
   },
   {
     className: 'animate__animated animate__fadeInLeft ',
+    classNameModal: '',
     img: big5,
     contentHover: 'LIGHTBOX',
     content: 'IMAGE',
@@ -586,5 +592,49 @@ export const portfolioPopupData = [
   {
     img: big6,
     className: 'animate__animated animate__flipInY ',
+  },
+];
+
+export const modalEducationData = [
+  {
+    title: 'GRADUATION AT ASHTON UNI',
+    time: 'Jan 2014 - Mar 2015',
+    imgModal: education,
+    content:
+      "I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However, during the game, I noticed that I didn't run as hard as I could, nor did I try to evade my defender and get open. The fact of the matter is that I really did not want to be thrown the ball. I didn't want to be the one at fault if I dropped the ball and the play didn't succeed. I did not want the responsibility of helping the team because I was too afraid of making a mistake. That aspect of my character led the first years of my high school life. All the while, I went to practice.",
+  },
+  {},
+  {},
+  {},
+  {
+    title: 'EDUCATION AT Y',
+    time: 'Jan 2014 - Mar 2015',
+    imgModal: '',
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+  {
+    title: 'EDUCATION AT Z',
+    time: 'Jan 2014 - Mar 2015',
+    imgModal: education,
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+];
+
+export const experienceModalData = [
+  {
+    title: 'EXPERIENCE AT Z',
+    time: 'Jan 2014 - Mar 2015',
+    content:
+      ' I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+  },
+  {},
+  {},
+  {
+    title: 'EXPERIENCE AT M',
+    time: 'Jan 2014 - Mar 2015',
+    content:
+      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
   },
 ];
