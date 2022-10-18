@@ -32,7 +32,7 @@ export default function Contact() {
         .max(25, 'Your must be 25 character!')
         .required('Please fill out this field'),
       subject: Yup.string(),
-      email: Yup.string().required('Please fill out this field'),
+      email: Yup.string(),
       message: Yup.string(),
     }),
 
@@ -66,9 +66,9 @@ export default function Contact() {
                   onClick={() => handleInputClick('name')}
                   placeholder=''
                 />
-                {/* {formik.errors.name && formik.touched.name && (
+                {formik.errors.name && formik.touched.name && (
                   <p className='notice_error'>{formik.errors.name}</p>
-                )} */}
+                )}
               </div>
               <div
                 className={
