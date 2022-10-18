@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Education.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import education from '../../../../assets/images/book.png';

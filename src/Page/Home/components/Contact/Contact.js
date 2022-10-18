@@ -27,10 +27,13 @@ export default function Contact() {
   const formik = useFormik({
     initialValues: { name: '', subject: '', email: '', message: '' },
     validationSchema: Yup.object({
-      name: Yup.string().required('Requierd'),
-      subject: Yup.string().required('Requierd'),
-      email: Yup.string().required('Requierd'),
-      message: Yup.string().required('Requierd'),
+      name: Yup.string()
+        .min(1, ' Your must be 1 character!')
+        .max(25, 'Your must be 25 character!')
+        .required('Please fill out this field'),
+      subject: Yup.string(),
+      email: Yup.string().required('Please fill out this field'),
+      message: Yup.string(),
     }),
 
     onSubmit: (value) => {
@@ -56,12 +59,16 @@ export default function Contact() {
                 <label className='label'>Name</label>
                 <input
                   type='text'
-                  id='name'
+                  name='name'
                   className='input name'
                   value={formik.values.name}
                   onChange={formik.handleChange}
+                  onClick={() => handleInputClick('name')}
                   placeholder=''
                 />
+                {/* {formik.errors.name && formik.touched.name && (
+                  <p className='notice_error'>{formik.errors.name}</p>
+                )} */}
               </div>
               <div
                 className={
@@ -72,12 +79,15 @@ export default function Contact() {
                 <label className='label'>Subject</label>
                 <input
                   type='text'
-                  id='subject'
+                  name='subject'
                   className='input'
                   value={formik.values.subject}
                   onChange={formik.handleChange}
                   placeholder=''
                 />
+                {formik.errors.subject && formik.touched.subject && (
+                  <p>{formik.errors.subject}</p>
+                )}
               </div>
               <div
                 className={
@@ -87,13 +97,16 @@ export default function Contact() {
               >
                 <label className='label'>Email</label>
                 <input
-                  type='text'
-                  id='email'
+                  type='email'
+                  name='email'
                   className='input'
                   value={formik.values.email}
                   onChange={formik.handleChange}
                   placeholder=''
                 />
+                {formik.errors.email && formik.touched.email && (
+                  <p className='notice_error'>{formik.errors.email}</p>
+                )}
               </div>
               <div
                 className={
@@ -104,17 +117,23 @@ export default function Contact() {
                 <label className='label'>Message</label>
                 <input
                   type='text'
-                  id='message'
+                  name='message'
                   className='textarea'
                   value={formik.values.message}
                   onChange={formik.handleChange}
                   placeholder=''
                 />
+                {formik.errors.message && formik.touched.message && (
+                  <p>{formik.errors.message}</p>
+                )}
               </div>
+              <input
+                type='submit'
+                value='Send'
+                className={`button_click ${color}`}
+                onClick={() => handleInputClick('name')}
+              />
             </form>
-            <button type='button' className={`button_click ${color}`}>
-              SEND
-            </button>
           </div>
           <Map />
         </section>
