@@ -29,6 +29,10 @@
 .menu_all {
   @extend .shadow;
   position: relative;
+  @include md {
+    height: 700px;
+    overflow-y: auto;
+  }
 
   .menu_header {
     background-color: $green;
@@ -41,8 +45,11 @@
 
     .menu_option {
       background-color: $white;
-      padding: 30px 30px 130px 30px;
+      padding: 30px 30px 250px 30px;
       font-size: 13px;
+      @include desktop-md {
+        padding: 30px 30px 170px 30px;
+      }
 
       &_wrap {
         margin-bottom: 23px;

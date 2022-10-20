@@ -11,22 +11,29 @@
   &_content {
     position: relative;
     top: 50px;
-    margin: 0 auto;
+    margin: 0px auto;
+    vertical-align: middle;
     width: 650px;
     height: 650px;
     box-shadow: 0 0 8px rgb(0 0 0 / 60%);
 
-    .cls_logo {
-      position: absolute;
-      top: -30px;
-      right: -5px;
-      border: none;
-      background-color: transparent;
-      color: grey;
+    @include desktop-md {
+      width: 550px;
+      height: 550px;
+      margin: 0px auto;
+    }
+  }
 
-      &:hover {
-        color: white;
-      }
+  .cls_logo {
+    position: absolute;
+    top: -30px;
+    right: -5px;
+    border: none;
+    background-color: transparent;
+    color: grey;
+
+    &:hover {
+      color: white;
     }
   }
 }

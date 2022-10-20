@@ -30,10 +30,10 @@ export default function Contact() {
       name: Yup.string()
         .min(1, ' Your must be 1 character!')
         .max(25, 'Your must be 25 character!')
-        .required('Please fill out this field'),
-      subject: Yup.string(),
-      email: Yup.string(),
-      message: Yup.string(),
+        .required('Required'),
+      subject: Yup.string().required('Required'),
+      email: Yup.string().required('Required'),
+      message: Yup.string().required('Required'),
     }),
 
     onSubmit: (value) => {
@@ -83,10 +83,11 @@ export default function Contact() {
                   className='input'
                   value={formik.values.subject}
                   onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                   placeholder=''
                 />
                 {formik.errors.subject && formik.touched.subject && (
-                  <p>{formik.errors.subject}</p>
+                  <p className='notice_error'>{formik.errors.subject}</p>
                 )}
               </div>
               <div
@@ -102,6 +103,7 @@ export default function Contact() {
                   className='input'
                   value={formik.values.email}
                   onChange={formik.handleChange}
+                  onBlur={inputClick === 'email' ? 'input active' : 'input'}
                   placeholder=''
                 />
                 {formik.errors.email && formik.touched.email && (
@@ -124,7 +126,9 @@ export default function Contact() {
                   placeholder=''
                 />
                 {formik.errors.message && formik.touched.message && (
-                  <p>{formik.errors.message}</p>
+                  <p className='notice_error-message'>
+                    {formik.errors.message}
+                  </p>
                 )}
               </div>
               <input

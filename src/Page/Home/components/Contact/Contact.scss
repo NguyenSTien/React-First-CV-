@@ -70,22 +70,18 @@
 
       .notice_error {
         position: absolute;
-        border: 1px solid grey;
-        border-radius: 2px;
-        box-shadow: 1px 1px 2px grey;
-        top: 25px;
-        right: 50px;
+        color: red;
+        top: 15px;
+        right: 40px;
         padding: 5px;
         margin-top: 10px;
-        clip-path: polygon(
-          0 0%,
-          15% 0%,
-          24% -8%,
-          30% 0%,
-          100% 0%,
-          100% 100%,
-          0 100%
-        );
+
+        &-message {
+          position: absolute;
+          top: 55px;
+          color: red;
+          right: 40px;
+        }
       }
     }
 
