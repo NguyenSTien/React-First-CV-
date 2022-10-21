@@ -78,7 +78,7 @@ const PickColor = () => {
         }
       >
         <button className='change_icon' onClick={handleClick}>
-          <i class={`fa-solid fa-gear ${'icon_active'}`}></i>
+          <i className={`fa-solid fa-gear ${'icon_active'}`}></i>
         </button>
         <div className='change_title'>
           <p>Pick a Color</p>

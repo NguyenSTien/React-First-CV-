@@ -4,11 +4,10 @@ import ReactDOM from 'react-dom';
 import './LogoItem.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar } from 'swiper';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import 'swiper/scss/autoplay';
 
 function ModalLogo({ clsLogo, indexValue }) {
   return ReactDOM.createPortal(
@@ -16,10 +15,12 @@ function ModalLogo({ clsLogo, indexValue }) {
       <div className='wrap_modalLogo' onClick={() => clsLogo(false)}>
         <div className='container'>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={0}
+            modules={[Navigation, Pagination, Scrollbar]}
+            spaceBetween={1000}
             speed={1000}
             loop={true}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
             autoHeight={true}
             slidesPerView={1}
             onSwiper={(swiper) => console.log(swiper)}

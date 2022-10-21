@@ -26,7 +26,7 @@ export const cardData = [
     content: 'email@mailprovider.com',
   },
   {
-    icon: <i class='fa-solid fa-globe'></i>,
+    icon: <i className='fa-solid fa-globe'></i>,
     content: 'yourpersonalwebsite.com',
   },
   {
@@ -71,7 +71,7 @@ export const educationData = [
     icon: '',
   },
   {
-    keyword: <i class='fa-solid fa-graduation-cap'></i>,
+    keyword: <i className='fa-solid fa-graduation-cap'></i>,
     title: 'Software Engineering',
     subTitle: 'Oxford University',
     date: 'Jan 2009 - Mar 2010',
@@ -88,7 +88,7 @@ export const educationData = [
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
-    keyword: <i class='fa-solid fa-earth-americas'></i>,
+    keyword: <i className='fa-solid fa-earth-americas'></i>,
     title: 'Web Development',
     subTitle: 'Lipro University',
     date: 'Jan 2011 - Mar 2012',
@@ -219,27 +219,27 @@ export const experienceData = [
 ];
 export const interestData = [
   {
-    icon: <i class='fa-solid fa-music'></i>,
+    icon: <i className='fa-solid fa-music'></i>,
     content: 'Music',
   },
   {
-    icon: <i class='fa-solid fa-gamepad'></i>,
+    icon: <i className='fa-solid fa-gamepad'></i>,
     content: 'Gaming',
   },
   {
-    icon: <i class='fa-solid fa-camera'></i>,
+    icon: <i className='fa-solid fa-camera'></i>,
     content: 'Photography',
   },
   {
-    icon: <i class='fa-solid fa-futbol'></i>,
+    icon: <i className='fa-solid fa-futbol'></i>,
     content: 'Football',
   },
   {
-    icon: <i class='fa-solid fa-plane-up'></i>,
+    icon: <i className='fa-solid fa-plane-up'></i>,
     content: 'Traveling',
   },
   {
-    icon: <i class='fa-solid fa-film'></i>,
+    icon: <i className='fa-solid fa-film'></i>,
     content: 'Movies',
   },
 ];
@@ -325,9 +325,9 @@ export const pricingData = [
 export const blogData = [
   {
     img: blog2,
-    peopleImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
-    timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
-    commentImg: <i class='fa-regular fa-comments'>168</i>,
+    peopleImg: <i className='fa-regular fa-user'>Jhon Doe</i>,
+    timeImg: <i className='fa-regular fa-clock-nine'> August 7, 2020</i>,
+    commentImg: <i className='fa-regular fa-comments'>168</i>,
     titleOne: 'Fontend',
     titleTwo: 'Design',
     titleThere: 'Material',
@@ -337,9 +337,9 @@ export const blogData = [
   },
   {
     img: blog1,
-    peopleImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
-    timeImg: <i class='fa-regular fa-timer'>August 7, 2020</i>,
-    commentImg: <i class='fa-regular fa-comments'>168</i>,
+    peopleImg: <i className='fa-regular fa-user'>Jhon Doe</i>,
+    timeImg: <i className='fa-regular fa-timer'>August 7, 2020</i>,
+    commentImg: <i className='fa-regular fa-comments'>168</i>,
     titleOne: 'Backend',
     titleTwo: 'Dev',
     titleThere: 'Shortcuts',
@@ -349,9 +349,9 @@ export const blogData = [
   },
   {
     img: blog3,
-    peopleImg: <i class='fa-regular fa-user'>Jhon Doe</i>,
-    timeImg: <i class='fa-regular fa-clock-nine'> August 7, 2020</i>,
-    commentImg: <i class='fa-regular fa-comments'>168</i>,
+    peopleImg: <i className='fa-regular fa-user'>Jhon Doe</i>,
+    timeImg: <i className='fa-regular fa-clock-nine'> August 7, 2020</i>,
+    commentImg: <i className='fa-regular fa-comments'>168</i>,
     titleOne: 'Fontend',
     titleTwo: 'Specs',
     titleThere: ' UI',
@@ -362,57 +362,57 @@ export const blogData = [
 ];
 export const menuData = [
   {
-    icon: <i class='fa-solid fa-user'></i>,
+    icon: <i className='fa-solid fa-user'></i>,
     link: 'home',
     content: 'HOME',
   },
   {
-    icon: <i class='fa-solid fa-gauge-high'></i>,
+    icon: <i className='fa-solid fa-gauge-high'></i>,
     link: 'about',
     content: 'ABOUT',
   },
   {
-    icon: <i class='fa-solid fa-graduation-cap'></i>,
+    icon: <i className='fa-solid fa-graduation-cap'></i>,
     link: 'education',
     content: 'EDUCATION',
   },
   {
-    icon: <i class='fa-solid fa-sliders'></i>,
+    icon: <i className='fa-solid fa-sliders'></i>,
     link: 'skill',
     content: 'SKILL',
   },
   {
-    icon: <i class='fa-solid fa-suitcase'></i>,
+    icon: <i className='fa-solid fa-suitcase'></i>,
     link: 'experience',
     content: 'EXPERIENCE',
   },
   {
-    icon: <i class='fa-solid fa-box-archive'></i>,
+    icon: <i className='fa-solid fa-box-archive'></i>,
     link: 'portfolios',
     content: 'PORTFOLIOS',
   },
   {
-    icon: <i class='fa-solid fa-heart'></i>,
+    icon: <i className='fa-solid fa-heart'></i>,
     link: 'interest',
     content: 'INTEREST',
   },
   {
-    icon: <i class='fa-solid fa-users'></i>,
+    icon: <i className='fa-solid fa-users'></i>,
     link: 'testimonials',
     content: 'TESTIMONIALS',
   },
   {
-    icon: <i class='fa-regular fa-money-bill-1'></i>,
+    icon: <i className='fa-regular fa-money-bill-1'></i>,
     content: 'PRICING',
     link: 'pricing',
   },
   {
-    icon: <i class='fa-solid fa-square-pen'></i>,
+    icon: <i className='fa-solid fa-square-pen'></i>,
     content: 'BLOG',
     link: 'blog',
   },
   {
-    icon: <i class='fa-solid fa-envelope'></i>,
+    icon: <i className='fa-solid fa-envelope'></i>,
     content: 'CONTACT',
     link: 'contact',
   },
@@ -430,7 +430,7 @@ export const logoData = [
     className: 'animate__animated animate__fadeInRight',
     classNameModal: '',
     img: big6,
-    icon: <i class='fa-solid fa-circle-play'></i>,
+    icon: <i className='fa-solid fa-circle-play'></i>,
     contentHover: 'LIGHTBOX',
     content: 'VIDEO',
     subContentHover: 'I DESIGNER FOR A CLIENT FOR HIS CAFE',
