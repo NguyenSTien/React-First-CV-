@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { experienceModalData } from '../../../../../utils/Mockdata';
+import { experienceModalData } from '../../../../../utils/MapData';
 import './ModalExperience.scss';
 import ModalExperienceItem from './ModalExperienceItem';
 

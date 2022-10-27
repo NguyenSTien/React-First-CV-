@@ -1,9 +1,8 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import { Link } from 'react-scroll';
 import John from '../../../../assets/images/john.png';
-import { menuData } from '../../../../utils/Mockdata';
+import { menuData } from '../../../../utils/MapData';
 import { useState } from 'react';
 import './Menu.scss';
 

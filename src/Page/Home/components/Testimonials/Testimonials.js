@@ -1,9 +1,9 @@
 import React from 'react';
 import hand from '../../../../assets/images/handshake.png';
 import { useColorContext } from '../../../../contexts/ColorContext';
-import { tesData } from '../../../../utils/Mockdata';
+import { tesData } from '../../../../utils/MapData';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import { animationData } from '../../../../utils/Mockdata';
+import { animationData } from '../../../../utils/MapData';
 import SectionTitle from '../Title/Title';
 import './Testimonials.scss';
 
@@ -31,8 +31,6 @@ const Testimonials = () => {
               slidesPerView={1}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
             >
               {tesData.map((data, index) => (
                 <SwiperSlide key={index}>
@@ -55,8 +53,6 @@ const Testimonials = () => {
               slidesPerView={6}
               speed={2000}
               scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
               loop={true}
               simulateTouch={false}
               breakpoints={{

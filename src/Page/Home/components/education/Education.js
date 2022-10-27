@@ -2,7 +2,7 @@ import React from 'react';
 import './Education.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import education from '../../../../assets/images/book.png';
-import { educationData } from '../../../../utils/Mockdata';
+import { educationData } from '../../../../utils/MapData';
 import SectionTitle from '../Title/Title';
 import EducationItem from './EducationItem/EducationItem';
 
@@ -19,7 +19,7 @@ const Education = () => {
           <div className='wrap_time_education'>
             <div className='time__education'>
               {educationData.map((data, index) => (
-                <EducationItem data={data} index={index} />
+                <EducationItem data={data} index={index} key={index} />
               ))}
             </div>
             <div className={`timeline ${color}`}></div>

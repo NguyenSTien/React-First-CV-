@@ -10,18 +10,7 @@ import './Contact.scss';
 export default function Contact() {
   const [inputClick, setInputClick] = useState('');
   const handleInputClick = (value) => {
-    if (value === 'name') {
-      setInputClick('name');
-    }
-    if (value === 'subject') {
-      setInputClick('subject');
-    }
-    if (value === 'email') {
-      setInputClick('email');
-    }
-    if (value === 'message') {
-      setInputClick('message');
-    }
+    setInputClick(value);
   };
   const { color, textColor } = useColorContext;
   const formik = useFormik({
@@ -83,7 +72,6 @@ export default function Contact() {
                   className='input'
                   value={formik.values.subject}
                   onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
                   placeholder=''
                 />
                 {formik.errors.subject && formik.touched.subject && (
@@ -103,7 +91,6 @@ export default function Contact() {
                   className='input'
                   value={formik.values.email}
                   onChange={formik.handleChange}
-                  onBlur={inputClick === 'email' ? 'input active' : 'input'}
                   placeholder=''
                 />
                 {formik.errors.email && formik.touched.email && (

@@ -4,7 +4,6 @@ import safe from '../../../../assets/images/safe.png';
 import Dribble from './components/Dribble';
 import Logo from './components/Logo';
 import Website from './components/Website';
-// import * as mdb from 'mdb-ui-kit'; // lib
 import './Portfolios.scss';
 
 const Portfolios = () => {
@@ -14,21 +13,7 @@ const Portfolios = () => {
     setExtra(!extra);
   };
   const handleClick = (value) => {
-    if (value === 'button_all') {
-      setText('button_all');
-    }
-    if (value === 'all') {
-      setText('all');
-    }
-    if (value === 'logo') {
-      setText('logo');
-    }
-    if (value === 'dribble') {
-      setText('dribble');
-    }
-    if (value === 'websites') {
-      setText('websites');
-    }
+    setText(value);
   };
   var buttons = document.querySelectorAll('.button_text');
 

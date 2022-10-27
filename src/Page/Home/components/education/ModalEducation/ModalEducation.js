@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { modalEducationData } from '../../../../../utils/Mockdata';
+import { modalEducationData } from '../../../../../utils/MapData';
 import './ModalEducation.scss';
 import ModalEducationItem from './ModalEducationItem';
 

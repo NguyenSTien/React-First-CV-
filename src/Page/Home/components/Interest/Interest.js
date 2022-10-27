@@ -2,7 +2,7 @@ import React from 'react';
 import './Interest.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import heart from '../../../../assets/images/heart.png';
-import { interestData } from '../../../../utils/Mockdata';
+import { interestData } from '../../../../utils/MapData';
 import SectionTitle from '../Title/Title';
 
 const Interest = () => {

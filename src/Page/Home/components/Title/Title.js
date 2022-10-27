@@ -4,7 +4,7 @@ const Title = ({ icon, title }) => {
   return (
     <div className='head_components'>
       <figure className='img_head'>
-        <img src={icon} alt='asds'></img>
+        <img src={icon} alt='icon'></img>
       </figure>
       <h4 className='text_head_components'>{title}</h4>
     </div>

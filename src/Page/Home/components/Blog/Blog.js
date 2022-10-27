@@ -2,7 +2,7 @@ import React from 'react';
 import post from '../../../../assets/images/post-it.png';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import SectionTitle from '../Title/Title';
-import { blogData } from '../../../../utils/Mockdata';
+import { blogData } from '../../../../utils/MapData';
 import './Blog.scss';
 
 const Blog = () => {
@@ -17,6 +17,7 @@ const Blog = () => {
           <section className='section blog'>
             {blogData.map((data, index) => (
               <div
+                key={index}
                 className={
                   index % 2 === 0 ? 'blog_block_left' : 'blog_block_right'
                 }

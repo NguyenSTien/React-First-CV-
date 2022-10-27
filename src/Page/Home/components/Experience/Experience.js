@@ -3,7 +3,7 @@ import './Experience.scss';
 import { useColorContext } from '../../../../contexts/ColorContext';
 
 import layers from '../../../../assets/images/layers.png';
-import { experienceData } from '../../../../utils/Mockdata';
+import { experienceData } from '../../../../utils/MapData';
 import SectionTitle from '../Title/Title';
 
 import ExperienceItem from './ExperienceItem/ExperienceItem';
@@ -21,7 +21,7 @@ const Experience = () => {
           <div className='wrap_time_exp'>
             <section className='section time__exp'>
               {experienceData.map((data, index) => (
-                <ExperienceItem data={data} index={index} />
+                <ExperienceItem data={data} index={index} key={index} />
               ))}
             </section>
           </div>

@@ -1,62 +1,28 @@
 import React from 'react';
-import { logoData, dribbleData } from '../../../../../utils/Mockdata';
+import { modalData } from '../../../../../utils/MapData';
 import ReactDOM from 'react-dom';
 import './LogoItem.scss';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar } from 'swiper';
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
+import ModalLogoItem from './ModalLogoItem';
 
 function ModalLogo({ clsLogo, indexValue }) {
   return ReactDOM.createPortal(
     <div>
-      <div className='wrap_modalLogo' onClick={() => clsLogo(false)}>
+      <div className='wrap_modalLogo'>
         <div className='container'>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar]}
-            spaceBetween={1000}
-            speed={1000}
-            loop={true}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            autoHeight={true}
-            slidesPerView={1}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
-          >
-            {logoData.map((data, index) => (
-              <SwiperSlide>
-                <div
-                  className={`wrap_modalLogo_content ${data.classNameModal}`}
+          {modalData.map(
+            (data, index) =>
+              indexValue === index && (
+                <ModalLogoItem
+                  data={data}
+                  index={index}
                   key={index}
-                >
-                  <figure className='img_modalLogo'>
-                    <img src={data.img} alt='imgLogo'></img>
-                  </figure>
-                  <button className='cls_logo' onClick={() => clsLogo(false)}>
-                    <i className='fa fa-close' />
-                  </button>
-                </div>
-              </SwiperSlide>
-            ))}
-            {dribbleData.map((data, index) => (
-              <SwiperSlide>
-                <div
-                  className={`wrap_modalLogo_content ${data.classNameModal}`}
-                  key={index}
-                >
-                  <figure className='img_modalLogo'>
-                    <img src={data.img} alt='imgLogo'></img>
-                  </figure>
-                  <button className='cls_logo' onClick={() => clsLogo(false)}>
-                    <i className='fa fa-close' />
-                  </button>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                  length={modalData.length}
+                />
+              )
+          )}
+          <button className='cls_logo' onClick={() => clsLogo(false)}>
+            <i className='fa fa-close' />
+          </button>
         </div>
       </div>
     </div>,

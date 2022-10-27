@@ -14,20 +14,19 @@
     margin: 0px auto;
     vertical-align: middle;
     width: 650px;
-    height: 650px;
+    height: auto;
     box-shadow: 0 0 8px rgb(0 0 0 / 60%);
 
     @include desktop-md {
       width: 550px;
-      height: 550px;
       margin: 0px auto;
     }
   }
 
   .cls_logo {
     position: absolute;
-    top: -30px;
-    right: -5px;
+    top: 3%;
+    right: 27%;
     border: none;
     background-color: transparent;
     color: grey;
@@ -35,5 +34,26 @@
     &:hover {
       color: white;
     }
+    @include desktop-md {
+      right: 235px;
+    }
   }
+}
+
+.btn__next,
+.btn__prev {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+
+.btn__next {
+  right: -40%;
+}
+
+.btn__prev {
+  left: -40%;
 }

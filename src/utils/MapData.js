@@ -638,3 +638,56 @@ export const experienceModalData = [
       'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
   },
 ];
+
+export const modalData = [
+  {
+    className: 'animate__animated animate__fadeInLeft ',
+    classNameModal: 'animate__animated animate__flipInY',
+    img: big1,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS SCALE',
+  },
+  {
+    className: 'animate__animated animate__fadeInRight',
+    classNameModal: '',
+    img: big6,
+    icon: <i className='fa-solid fa-circle-play'></i>,
+    contentHover: 'LIGHTBOX',
+    content: 'VIDEO',
+    subContentHover: 'I DESIGNER FOR A CLIENT FOR HIS CAFE',
+  },
+  {
+    className: 'animate__animated animate__fadeInRight',
+    classNameModal: 'animate__animated animate__fadeInLeft',
+    img: big2,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS UP',
+  },
+  {
+    className: 'animate__animated animate__fadeInRight',
+    classNameModal: 'animate__animated animate__fadeInDownBig',
+    img: big3,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS SCALE',
+  },
+  {
+    className: 'animate__animated animate__fadeInLeft ',
+    classNameModal: 'animate__animated animate__flipInY',
+    img: big4,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'USED LATEST MATERIAL DESIGN TO MAKE',
+    subContentHover2: 'THIS SAMPLE ',
+  },
+  {
+    className: 'animate__animated animate__fadeInLeft ',
+    classNameModal: '',
+    img: big5,
+    contentHover: 'LIGHTBOX',
+    content: 'IMAGE',
+    subContentHover: 'TWO HOVER EFFECT FOR PORTFOLIOS GRID BLOCK. ITS SCALE',
+  },
+];

@@ -10,60 +10,71 @@ const PickColor = () => {
   const { setTextColor } = useColorContext();
   const { setBorderBottom } = useColorContext();
   const handleColor = (value) => {
-    if (value === 'blue') {
-      setColor('blue');
-      setLightColor('orange');
-      setBorder('border_orange');
-      setTextColor('text_orange');
-      setBorderBottom('border_bottom_orange');
-    }
-    if (value === 'dGreen') {
-      setColor('dGreen');
-      setLightColor('purple');
-      setBorder('border_purple');
-      setTextColor('text_purple');
-      setBorderBottom('border_bottom_purple');
-    }
-    if (value === 'lBrown') {
-      setColor('lBrown');
-      setLightColor('orange');
-      setBorder('border_orange');
-      setTextColor('text_orange');
-      setBorderBottom('border_bottom_orange');
-    }
-    if (value === 'green') {
-      setColor('green');
-    }
-    if (value === 'purple') {
-      setColor('purple');
-      setLightColor('pink');
-      setBorder('border_pink');
-      setTextColor('text_pink');
-      setBorderBottom('border_bottom_pink');
-    }
-    if (value === 'brown') {
-      setColor('brown');
-      setLightColor('blue');
-    }
-    if (value === 'red') {
-      setColor('red');
-      setLightColor('lOr');
-      setBorder('border_orange');
-      setTextColor('text_orange');
-      setBorderBottom('border_bottom_orange');
-    }
-    if (value === 'pink') {
-      setColor('pink');
-      setLightColor('purple');
-      setBorder('border_purple');
-      setTextColor('text_purple');
-      setBorderBottom('border_bottom_purple');
-    }
-    if (value === 'white') {
-      setColor('wGreen');
-      setBorder('border_green');
-      setTextColor('text_green');
-      setLightColor('green');
+    switch (value) {
+      case 'blue':
+        setColor('blue');
+        setLightColor('orange');
+        setBorder('border_orange');
+        setTextColor('text_orange');
+        setBorderBottom('border_bottom_orange');
+        break;
+
+      case 'dGreen':
+        setColor('dGreen');
+        setLightColor('purple');
+        setBorder('border_purple');
+        setTextColor('text_purple');
+        setBorderBottom('border_bottom_purple');
+        break;
+      case 'lBrown':
+        setColor('lBrown');
+        setLightColor('orange');
+        setBorder('border_orange');
+        setTextColor('text_orange');
+        setBorderBottom('border_bottom_orange');
+        break;
+
+      case 'green':
+        setColor('green');
+        break;
+
+      case 'purple':
+        setColor('purple');
+        setLightColor('pink');
+        setBorder('border_pink');
+        setTextColor('text_pink');
+        setBorderBottom('border_bottom_pink');
+        break;
+
+      case 'brown':
+        setColor('brown');
+        setLightColor('blue');
+        break;
+
+      case 'red':
+        setColor('red');
+        setLightColor('lOr');
+        setBorder('border_orange');
+        setTextColor('text_orange');
+        setBorderBottom('border_bottom_orange');
+        break;
+
+      case 'pink':
+        setColor('pink');
+        setLightColor('purple');
+        setBorder('border_purple');
+        setTextColor('text_purple');
+        setBorderBottom('border_bottom_purple');
+        break;
+
+      case 'white':
+        setColor('wGreen');
+        setBorder('border_green');
+        setTextColor('text_green');
+        setLightColor('green');
+        break;
+      default:
+        break;
     }
   };
   const [changeMenu, setChangeMenu] = useState('');

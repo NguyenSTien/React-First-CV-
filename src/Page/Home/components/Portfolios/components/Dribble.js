@@ -1,5 +1,5 @@
 import React from 'react';
-import { dribbleData } from '../../../../../utils/Mockdata';
+import { dribbleData } from '../../../../../utils/MapData';
 import '../Portfolios.scss';
 import DribbleContent from '../DribbleItem/DribbleContent';
 
@@ -7,7 +7,7 @@ const Dribble = () => {
   return (
     <div className='wrap_dribble'>
       {dribbleData.map((data, index) => (
-        <DribbleContent data={data} index={index} />
+        <DribbleContent data={data} index={index} key={index} />
       ))}
     </div>
   );

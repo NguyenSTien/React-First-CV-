@@ -3,7 +3,7 @@ import { useColorContext } from '../../../../contexts/ColorContext';
 import './Card.scss';
 import profile from '../../../../assets/images/profile.png';
 import background from '../../../../assets/images/background.jpg';
-import { cardData } from '../../../../utils/Mockdata';
+import { cardData } from '../../../../utils/MapData';
 
 const Card = () => {
   const { color, lightColor } = useColorContext();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { websiteData } from '../../../../../utils/Mockdata';
+import { websiteData } from '../../../../../utils/MapData';
 import '../Portfolios.scss';
 
 const Website = () => {

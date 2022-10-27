@@ -2,7 +2,7 @@ import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import './Skill.scss';
 import skill from '../../../../assets/images/mixer.png';
-import { skillData } from '../../../../utils/Mockdata';
+import { skillData } from '../../../../utils/MapData';
 import SectionTitle from '../Title/Title';
 
 const Skill = () => {
