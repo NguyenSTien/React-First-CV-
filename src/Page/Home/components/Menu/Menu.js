@@ -19,7 +19,7 @@ const Menu = () => {
           <div className='menu_all'>
             <div className={`menu_header ${color}`}>
               <figure className='menu_img'>
-                <img src={John} alt='asdsad' />
+                <img src={John} alt='T' />
               </figure>
               <div className='menu_option'>
                 {menuData.map((data, index) => (

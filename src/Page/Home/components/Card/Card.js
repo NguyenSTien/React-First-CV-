@@ -1,7 +1,7 @@
 import React from 'react';
 import { useColorContext } from '../../../../contexts/ColorContext';
 import './Card.scss';
-import profile from '../../../../assets/images/profile.png';
+import profile from '../../../../assets/images/imgCV.png';
 import background from '../../../../assets/images/background.jpg';
 import { cardData } from '../../../../utils/MapData';
 
@@ -21,9 +21,9 @@ const Card = () => {
             <div className='nameCard section'>
               <div className={`${color} card`}>
                 <div className='cardContent'>
-                  <h4 className={`cardContentName ${color}`}>JOHN DOE</h4>
+                  <h4 className={`cardContentName ${color}`}>Nguyen Sy Tien</h4>
                   <h6 className={`cardContentPosition ${color}`}>
-                    Software Engineer & UI/UX Expert
+                    Front End Developer
                   </h6>
                   <div className='cardContentInfo'>
                     {cardData.map((data, index) => (

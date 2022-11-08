@@ -23,77 +23,73 @@ import education from '../assets/images/education1.jpg';
 export const cardData = [
   {
     icon: <i className='fa-solid fa-envelope'></i>,
-    content: 'email@mailprovider.com',
+    content: 'nickkyy1701@gmail.com',
   },
   {
     icon: <i className='fa-solid fa-globe'></i>,
-    content: 'yourpersonalwebsite.com',
+    content: 'https://github.com/NguyenSTien',
   },
   {
     icon: <i className='fa-brands fa-skype'></i>,
-    content: 'yourusername@skype.com',
+    content: 'live:.cid.6e08b60e3fee2047',
   },
   {
     icon: <i className='fa-solid fa-phone'></i>,
-    content: '+152 25634 254 846',
+    content: '0775969025',
   },
   {
     icon: <i className='fa-solid fa-location-dot'></i>,
-    content: 'LampStreet 34/3, London, UK',
+    content: 'Distric 2, HCMC',
   },
 ];
 
 export const educationData = [
   {
-    keyword: 'P',
-    title: 'Preparatory Education',
+    keyword: 'F',
+    title: 'FPT Aptect',
     subTitle: 'Fedrick School',
-    date: 'Jan 1997 - Mar 2000',
-    content:
-      'I completed my preparatory education from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.',
+    date: 'April 2021 - Jul 2022',
+    content: 'Specialized in software engineering with GPA 3.26',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
-    keyword: 'H',
-    title: 'High School',
-    subTitle: 'RedStreet College',
-    date: 'Jan 2000 - Mar 2005',
-    content:
-      'I completed my high school degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.',
-  },
-  {
-    keyword: 'C',
-    title: 'Computer Science',
-    subTitle: 'Down Street College',
-    date: 'Jan 2006 - Mar 2008',
-    content:
-      'I completed my computer science degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.',
-    icon: '',
-  },
-  {
-    keyword: <i className='fa-solid fa-graduation-cap'></i>,
-    title: 'Software Engineering',
-    subTitle: 'Oxford University',
-    date: 'Jan 2009 - Mar 2010',
-    content:
-      'I completed this degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.',
-  },
-  {
-    keyword: 'U',
-    title: 'UI/UX Workshop',
-    subTitle: 'IT Next Academy',
-    date: 'Jan 2010 - Mar 2011',
-    content:
-      'I completed this course from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.',
+    keyword: 'F',
+    title: 'FPT Aptect',
+    subTitle: 'Fedrick School',
+    date: 'April 2021 - Jul 2022',
+    content: 'Specialized in software engineering with GPA 3.26',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
-    keyword: <i className='fa-solid fa-earth-americas'></i>,
-    title: 'Web Development',
-    subTitle: 'Lipro University',
-    date: 'Jan 2011 - Mar 2012',
-    content:
-      'I completed this course from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.',
+    keyword: 'F',
+    title: 'FPT Aptect',
+    subTitle: 'Fedrick School',
+    date: 'April 2021 - Jul 2022',
+    content: 'Specialized in software engineering with GPA 3.26',
+    icon: <i className='fa-solid fa-ellipsis'></i>,
+  },
+  {
+    keyword: 'F',
+    title: 'FPT Aptect',
+    subTitle: 'Fedrick School',
+    date: 'April 2021 - Jul 2022',
+    content: 'Specialized in software engineering with GPA 3.26',
+    icon: <i className='fa-solid fa-ellipsis'></i>,
+  },
+  {
+    keyword: 'F',
+    title: 'FPT Aptect',
+    subTitle: 'Fedrick School',
+    date: 'April 2021 - Jul 2022',
+    content: 'Specialized in software engineering with GPA 3.26',
+    icon: <i className='fa-solid fa-ellipsis'></i>,
+  },
+  {
+    keyword: 'F',
+    title: 'FPT Aptect',
+    subTitle: 'Fedrick School',
+    date: 'April 2021 - Jul 2022',
+    content: 'Specialized in software engineering with GPA 3.26',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
 ];
@@ -107,12 +103,12 @@ export const professionalData = [
     content: '90',
   },
   {
-    keyword: 'jQuery',
+    keyword: 'Javascript',
     content: '70',
   },
   {
-    keyword: 'PHP',
-    content: '68',
+    keyword: 'ReactJs',
+    content: '80',
   },
 ];
 export const personalData = [
@@ -130,7 +126,7 @@ export const personalData = [
   },
   {
     keyword: 'Dedication',
-    content: '70',
+    content: '80',
   },
 ];
 export const softwarelData = [
@@ -140,14 +136,14 @@ export const softwarelData = [
   },
   {
     keyword: 'Adobe Indesign',
+    content: '80',
+  },
+  {
+    keyword: 'PAdobe Photoshop',
     content: '70',
   },
   {
-    keyword: 'PHP Storm',
-    content: '60',
-  },
-  {
-    keyword: 'Dev Console',
+    keyword: 'Adobe XD',
     content: '80',
   },
 ];
@@ -157,8 +153,8 @@ export const skillData = [
     content: [
       { skill: 'HTML5', percent: 90 },
       { skill: 'CSS3', percent: 90 },
-      { skill: 'jQuery', percent: 70 },
-      { skill: 'PHP', percent: 68 },
+      { skill: 'Javascript', percent: 70 },
+      { skill: 'ReactJs', percent: 80 },
     ],
   },
   {
@@ -167,54 +163,53 @@ export const skillData = [
       { skill: 'Communication', percent: 80 },
       { skill: 'Teamwork', percent: 60 },
       { skill: 'Creativity', percent: 70 },
-      { skill: 'Dedication', percent: 70 },
+      { skill: 'Dedication', percent: 80 },
     ],
   },
   {
     title: 'Software',
     content: [
       { skill: 'Adobe Illustrator', percent: 80 },
-      { skill: 'Adobe InDesign', percent: 70 },
-      { skill: 'PHP Storm', percent: 60 },
-      { skill: 'DEV Console', percent: 80 },
+      { skill: 'Adobe InDesign', percent: 80 },
+      { skill: 'Adobe Photoshop', percent: 70 },
+      { skill: 'Adobe XD', percent: 80 },
     ],
   },
 ];
 
 export const experienceData = [
   {
-    keyword: 'D',
-    title: 'Design',
-    subTitle: 'RulerSoft',
-    date: 'Jan 2010 - Mar 2012',
+    keyword: 'F',
+    title: 'Freelance',
+    subTitle: 'HCMC Guide',
+    date: '1 month',
     content:
-      'I started my designing carrier here, spent tow years learning and working in various designing aspects..',
+      'Use HTML5, CSS to create viewer interface. Convert CSS to SCSS. Responsive from desktop first to moblie first.',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
     keyword: 'F',
-    title: 'Frontend Developer',
-    subTitle: 'Micro IT',
-    date: 'Jan 2012 - Mar 2014',
+    title: 'Freelance',
+    subTitle: 'My CV',
+    date: '2 month',
     content:
-      'I started my frontend carrier here, spent tow years learning and working in various frontend aspects. I worked on about 40+ projects local and online.',
+      'Use HTML5, SCSS, ReactJs to create viewer interface. Use support libraries like: google map, animate.css, react-scroll, react-swiper. Responsive for all types of devices. Use logic to handle a few cases',
   },
   {
-    keyword: 'U',
-    title: 'UI/UX Expert',
-    subTitle: 'Libra IT Solutions',
-    date: 'Jan 2014 - Mar 2015',
+    keyword: 'F',
+    title: 'Freelance',
+    subTitle: 'My CV',
+    date: '2 month',
     content:
-      'I started my expertise carrier here, spent tow years learning and working in various UX/UI aspects. I worked on about 70+ projects local and online.',
+      'Use HTML5, SCSS, ReactJs to create viewer interface. Use support libraries like: google map, animate.css, react-scroll, react-swiper. Responsive for all types of devices. Use logic to handle a few cases',
   },
   {
-    keyword: 'S',
-    title: 'Senior Developer',
-    subTitle: 'WebStyle Technologies',
-    date: 'Jan 2016 - Continue..',
+    keyword: 'F',
+    title: 'Freelance',
+    subTitle: 'My CV',
+    date: '2 month',
     content:
-      'I recently joined here, currently working on various development aspects. I already worked on about..',
-    icon: <i className='fa-solid fa-ellipsis'></i>,
+      'Use HTML5, SCSS, ReactJs to create viewer interface. Use support libraries like: google map, animate.css, react-scroll, react-swiper. Responsive for all types of devices. Use logic to handle a few cases',
   },
 ];
 export const interestData = [
