@@ -142,17 +142,15 @@ video {
 }
 @font-face {
   font-family: 'raleway';
-  src: url('./assets/fonts/Raleway.ttf') format('truetype'),
-    url('./assets/fonts/Raleway.woff') format('woff'),
-    url('./assets/fonts/Raleway.woff2') format('woff2');
+  src: url('./assets/Fonts/Raleway.ttf') format('truetype'), url('./assets/Fonts/Raleway.woff') format('woff'),
+    url('./assets/Fonts/Raleway.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'muli';
-  src: url('./assets/fonts/Mulish-Medium.ttf') format('truetype'),
-    url('./assets/fonts/Mulish-Medium.woff') format('woff'),
-    url('./assets/fonts/Mulish-Medium.woff2') format('woff2');
+  src: url('./assets/Fonts/Mulish-Medium.ttf') format('truetype'),
+    url('./assets/Fonts/Mulish-Medium.woff') format('woff'), url('./assets/Fonts/Mulish-Medium.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

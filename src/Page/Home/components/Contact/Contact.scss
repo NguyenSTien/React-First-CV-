@@ -23,15 +23,6 @@
 
     .wrap_label {
       position: relative;
-      .label {
-        font-size: 15px;
-        position: absolute;
-        top: -10px;
-        color: $black;
-        opacity: 0.8;
-        transition: 0.5s linear;
-      }
-
       .input {
         border: 1px solid transparent;
         border-bottom: 1px solid $grey;
@@ -57,15 +48,6 @@
         border-bottom: 1px solid $grey;
         margin-bottom: 10px;
         outline: none;
-      }
-
-      &.active {
-        .label {
-          font-size: 13px;
-          top: -25px;
-          color: $sky;
-          transition: 0.5s linear;
-        }
       }
 
       .notice_error {

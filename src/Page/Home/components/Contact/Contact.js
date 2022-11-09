@@ -9,7 +9,7 @@ import './Contact.scss';
 
 export default function Contact() {
   const [inputClick, setInputClick] = useState('');
-  const handleInputClick = (value) => {
+  const handleInputClick = value => {
     setInputClick(value);
   };
   const { color, textColor } = useColorContext;
@@ -25,7 +25,7 @@ export default function Contact() {
       message: Yup.string().required('Required'),
     }),
 
-    onSubmit: (value) => {
+    onSubmit: value => {
       console.log(value);
     },
   });
@@ -40,12 +40,9 @@ export default function Contact() {
           <div className='wrap_contact'>
             <form onSubmit={formik.handleSubmit}>
               <div
-                className={
-                  inputClick === 'name' ? 'wrap_label active' : 'wrap_label'
-                }
+                className='wrap_label'
                 onClick={() => handleInputClick('name')}
               >
-                <label className='label'>Name</label>
                 <input
                   type='text'
                   name='name'
@@ -53,64 +50,55 @@ export default function Contact() {
                   value={formik.values.name}
                   onChange={formik.handleChange}
                   onClick={() => handleInputClick('name')}
-                  placeholder=''
+                  placeholder='Name'
                 />
                 {formik.errors.name && formik.touched.name && (
                   <p className='notice_error'>{formik.errors.name}</p>
                 )}
               </div>
               <div
-                className={
-                  inputClick === 'subject' ? 'wrap_label active' : 'wrap_label'
-                }
+                className='wrap_label'
                 onClick={() => handleInputClick('subject')}
               >
-                <label className='label'>Subject</label>
                 <input
                   type='text'
                   name='subject'
                   className='input'
                   value={formik.values.subject}
                   onChange={formik.handleChange}
-                  placeholder=''
+                  placeholder='Subject'
                 />
                 {formik.errors.subject && formik.touched.subject && (
                   <p className='notice_error'>{formik.errors.subject}</p>
                 )}
               </div>
               <div
-                className={
-                  inputClick === 'email' ? 'wrap_label active' : 'wrap_label'
-                }
+                className='wrap_label'
                 onClick={() => handleInputClick('email')}
               >
-                <label className='label'>Email</label>
                 <input
                   type='email'
                   name='email'
                   className='input'
                   value={formik.values.email}
                   onChange={formik.handleChange}
-                  placeholder=''
+                  placeholder='Email'
                 />
                 {formik.errors.email && formik.touched.email && (
                   <p className='notice_error'>{formik.errors.email}</p>
                 )}
               </div>
               <div
-                className={
-                  inputClick === 'message' ? 'wrap_label active' : 'wrap_label'
-                }
+                className='wrap_label'
                 onClick={() => handleInputClick('message')}
               >
-                <label className='label'>Message</label>
-                <input
+                <textarea
                   type='text'
                   name='message'
                   className='textarea'
                   value={formik.values.message}
                   onChange={formik.handleChange}
-                  placeholder=''
+                  placeholder='Message'
                 />
                 {formik.errors.message && formik.touched.message && (
                   <p className='notice_error-message'>
@@ -118,12 +106,13 @@ export default function Contact() {
                   </p>
                 )}
               </div>
-              <input
+              <button
                 type='submit'
-                value='Send'
                 className={`button_click ${color}`}
                 onClick={() => handleInputClick('name')}
-              />
+              >
+                SEND
+              </button>
             </form>
           </div>
           <Map />
