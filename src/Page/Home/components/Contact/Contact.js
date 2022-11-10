@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SectionTitle from '../Title/Title';
 import * as Yup from 'yup';
 import envelope from '../../../../assets/images/envelope.png';
