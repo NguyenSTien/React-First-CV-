@@ -17,12 +17,12 @@ const Education = () => {
             <SectionTitle title='EDUCATION' icon={education} />
           </section>
           <div className='wrap_time_education'>
+            <div className={`timeline ${color}`}></div>
             <div className='time__education'>
               {educationData.map((data, index) => (
                 <EducationItem data={data} index={index} key={index} />
               ))}
             </div>
-            <div className={`timeline ${color}`}></div>
           </div>
         </div>
       </div>

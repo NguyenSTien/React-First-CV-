@@ -30,19 +30,10 @@
         width: 100%;
         margin-bottom: 40px;
         background-color: transparent;
-
-        &_mess {
-          height: 60px;
-          border: 1px solid transparent;
-          border-bottom: 1px solid $grey;
-          outline: none;
-          width: 100%;
-          margin-bottom: 20px;
-        }
       }
 
       .textarea {
-        height: 60px;
+        height: 80px;
         width: 100%;
         border: none;
         border-bottom: 1px solid $grey;
@@ -60,9 +51,9 @@
 
         &-message {
           position: absolute;
-          top: 55px;
+          top: 85px;
           color: red;
-          right: 40px;
+          right: 42px;
         }
       }
     }

@@ -1,7 +1,7 @@
 @import '../../../../index.scss';
 .wrap__education {
   position: relative;
-  height: 1050px;
+  height: auto;
   margin: 0 auto;
   max-width: 970px;
 
@@ -51,7 +51,7 @@
   position: absolute;
   background-color: $green;
   width: 4px;
-  height: 700px;
+  height: 80%;
   top: 25px;
   z-index: 1;
   left: 50.5%;

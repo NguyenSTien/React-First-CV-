@@ -49,7 +49,7 @@ export const educationData = [
     title: 'FPT Aptect',
     subTitle: 'Fedrick School',
     date: 'April 2021 - Jul 2022',
-    content: 'Specialized in software engineering with GPA 3.26',
+    content: 'Specialized in Front End Develop with GPA 3.26',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
@@ -57,39 +57,7 @@ export const educationData = [
     title: 'FPT Aptect',
     subTitle: 'Fedrick School',
     date: 'April 2021 - Jul 2022',
-    content: 'Specialized in software engineering with GPA 3.26',
-    icon: <i className='fa-solid fa-ellipsis'></i>,
-  },
-  {
-    keyword: 'F',
-    title: 'FPT Aptect',
-    subTitle: 'Fedrick School',
-    date: 'April 2021 - Jul 2022',
-    content: 'Specialized in software engineering with GPA 3.26',
-    icon: <i className='fa-solid fa-ellipsis'></i>,
-  },
-  {
-    keyword: 'F',
-    title: 'FPT Aptect',
-    subTitle: 'Fedrick School',
-    date: 'April 2021 - Jul 2022',
-    content: 'Specialized in software engineering with GPA 3.26',
-    icon: <i className='fa-solid fa-ellipsis'></i>,
-  },
-  {
-    keyword: 'F',
-    title: 'FPT Aptect',
-    subTitle: 'Fedrick School',
-    date: 'April 2021 - Jul 2022',
-    content: 'Specialized in software engineering with GPA 3.26',
-    icon: <i className='fa-solid fa-ellipsis'></i>,
-  },
-  {
-    keyword: 'F',
-    title: 'FPT Aptect',
-    subTitle: 'Fedrick School',
-    date: 'April 2021 - Jul 2022',
-    content: 'Specialized in software engineering with GPA 3.26',
+    content: 'Specialized in Front End Develop with GPA 3.26',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
 ];
@@ -181,35 +149,38 @@ export const experienceData = [
   {
     keyword: 'F',
     title: 'Freelance',
-    subTitle: 'HCMC Guide',
+    subTitle: 'HCMC Tour guide design',
     date: '1 month',
     content:
-      'Use HTML5, CSS to create viewer interface. Convert CSS to SCSS. Responsive from desktop first to moblie first.',
+      '• Using HTML5, SCSS to building a design. Structure the folder to easy to manage and maintain with the other teammate...',
     icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
     keyword: 'F',
     title: 'Freelance',
-    subTitle: 'My CV',
+    subTitle: 'Resume Portfolio',
     date: '2 month',
     content:
-      'Use HTML5, SCSS, ReactJs to create viewer interface. Use support libraries like: google map, animate.css, react-scroll, react-swiper. Responsive for all types of devices. Use logic to handle a few cases',
+      ' • Using HTML5, SCSS to building a design. Using Reactjs for separate components and make sure we can resuse if it duplicate in the other pages...',
+    icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
     keyword: 'F',
     title: 'Freelance',
-    subTitle: 'My CV',
+    subTitle: 'Resume Portfolio',
     date: '2 month',
     content:
-      'Use HTML5, SCSS, ReactJs to create viewer interface. Use support libraries like: google map, animate.css, react-scroll, react-swiper. Responsive for all types of devices. Use logic to handle a few cases',
+      ' • Using HTML5, SCSS to building a design. Using Reactjs for separate components and make sure we can resuse if it duplicate in the other pages...',
+    icon: <i className='fa-solid fa-ellipsis'></i>,
   },
   {
     keyword: 'F',
     title: 'Freelance',
-    subTitle: 'My CV',
+    subTitle: 'Resume Portfolio',
     date: '2 month',
     content:
-      'Use HTML5, SCSS, ReactJs to create viewer interface. Use support libraries like: google map, animate.css, react-scroll, react-swiper. Responsive for all types of devices. Use logic to handle a few cases',
+      ' • Using HTML5, SCSS to building a design. Using Reactjs for separate components and make sure we can resuse if it duplicate in the other pages...',
+    icon: <i className='fa-solid fa-ellipsis'></i>,
   },
 ];
 export const interestData = [
@@ -619,18 +590,86 @@ export const modalEducationData = [
 
 export const experienceModalData = [
   {
-    title: 'EXPERIENCE AT Z',
-    time: 'Jan 2014 - Mar 2015',
-    content:
-      ' I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+    title: 'HCMC Tour guide design',
+    time: 'Jun 2022 - July 2022',
+    content_a: ' • Using HTML5, SCSS to building a design',
+    content_b:
+      ' • Structure the folder to easy to manage and maintain with the other teammate.',
+    content_c:
+      ' • Using BEM ( Block Element Modifiers ) for less naming and easy to resuse the styles. With Mixin function it helps to build a function for coding responsive easily and save a lot of time.',
+    content_d:
+      ' • Using SCSS and node-sass to compile SCSS to CSS and help for coding design fast.',
+    content_e: ' • Make user friendly on mobile, tablet, desktop.',
+    content_f: ' • Tech: HTML5, CSS, SASS, BEM.',
+    content_g: ' • Tool: Github Desktop, Adobe Photoshop.',
+    content_h:
+      ' • Use GitHub for the source management of code. and with Github desktop I can easy to publish, fetch my working',
   },
-  {},
-  {},
   {
-    title: 'EXPERIENCE AT M',
-    time: 'Jan 2014 - Mar 2015',
-    content:
-      'I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turned away from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However,',
+    title: 'Resume Portfolio',
+    time: 'Aug 2022 - Sep 2022',
+    content_a: ' • Using HTML5, SCSS to building a design',
+    content_b:
+      ' • Using Reactjs for separate components and make sure we can resuse if it duplicate in the other pages. <br>',
+    content_c:
+      ' • Structure the folder to easy to manage and maintain with the other teammate.',
+    content_d:
+      ' • Use google map library to create a map from geolocation to show the location correctly.',
+    content_e:
+      ' • Use the swiper library to create carousels for showing multiple items in a row and it helps to build fast, easy to maintain, and custom.',
+    content_f:
+      ' • Use the react-animations library to create animations for components that need a nice appearance for the user when applying to lazyload components.',
+    content_g:
+      ' • Using BEM ( Block Element Modifiers ) for less naming and easy to resuse the styles. With Mixin function it helps to build a function for coding responsive easily and save a lot of time.',
+    content_h: ' • Make user friendly on mobile, tablet, desktop.',
+    content_j: ' • Tech: HTML5, SASS, Reactjs, React hook.',
+    content_k: ' • Tool: Github Desktop.',
+    content_l:
+      ' • Use GitHub for the source management of code. and with Github desktop I can easy to publish, fetch my working',
+  },
+  {
+    title: 'Resume Portfolio',
+    time: 'Aug 2022 - Sep 2022',
+    content_a: ' • Using HTML5, SCSS to building a design',
+    content_b:
+      ' • Using Reactjs for separate components and make sure we can resuse if it duplicate in the other pages. <br>',
+    content_c:
+      ' • Structure the folder to easy to manage and maintain with the other teammate.',
+    content_d:
+      ' • Use google map library to create a map from geolocation to show the location correctly.',
+    content_e:
+      ' • Use the swiper library to create carousels for showing multiple items in a row and it helps to build fast, easy to maintain, and custom.',
+    content_f:
+      ' • Use the react-animations library to create animations for components that need a nice appearance for the user when applying to lazyload components.',
+    content_g:
+      ' • Using BEM ( Block Element Modifiers ) for less naming and easy to resuse the styles. With Mixin function it helps to build a function for coding responsive easily and save a lot of time.',
+    content_h: ' • Make user friendly on mobile, tablet, desktop.',
+    content_j: ' • Tech: HTML5, SASS, Reactjs, React hook.',
+    content_k: ' • Tool: Github Desktop.',
+    content_l:
+      ' • Use GitHub for the source management of code. and with Github desktop I can easy to publish, fetch my working',
+  },
+  {
+    title: 'Resume Portfolio',
+    time: 'Aug 2022 - Sep 2022',
+    content_a: ' • Using HTML5, SCSS to building a design',
+    content_b:
+      ' • Using Reactjs for separate components and make sure we can resuse if it duplicate in the other pages. <br>',
+    content_c:
+      ' • Structure the folder to easy to manage and maintain with the other teammate.',
+    content_d:
+      ' • Use google map library to create a map from geolocation to show the location correctly.',
+    content_e:
+      ' • Use the swiper library to create carousels for showing multiple items in a row and it helps to build fast, easy to maintain, and custom.',
+    content_f:
+      ' • Use the react-animations library to create animations for components that need a nice appearance for the user when applying to lazyload components.',
+    content_g:
+      ' • Using BEM ( Block Element Modifiers ) for less naming and easy to resuse the styles. With Mixin function it helps to build a function for coding responsive easily and save a lot of time.',
+    content_h: ' • Make user friendly on mobile, tablet, desktop.',
+    content_j: ' • Tech: HTML5, SASS, Reactjs, React hook.',
+    content_k: ' • Tool: Github Desktop.',
+    content_l:
+      ' • Use GitHub for the source management of code. and with Github desktop I can easy to publish, fetch my working',
   },
 ];
 

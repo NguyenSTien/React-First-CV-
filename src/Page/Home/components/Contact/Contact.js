@@ -8,10 +8,6 @@ import { useColorContext } from '../../../../contexts/ColorContext';
 import './Contact.scss';
 
 export default function Contact() {
-  const [inputClick, setInputClick] = useState('');
-  const handleInputClick = value => {
-    setInputClick(value);
-  };
   const { color, textColor } = useColorContext;
   const formik = useFormik({
     initialValues: { name: '', subject: '', email: '', message: '' },
@@ -39,27 +35,20 @@ export default function Contact() {
         <section className='section wrap_contact_all'>
           <div className='wrap_contact'>
             <form onSubmit={formik.handleSubmit}>
-              <div
-                className='wrap_label'
-                onClick={() => handleInputClick('name')}
-              >
+              <div className='wrap_label'>
                 <input
                   type='text'
                   name='name'
                   className='input name'
                   value={formik.values.name}
                   onChange={formik.handleChange}
-                  onClick={() => handleInputClick('name')}
                   placeholder='Name'
                 />
                 {formik.errors.name && formik.touched.name && (
                   <p className='notice_error'>{formik.errors.name}</p>
                 )}
               </div>
-              <div
-                className='wrap_label'
-                onClick={() => handleInputClick('subject')}
-              >
+              <div className='wrap_label'>
                 <input
                   type='text'
                   name='subject'
@@ -72,10 +61,7 @@ export default function Contact() {
                   <p className='notice_error'>{formik.errors.subject}</p>
                 )}
               </div>
-              <div
-                className='wrap_label'
-                onClick={() => handleInputClick('email')}
-              >
+              <div className='wrap_label'>
                 <input
                   type='email'
                   name='email'
@@ -88,10 +74,7 @@ export default function Contact() {
                   <p className='notice_error'>{formik.errors.email}</p>
                 )}
               </div>
-              <div
-                className='wrap_label'
-                onClick={() => handleInputClick('message')}
-              >
+              <div className='wrap_label'>
                 <textarea
                   type='text'
                   name='message'
@@ -106,11 +89,7 @@ export default function Contact() {
                   </p>
                 )}
               </div>
-              <button
-                type='submit'
-                className={`button_click ${color}`}
-                onClick={() => handleInputClick('name')}
-              >
+              <button type='submit' className={`button_click ${color}`}>
                 SEND
               </button>
             </form>
