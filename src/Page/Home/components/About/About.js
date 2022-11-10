@@ -12,10 +12,12 @@ const About = () => {
             <div className='container'>
               <div className='wrap__content'>
                 <p className='experience'>
-                  Hello! I’m Nguyen Tien. Web Developer with over 3 month of
-                  experience front end development .Having an knowledge
-                  including HTML5, CSS, ES7, CSS3, SASS, ReactJS, React Hook,
-                  Redux ,JavaScript.
+                  • I'm seeking a front-end developer role to use my thorough
+                  knowledge of programming frameworks and development software.
+                  My goal is to get more and more challenges to complete my
+                  knowledge and become advanced in my front-end career path. And
+                  I'm continuously learning and improving my communication and
+                  mindset to adapt to any environment I'm working with.
                 </p>
                 <div className='about'>
                   <a href='./about' className={`about__content ${color}`}>
